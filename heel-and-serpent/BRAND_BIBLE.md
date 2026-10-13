@@ -128,7 +128,8 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
 - Done: Instagram account @heelandserpent created; Metricool connected; logo system locked (Monogram, Seal, Cross & Serpent) (Oct 13).
 - Done: post templates and a draft launch set (welcome Story, Marching Orders on Proverbs 24:16, Get Back Up carousel on Peter) (Oct 13).
 - Launch set scheduled Oct 13, 2026 (Metricool): welcome Story Tue Oct 13, 9:30 AM CT (post 394994572); Marching Orders #1 Wed Oct 14, 6:45 AM CT (394994656); Get Back Up #1, Peter, Wed Oct 14, 7:15 PM CT (394994778). Working cadence: Marching Orders 6:45 AM, Get Back Up 7:15 PM.
-- Week 1 (Arm) scheduled Oct 13, 2026, set posts/2026-10-15-week1/ (38 verses, running total 43). Armor Check runs Sundays 1:15 PM CT. Metricool post ids:
+- Intro carousel "Why Heel & Serpent" (Start Here, Genesis 3:15 and Romans 16:20) published Oct 13, 2026, 9:57 AM CT: https://www.instagram.com/p/DecE5YZDT3a/ (Metricool 395032100). Meant to stay pinned at the top of the profile. Set: posts/2026-10-13-intro/.
+- Week 1 (Arm) scheduled Oct 13, 2026, set posts/2026-10-15-week1/ (38 verses). Armor Check runs Sundays 1:15 PM CT. Metricool post ids:
   - Thu Oct 15: Marching Orders, 1 Cor 9:27, 6:45 AM (395008299); Get Back Up, David, 7:15 PM (395008487)
   - Fri Oct 16: Marching Orders, Eph 6:4 (395008539); Get Back Up, lie "too far gone" (395008704)
   - Sat Oct 17: Marching Orders, Ps 5:3 (395008775); Get Back Up, Jonah (395009231)
