@@ -211,9 +211,14 @@ LAUNCH = {
         title=["YOUR WORST NIGHT", "ISN\u2019T YOUR", "LAST [WORD]."], body=["Get back up."], close=True),
 }
 
+def render_set(posts, out_dir):
+    """Render a {filename: svg} dict into out_dir. Each post set's build.py calls this."""
+    os.makedirs(out_dir, exist_ok=True)
+    for name, svg_text in posts.items():
+        render(svg_text, os.path.join(out_dir, name))
+    return sorted(os.listdir(out_dir))
+
+
 if __name__ == "__main__":
     out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "posts", "2026-10-13-launch")
-    os.makedirs(out, exist_ok=True)
-    for name, svg_text in LAUNCH.items():
-        render(svg_text, os.path.join(out, name))
-    print("\n".join(sorted(os.listdir(out))))
+    print("\n".join(render_set(LAUNCH, out)))

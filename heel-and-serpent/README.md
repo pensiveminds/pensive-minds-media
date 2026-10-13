@@ -10,6 +10,8 @@ Faith-driven motivation for men who get back up. Brand rules live in `BRAND_BIBL
 - `make_posts.py` templates: `marching_orders()`, `slide()` (carousels), `story()`; the launch set is defined at the bottom
 - `posts/<date>-<set>/` rendered posts plus `CAPTIONS.md`
 - `SOURCES.md` every verse used, by post
+- `posts/_template/build.py` copy this to start a new set
+- `PROJECT_SETUP.md` how to set up a dedicated claude.ai Project
 - `fonts/` EB Garamond and Inter (SIL Open Font License)
 
 ## Rendering

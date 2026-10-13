@@ -111,6 +111,17 @@ Rotate so the same pillar doesn't run twice in a row.
 - Media repo: pensiveminds/pensive-minds-media, folder heel-and-serpent/ (reorganized Oct 13, 2026: each page has its own folder; Pensive Minds moved to pensive-minds/, Ranks & Reason unchanged).
 - Builder: heel-and-serpent/make_posts.py. Templates: marching_orders(), slide() for carousels (cover, body, close with the Seal), story(). Bracket one word for ember, e.g. "GET [UP]." Text is measured and auto-shrinks to fit; content centres between the header and footer rules. Slides go in heel-and-serpent/posts/<date>-<set>/ with a CAPTIONS.md, and are pushed to main so Metricool can fetch them; a copy goes in a Heelandserpent Desktop folder.
 
+## Working session (start here in any new Project or chat)
+
+Everything needed lives in the media repo; nothing depends on earlier chats.
+
+1. **Attach the repo:** pensiveminds/pensive-minds-media (push access). Work only inside heel-and-serpent/; don't touch pensive-minds/ or ranks-and-reason/.
+2. **Read** heel-and-serpent/BRAND_BIBLE.md (this file), SOURCES.md, and the latest posts/<date>-<set>/CAPTIONS.md.
+3. **Set up rendering:** `pip install --break-system-packages cairosvg pillow numpy`, then `mkdir -p ~/.fonts && cp heel-and-serpent/fonts/*.ttf ~/.fonts/ && fc-cache -f` (SVG text needs the fonts installed).
+4. **Build a set:** copy posts/_template/ to posts/<YYYY-MM-DD>-<set>/, fill SET in build.py, run it, look at every image, write CAPTIONS.md (CSB credit line on every caption that quotes Scripture), add each verse to SOURCES.md.
+5. **Publish:** commit and push to main; images are then at https://raw.githubusercontent.com/pensiveminds/pensive-minds-media/main/heel-and-serpent/posts/<set>/<file>. Before scheduling, run Metricool getBrandSettings and confirm blogId 7400959 shows instagramData "heelandserpent". Schedule with createScheduledPost (Story: no text; feed: caption plus alt text per image; isAiGenerated false).
+6. **Record** what was scheduled (date, time, Metricool post id) in Setup status below, in the repo copy and the Project copy of this bible.
+
 ## Setup status
 
 - Name locked: Heel & Serpent (Oct 13, 2026).
