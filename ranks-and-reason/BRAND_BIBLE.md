@@ -28,7 +28,8 @@ Short, narrated, animated explainers on military history, history and philosophy
 - **Plan:** a paid studio-quality voice service (ElevenLabs Starter at $5/month to begin, with a commercial license; Creator at $22/month for daily posting). One consistent voice: deep, measured, documentary narrator.
 - Chris signs in himself; scripts are generated in his account, then the MP3 is attached to the chat or pulled from his computer.
 - **Chosen voice (Oct 13, 2026): Brian**, an ElevenLabs default voice (voice ID nPczCjzI2devNBz1zQrb; middle-aged American male, deep, built for narration). It's a default voice rather than a community voice, so it can't be pulled from the library by its creator and the channel's voice stays the same. Fallback if Brian doesn't sound right: George (JBFqnCBsd6RMkjVDRZzb, warm British narrator).
-- **Settings:** model Eleven Multilingual v2; Stability 50%; Similarity 75%; Style Exaggeration 0%; Speaker Boost on; Speed 0.95. Keep these fixed for every Reel.
+- **Settings (as used for the Marathon pilot, Oct 13):** "Brian - Deep, Resonant and Comforting", Eleven v4 model, Speed 1.0, Stability 50%, Similarity 75%. Keep these fixed for every Reel.
+- **Post-processing:** silence is trimmed from both ends of each clip and pauses inside a clip are capped at 0.5 s, then the full mix is lifted to about -16 dB with a limiter (peaks at -1 dB) and encoded at roughly 4 Mbps (about 25 MB for a 47 s Reel).
 - **Generation:** one clip per beat (the "say" line in beats.json), downloaded as MP3 and named b1.mp3, b2.mp3, etc. They're converted to vo/b1.wav… for the renderer. Check names by ear (e.g. Miltiades = mil-TY-uh-deez); if one is wrong, spell it phonetically in the text box.
 
 ## Accuracy rules
@@ -71,7 +72,7 @@ The pilot's renderer and script live in the media repo under ranks-and-reason/: 
 
 ## Pilot status
 
-- Campaign No. 1: Marathon (490 BC). 48 s. Rendered with the free voice and checked Oct 13 (specs, loudness, numbers all pass). To be re-voiced with Brian before posting.
+- Campaign No. 1: Marathon (490 BC). Re-voiced with Brian on Oct 13: 47.1 s, -16.0 dB mean, -1.0 dB peak, 24.7 MB (c001_marathon_brian.mp4 in the Ranksandreason Desktop folder). Awaiting Chris's approval before scheduling.
 - Caption draft: "Ten thousand Athenians. The largest empire on Earth. And a general who did the unthinkable. At Marathon in 490 BC, Miltiades thinned his own center, stacked his wings and charged at a run. Herodotus counts 6,400 Persian dead to 192 Athenian. The run everyone remembers isn't the one that mattered. Part 2 next. Source: Herodotus, Histories, Book 6. #history #militaryhistory #ancientgreece #battleofmarathon #ancienthistory"
 - Part 2 topic: Pheidippides' run to Sparta (about 150 miles in two days, per Herodotus) and the Spartans' answer (they waited for the full moon).
 
