@@ -43,6 +43,12 @@ These are the anchors, not a slogan. No single quote is repeated across posts, a
 - Humor allowed, dry and rare. Never mocking.
 - Never claims a personal testimony that didn't happen. The page speaks as a voice, not as a specific man with an invented past.
 
+### What's landing (Chris's feedback; read before writing, add to it after)
+
+The voice keeps evolving with Chris's reactions and the numbers from Watch. Log what he likes or pushes back on here, with the date, and let it shape the next set.
+
+- Oct 13, 2026: liked the intro carousel ("Why Heel & Serpent"). What it did: opened with the promise, not with us; let Scripture carry the weight; short lines; named the wound before the win ("The heel gets bruised. The head gets crushed."); closed on "Bruised, not beaten." Keep that shape.
+
 ## Visual language
 
 - **Feed:** 1080x1350 (4:5) stills and carousels. **Stories:** 1080x1920.
