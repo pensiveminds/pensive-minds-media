@@ -23,8 +23,9 @@ CSB terms: up to 1,000 verses may be quoted without written permission, provided
 | 2026-10-20 Get Back Up, lie: "it's just my temper" | Ephesians 4:26 (partial); Proverbs 16:32; James 1:19 (partial); Proverbs 15:1 | Eph 4:25–27; Prov 16:32; James 1:19–20; Prov 15:1 | 4 |
 | 2026-10-21 Marching Orders, Rom 12 | Romans 12:2 (partial on graphic, full in caption) | Rom 12:1–2 | 1 |
 | 2026-10-21 Get Back Up, Paul | Acts 8:3; Acts 9:4; 1 Timothy 1:15 (partial); Philippians 3:13–14 (partial) | Acts 8:1–3; Acts 9:1–22; 1 Tim 1:12–16; Phil 3:12–14 | 5 |
+| 2026-10-13 Intro carousel (Start Here) | Genesis 3:15 (partial on graphic, last two lines in caption); Romans 16:20 (partial) | Gen 3:14–15; Rom 16:17–20 | 2 |
 | Brand anchors (bible, not posts) | Genesis 3:15; Romans 16:20; Romans 8:31 | | 0 |
 
 Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
 
-**Running total on posts: 43 verses.**
+**Running total on posts: 45 verses.**
