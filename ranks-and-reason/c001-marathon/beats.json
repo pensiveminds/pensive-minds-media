@@ -1,0 +1,9 @@
+[
+ {"id": 1, "say": "Four ninety B.C. Ten thousand Athenians stand on the plain of Marathon.", "cap": ["490 BC.", "10,000 Athenians.", "One plain."], "hi": "10,000"},
+ {"id": 2, "say": "Facing them: an army of the largest empire the world had ever seen.", "cap": ["Facing them: the largest", "empire on Earth."], "hi": "largest"},
+ {"id": 3, "say": "Their general, Miltiades, did the unthinkable. He thinned his own center, and stacked both wings.", "cap": ["He thinned his own center.", "Stacked both wings."], "hi": "thinned"},
+ {"id": 4, "say": "Then he ordered the charge. At a run. Nearly a mile, straight at the Persian line. The Persians thought they were insane.", "cap": ["The charge.", "At a run."], "hi": "run"},
+ {"id": 5, "say": "The Persian center broke through. Right into the trap. And the wings swung shut.", "cap": ["Center breaks through...", "into the trap."], "hi": "trap"},
+ {"id": 6, "say": "Herodotus counts sixty-four hundred Persian dead. Athens lost one hundred ninety-two.", "cap": ["6,400 Persian dead.", "192 Athenian."], "hi": "192"},
+ {"id": 7, "say": "And that famous run to Athens? The run that really mattered was a hundred and fifty miles. Part two.", "cap": ["The run that mattered", "was 150 miles."], "hi": "150"}
+]
