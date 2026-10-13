@@ -116,4 +116,5 @@ Rotate so the same pillar doesn't run twice in a row.
 - Name locked: Heel & Serpent (Oct 13, 2026).
 - Done: Instagram account @heelandserpent created; Metricool connected; logo system locked (Monogram, Seal, Cross & Serpent) (Oct 13).
 - Done: post templates and a draft launch set (welcome Story, Marching Orders on Proverbs 24:16, Get Back Up carousel on Peter) (Oct 13).
-- To do: upload profile picture; approve and post the launch set; domain and trademark check.
+- Launch set scheduled Oct 13, 2026 (Metricool): welcome Story Tue Oct 13, 9:30 AM CT (post 394994572); Marching Orders #1 Wed Oct 14, 6:45 AM CT (394994656); Get Back Up #1, Peter, Wed Oct 14, 7:15 PM CT (394994778). Working cadence: Marching Orders 6:45 AM, Get Back Up 7:15 PM.
+- To do: domain and trademark check; build week one (Arm).
