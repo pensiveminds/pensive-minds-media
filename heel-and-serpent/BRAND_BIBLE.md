@@ -144,4 +144,5 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
   - Tue Oct 20: Marching Orders, Josh 24:15 (395009927); Get Back Up, lie "it's just my temper" (395010077)
   - Wed Oct 21: Marching Orders, Rom 12:2 (395010132); Get Back Up, Paul (395010266)
 - Next week (Arm) starts Thu Oct 22; Armor Check #2 is the breastplate of righteousness. Stories for week 1 are not built yet (feed only).
+- On hold (Chris, Oct 13, 2026): comment and DM auto-replies via Metricool Flows. If revisited: narrow keyword triggers only, every reply says a real person reads the inbox, crisis messages point to 988, never an auto-reply on every comment.
 - To do: domain and trademark check.
