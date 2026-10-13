@@ -4,11 +4,11 @@
 
 Why Heel & Serpent?
 
-It starts in a garden, with the first promise after the fall: "He will strike your head, and you will strike his heel." Genesis 3:15 (CSB)
+It starts in a garden, with the first promise after the fall: "…He will strike your head, and you will strike his heel." Genesis 3:15 (CSB)
 
 The heel gets bruised. The head gets crushed. A wound isn't a defeat.
 
-That promise was kept at the cross. The fight is spiritual, and the ending is settled: "The God of peace will soon crush Satan under your feet." Romans 16:20 (CSB)
+That promise was kept at the cross. The fight is spiritual, and the ending is settled: "The God of peace will soon crush Satan under your feet…" Romans 16:20 (CSB)
 
 This page is for men who've been knocked down and want to get back up. Faith, discipline and fatherhood.
 
