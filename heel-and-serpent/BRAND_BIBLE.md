@@ -60,6 +60,18 @@ The voice keeps evolving with Chris's reactions and the numbers from Watch. Log 
 - **Header on every frame:** series name in ember (top left), Cross & Serpent mark (top right).
 - **Scripture reference always shown** under any verse, in ash (e.g. "Romans 8:31, CSB").
 
+### Looks (rotation set by Chris, Oct 13, 2026)
+
+Five looks, same words, palette, type and marks. Built by heel-and-serpent/make_variants.py: mo_look() for Marching Orders, carousel() for carousels (a carousel keeps one look on every slide), render_looks() to render.
+
+- **Classic:** centred on iron. The anchor look.
+- **Bone:** iron type on a bone ground (marks swapped to iron). Breaks the grid into light and dark.
+- **Ledger:** left-aligned and larger, with an ember rule down the left margin. Suits discipline posts.
+- **Engraved:** inset double frame, the seal faint behind the type, three ember dots as the divider. Suits Sundays and Armor Check.
+- **Forge:** low ember glow from below; on stills, covers and closing slides the ember word is set huge and cropped behind the command. Strongest lines only, about once or twice a week.
+
+Rules: no two posts in a row share a look (count Reels as their own look); Classic and Bone carry most of the week; Armor Check runs in Engraved; Forge stays rare. Non-classic files carry a _<look> suffix. When rebuilding a scheduled post in a new look, use new file names and update the Metricool post's media.
+
 ## Formats and cadence
 
 About 14 feed posts a week plus daily Stories, all templated. Fixed times; adjust after the first month of data.
@@ -137,14 +149,16 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
 - Done: post templates and a draft launch set (welcome Story, Marching Orders on Proverbs 24:16, Get Back Up carousel on Peter) (Oct 13).
 - Launch set scheduled Oct 13, 2026 (Metricool): welcome Story Tue Oct 13, 9:30 AM CT (post 394994572); Marching Orders #1 Wed Oct 14, 6:45 AM CT (394994656); Get Back Up #1, Peter, Wed Oct 14, 7:15 PM CT (394994778). Working cadence: Marching Orders 6:45 AM, Get Back Up 7:15 PM.
 - Intro carousel "Why Heel & Serpent" (Start Here, Genesis 3:15 and Romans 16:20) published Oct 13, 2026, 9:57 AM CT: https://www.instagram.com/p/DecE5YZDT3a/ (Metricool 395032100). Meant to stay pinned at the top of the profile. Set: posts/2026-10-13-intro/.
-- Week 1 (Arm) scheduled Oct 13, 2026, set posts/2026-10-15-week1/ (38 verses). Armor Check runs Sundays 1:15 PM CT. Metricool post ids:
-  - Thu Oct 15: Marching Orders, 1 Cor 9:27, 6:45 AM (395008299); Get Back Up, David, 7:15 PM (395008487)
-  - Fri Oct 16: Marching Orders, Eph 6:4 (395008539); Get Back Up, lie "too far gone" (395008704)
-  - Sat Oct 17: Marching Orders, Ps 5:3 (395008775); Get Back Up, Jonah (395009231)
-  - Sun Oct 18: Marching Orders, 1 Cor 10:13 (395009281); Armor Check #1, belt of truth, 1:15 PM (395009428); Get Back Up, lie "strong men don't apologize" (395009536)
-  - Mon Oct 19: Marching Orders, Col 3:23 (395009572); Get Back Up, Samson (395009876)
-  - Tue Oct 20: Marching Orders, Josh 24:15 (395009927); Get Back Up, lie "it's just my temper" (395010077)
-  - Wed Oct 21: Marching Orders, Rom 12:2 (395010132); Get Back Up, Paul (395010266)
+- Week 1 (Arm) scheduled Oct 13, 2026, set posts/2026-10-15-week1/ (38 verses). Armor Check runs Sundays 1:15 PM CT. Rebuilt in the rotating looks the same afternoon (Metricool ids changed on update; uuids did not). Metricool post ids, look in brackets:
+  - Thu Oct 15: Marching Orders, 1 Cor 9:27, 6:45 AM (395318385) [Ledger]; Get Back Up, David, 7:15 PM (395318548) [Bone]
+  - Fri Oct 16: Marching Orders, Eph 6:4 (395008539) [Classic]; Get Back Up, lie "too far gone" (395318688) [Engraved]
+  - Sat Oct 17: Marching Orders, Ps 5:3 (395318742) [Bone]; Get Back Up, Jonah (395009231) [Classic]
+  - Sun Oct 18: Marching Orders, 1 Cor 10:13 (395318798) [Bone]; Armor Check #1, belt of truth, 1:15 PM (395318899) [Engraved]; Get Back Up, lie "strong men don't apologize" (395009536) [Classic]
+  - Mon Oct 19: Marching Orders, Col 3:23 (395318964) [Ledger]; Get Back Up, Samson (395319087) [Bone]
+  - Tue Oct 20: Marching Orders, Josh 24:15 (395009927) [Classic]; Get Back Up, lie "it's just my temper" (395319232) [Ledger]
+  - Wed Oct 21: Marching Orders, Rom 12:2 (395319273) [Forge]; Get Back Up, Paul (395319380) [Bone]
+- Wed Oct 14: Marching Orders #1, Prov 24:16, rebuilt in Forge (395318152, posts/2026-10-13-launch/build_forge.py); Get Back Up #1, Peter, stays Classic (394994778).
+- Tue Oct 13 evening (first posts in the new looks, set posts/2026-10-13-evening/): Marching Orders, Deut 6:7, 5:45 PM [Bone] (395317735); Get Back Up, lie "you're the only one" (Elijah), 8:30 PM [Ledger] (395318012).
 - Next week (Arm) starts Thu Oct 22; Armor Check #2 is the breastplate of righteousness. Stories for week 1 are not built yet (feed only).
 - Strike #1 (Micah 7:8 Reel) published Oct 13, 2026, 3:28 PM CT: https://www.instagram.com/reel/DecqtXAoNuJ/ (Metricool 395304172). Set: reels/2026-10-13-micah7-8/.
 - Reels (Strike) added Oct 13, 2026. Instagram sounds can't be attached through Metricool: @heelandserpent is a Business account with no Facebook Page linked. Chris chose the original generated score instead (Oct 13); he can still add a trending sound in the app.
