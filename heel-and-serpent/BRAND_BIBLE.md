@@ -118,7 +118,7 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
 1. **Attach the repo:** pensiveminds/pensive-minds-media (push access). Work only inside heel-and-serpent/; don't touch pensive-minds/ or ranks-and-reason/.
 2. **Read** heel-and-serpent/BRAND_BIBLE.md (this file), SOURCES.md, and the latest posts/<date>-<set>/CAPTIONS.md.
 3. **Set up rendering:** `pip install --break-system-packages cairosvg pillow numpy`, then `mkdir -p ~/.fonts && cp heel-and-serpent/fonts/*.ttf ~/.fonts/ && fc-cache -f` (SVG text needs the fonts installed).
-4. **Build a set:** copy posts/_template/ to posts/<YYYY-MM-DD>-<set>/, fill SET in build.py, run it, look at every image, write CAPTIONS.md (CSB credit line on every caption that quotes Scripture), add each verse to SOURCES.md.
+4. **Build a set:** copy posts/_template/ to posts/<YYYY-MM-DD>-<set>/, fill SET in build.py, run it, look at every image, write CAPTIONS.md (CSB credit line on every caption that quotes Scripture), add each verse to SOURCES.md. To check CSB wording, open the passages on BibleGateway (version=CSB, several references separated by semicolons) in the built-in browser and read the page text; the web fetcher only returns short snippets and the shell can't reach the site. If an ember word loses the space before it (seen after "WAY"), use an en space (\u2002) before the bracket.
 5. **Publish:** commit and push to main; images are then at https://raw.githubusercontent.com/pensiveminds/pensive-minds-media/main/heel-and-serpent/posts/<set>/<file>. Before scheduling, run Metricool getBrandSettings and confirm blogId 7400959 shows instagramData "heelandserpent". Schedule with createScheduledPost (Story: no text; feed: caption plus alt text per image; isAiGenerated false).
 6. **Record** what was scheduled (date, time, Metricool post id) in Setup status below, in the repo copy and the Project copy of this bible.
 
@@ -128,4 +128,13 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
 - Done: Instagram account @heelandserpent created; Metricool connected; logo system locked (Monogram, Seal, Cross & Serpent) (Oct 13).
 - Done: post templates and a draft launch set (welcome Story, Marching Orders on Proverbs 24:16, Get Back Up carousel on Peter) (Oct 13).
 - Launch set scheduled Oct 13, 2026 (Metricool): welcome Story Tue Oct 13, 9:30 AM CT (post 394994572); Marching Orders #1 Wed Oct 14, 6:45 AM CT (394994656); Get Back Up #1, Peter, Wed Oct 14, 7:15 PM CT (394994778). Working cadence: Marching Orders 6:45 AM, Get Back Up 7:15 PM.
-- To do: domain and trademark check; build week one (Arm).
+- Week 1 (Arm) scheduled Oct 13, 2026, set posts/2026-10-15-week1/ (38 verses, running total 43). Armor Check runs Sundays 1:15 PM CT. Metricool post ids:
+  - Thu Oct 15: Marching Orders, 1 Cor 9:27, 6:45 AM (395008299); Get Back Up, David, 7:15 PM (395008487)
+  - Fri Oct 16: Marching Orders, Eph 6:4 (395008539); Get Back Up, lie "too far gone" (395008704)
+  - Sat Oct 17: Marching Orders, Ps 5:3 (395008775); Get Back Up, Jonah (395009231)
+  - Sun Oct 18: Marching Orders, 1 Cor 10:13 (395009281); Armor Check #1, belt of truth, 1:15 PM (395009428); Get Back Up, lie "strong men don't apologize" (395009536)
+  - Mon Oct 19: Marching Orders, Col 3:23 (395009572); Get Back Up, Samson (395009876)
+  - Tue Oct 20: Marching Orders, Josh 24:15 (395009927); Get Back Up, lie "it's just my temper" (395010077)
+  - Wed Oct 21: Marching Orders, Rom 12:2 (395010132); Get Back Up, Paul (395010266)
+- Next week (Arm) starts Thu Oct 22; Armor Check #2 is the breastplate of righteousness. Stories for week 1 are not built yet (feed only).
+- To do: domain and trademark check.
