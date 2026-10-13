@@ -79,6 +79,7 @@ The pilot's renderer and script live in the media repo under ranks-and-reason/: 
 - Builder: ranks-and-reason/stories/launch/make_stories.py in the media repo. New slides go in ranks-and-reason/stories/<date-or-set>/ and are pushed to main so Metricool can fetch them; a copy goes in the Ranksandreason Desktop folder under stories.
 - Story types: brand intro, Reel teaser (a still from the Reel + drop time), "Ideas that shaped war" quote, "Myth vs record" hook.
 - Launch set posted Oct 13, 2026 (5:25–5:28 AM CT): welcome, Campaign No. 1 teaser, Sun Tzu "All warfare is based on deception." (Giles, 1910, I.18), Marathon-run myth hook.
+- Oct 13, 2026, 12:59 PM CT: Commanders & Choices, "the deciding vote" (Callimachus the polemarch broke the generals' split after Miltiades' appeal; Herodotus 6.109–110, tr. A. D. Godley, 1920, public domain), teasing the Reel. Metricool post 395194733. Builder: stories/2026-10-13-callimachus/make_story.py (reuses the launch helpers; needs DM Serif Display and DM Sans in /home/claude/fonts).
 
 ## Pilot status
 
