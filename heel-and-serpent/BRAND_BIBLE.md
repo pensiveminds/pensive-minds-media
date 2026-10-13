@@ -109,6 +109,7 @@ Rotate so the same pillar doesn't run twice in a row.
 | --- | --- |
 | **Rise** [optional topic] | Make one feed post (Marching Orders still or Get Back Up carousel, whichever is next) and schedule it about 2 minutes out via Metricool. No topic: pick by pillar rotation. Scripture rules and guardrails apply; HOLD if it touches current events. |
 | **Arm** [notes] | Build and schedule next week's 14 feed posts plus Armor Check. |
+| **Strike** [optional topic] | Make one short Reel (9:16, 12–18 s) with heel-and-serpent/make_reel.py: moving type over the iron ground, a verse with its reference, the seal to close, and an original score built into the video (drone in D minor, heartbeat pulse, impacts on the cuts, resolving to D major on the seal). Show Chris and wait for his OK, then schedule about 2 minutes out via Metricool as a REEL. Use it between the morning and evening posts. No topic: pick by pillar rotation. Sets go in heel-and-serpent/reels/<date>-<topic>/. |
 | **Watch** | Report the latest Metricool numbers for the page. |
 | **Sheathe** | Move all scheduled posts to draft. "Sheathe off" restores them. |
 
@@ -144,5 +145,6 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
   - Tue Oct 20: Marching Orders, Josh 24:15 (395009927); Get Back Up, lie "it's just my temper" (395010077)
   - Wed Oct 21: Marching Orders, Rom 12:2 (395010132); Get Back Up, Paul (395010266)
 - Next week (Arm) starts Thu Oct 22; Armor Check #2 is the breastplate of righteousness. Stories for week 1 are not built yet (feed only).
+- Reels (Strike) added Oct 13, 2026. Instagram sounds can't be attached through Metricool: @heelandserpent is a Business account with no Facebook Page linked. Chris chose the original generated score instead (Oct 13); he can still add a trending sound in the app.
 - On hold (Chris, Oct 13, 2026): comment and DM auto-replies via Metricool Flows. If revisited: narrow keyword triggers only, every reply says a real person reads the inbox, crisis messages point to 988, never an auto-reply on every comment.
 - To do: domain and trademark check.

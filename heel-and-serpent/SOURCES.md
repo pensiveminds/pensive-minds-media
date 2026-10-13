@@ -24,8 +24,9 @@ CSB terms: up to 1,000 verses may be quoted without written permission, provided
 | 2026-10-21 Marching Orders, Rom 12 | Romans 12:2 (partial on graphic, full in caption) | Rom 12:1–2 | 1 |
 | 2026-10-21 Get Back Up, Paul | Acts 8:3; Acts 9:4; 1 Timothy 1:15 (partial); Philippians 3:13–14 (partial) | Acts 8:1–3; Acts 9:1–22; 1 Tim 1:12–16; Phil 3:12–14 | 5 |
 | 2026-10-13 Intro carousel (Start Here) | Genesis 3:15 (partial on graphic, last two lines in caption); Romans 16:20 (partial) | Gen 3:14–15; Rom 16:17–20 | 2 |
+| 2026-10-13 Strike #1 (Reel) | Micah 7:8 | Micah 7:7–9 | 1 |
 | Brand anchors (bible, not posts) | Genesis 3:15; Romans 16:20; Romans 8:31 | | 0 |
 
 Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
 
-**Running total on posts: 45 verses.**
+**Running total on posts: 46 verses.**
