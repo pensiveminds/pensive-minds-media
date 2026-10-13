@@ -80,6 +80,12 @@ The pilot's renderer and script live in the media repo under ranks-and-reason/: 
 - Story types: brand intro, Reel teaser (a still from the Reel + drop time), "Ideas that shaped war" quote, "Myth vs record" hook.
 - Launch set posted Oct 13, 2026 (5:25–5:28 AM CT): welcome, Campaign No. 1 teaser, Sun Tzu "All warfare is based on deception." (Giles, 1910, I.18), Marathon-run myth hook.
 - Oct 13, 2026, 12:59 PM CT: Commanders & Choices, "the deciding vote" (Callimachus the polemarch broke the generals' split after Miltiades' appeal; Herodotus 6.109–110, tr. A. D. Godley, 1920, public domain), teasing the Reel. Metricool post 395194733. Builder: stories/2026-10-13-callimachus/make_story.py (reuses the launch helpers; needs DM Serif Display and DM Sans in /home/claude/fonts).
+- Oct 13, 2026, 7:00 PM CT: Ideas That Shaped War, Melian Dialogue Story ("The strong do what they can and the weak suffer what they must", Thucydides 5.89, tr. Richard Crawley, 1874). Metricool post 395431080. Builder: stories/2026-10-13-melos/make_story.py.
+
+## Feed carousels (exception to Reels-only)
+
+- When a post is needed fast and no narration is ready, a 4:5 (1080x1350) still carousel in the Story style is allowed: same header, footer with @ranksandreason and page count, every claim cited on the slide.
+- Oct 13, 2026, 7:01 PM CT: Melian Dialogue, 4 slides (Thucydides 5.84–116, 6.30, tr. Crawley). Metricool post 395431289. Builder: posts/2026-10-13-melos/make_post.py. Teases a future Sicilian Expedition Campaign.
 
 ## Pilot status
 
