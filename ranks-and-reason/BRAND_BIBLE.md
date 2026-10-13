@@ -18,7 +18,7 @@ Short, narrated, animated explainers on military history, history and philosophy
 - 30 to 50 seconds, 1080x1920, 30 fps, narrated, captions burned in (most people watch muted).
 - **Structure:** hook in the first 2 seconds (a date, a number, a stake) → three or four beats → a hard payoff number or line → cliffhanger or follow prompt.
 - **Visual language:** charcoal background with film grain and vignette; brass (#C49242) for highlights; bone (#E9E4D8) for friendly forces and text; red (#B23428) for the enemy; sea #16262C. DM Serif Display for big text and captions, DM Sans Bold for labels. Animated top-down maps with unit blocks, arrows, distance brackets, camera push-ins and impact shakes; big counters for casualty or army figures. Gemini stills or clips may be used for scene-setting.
-- **Header on every frame:** "CAMPAIGN No. N" (brass) / "TOPIC · DATE" (muted) / "RANKS & REASON" (top right).
+- **Header on every frame:** "CAMPAIGN No. N" (brass) / "TOPIC · DATE" (muted) / "RANKS & REASON" (top right). Exception: the header may fade out behind the dim on payoff frames (the big casualty counter and the closing number / Part 2 card), so the payoff stands alone. It stays visible on every map and story beat.
 - **Captions:** two lines max per beat, one brass highlight word, inside the safe zone (y ≈ 1250 to 1450).
 - **Sound:** narration first; synthesized drum score underneath (tom hits on beats, accelerating drums into a charge, a boom on the decisive moment), ducked under the voice. Target about -16 dB mean, peaks under -1 dB.
 
@@ -27,6 +27,9 @@ Short, narrated, animated explainers on military history, history and philosophy
 - Pilot used a free open-source voice (Piper LibriTTS #432, CC BY 4.0). Rejected Oct 12 as not good enough.
 - **Plan:** a paid studio-quality voice service (ElevenLabs Starter at $5/month to begin, with a commercial license; Creator at $22/month for daily posting). One consistent voice: deep, measured, documentary narrator.
 - Chris signs in himself; scripts are generated in his account, then the MP3 is attached to the chat or pulled from his computer.
+- **Chosen voice (Oct 13, 2026): Brian**, an ElevenLabs default voice (voice ID nPczCjzI2devNBz1zQrb; middle-aged American male, deep, built for narration). It's a default voice rather than a community voice, so it can't be pulled from the library by its creator and the channel's voice stays the same. Fallback if Brian doesn't sound right: George (JBFqnCBsd6RMkjVDRZzb, warm British narrator).
+- **Settings:** model Eleven Multilingual v2; Stability 50%; Similarity 75%; Style Exaggeration 0%; Speaker Boost on; Speed 0.95. Keep these fixed for every Reel.
+- **Generation:** one clip per beat (the "say" line in beats.json), downloaded as MP3 and named b1.mp3, b2.mp3, etc. They're converted to vo/b1.wav… for the renderer. Check names by ear (e.g. Miltiades = mil-TY-uh-deez); if one is wrong, spell it phonetically in the text box.
 
 ## Accuracy rules
 
@@ -68,7 +71,7 @@ The pilot's renderer and script live in the media repo under ranks-and-reason/: 
 
 ## Pilot status
 
-- Campaign No. 1: Marathon (490 BC). 48 s. Rendered with the free voice; to be re-voiced with the paid voice before posting.
+- Campaign No. 1: Marathon (490 BC). 48 s. Rendered with the free voice and checked Oct 13 (specs, loudness, numbers all pass). To be re-voiced with Brian before posting.
 - Caption draft: "Ten thousand Athenians. The largest empire on Earth. And a general who did the unthinkable. At Marathon in 490 BC, Miltiades thinned his own center, stacked his wings and charged at a run. Herodotus counts 6,400 Persian dead to 192 Athenian. The run everyone remembers isn't the one that mattered. Part 2 next. Source: Herodotus, Histories, Book 6. #history #militaryhistory #ancientgreece #battleofmarathon #ancienthistory"
 - Part 2 topic: Pheidippides' run to Sparta (about 150 miles in two days, per Herodotus) and the Spartans' answer (they waited for the full moon).
 
