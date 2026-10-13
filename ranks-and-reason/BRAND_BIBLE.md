@@ -61,7 +61,8 @@ Start at 3 Reels a week at fixed times (adjust after the first month of data). P
 
 | Command | Action |
 | --- | --- |
-| **Deploy** [topic] | Research, script, narrate, animate and publish one Reel now (AI label on). HOLD if it touches current events. |
+| **Ranks & Reason** [optional topic] | Make one new Story slide and post it to Instagram immediately (scheduled about 2 minutes out via Metricool, no AI label). No topic given: pick from the pillars, rotating so the same pillar doesn't run twice in a row, and tie it to the next scheduled Reel when one is coming. Every claim sourced, quotes only from public-domain translations, guardrails apply; HOLD if it touches current events. |
+| **Deploy** [topic] | Research, script, narrate, animate and publish one Reel now (no per-Reel AI label; see AI disclosure). HOLD if it touches current events. |
 | **Recon** | Report the latest Metricool numbers for @ranksandreason. |
 | **Resupply** [notes] | Build and schedule next week's three Reels. |
 | **Stand down** | Move all scheduled posts to draft. "Stand down off" restores them. |
@@ -70,9 +71,19 @@ Start at 3 Reels a week at fixed times (adjust after the first month of data). P
 
 The pilot's renderer and script live in the media repo under ranks-and-reason/: render.py (animation, captions, drum score, mux), beats.json (script beats with captions and highlight words). Fonts: DM Serif Display, DM Sans. Voice files are generated per beat, then laid on a timeline with 0.4 s gaps.
 
+## Stories
+
+- 1080x1920 still JPG, same look as the Reels: charcoal with grain and vignette, DM Serif Display for the big text, DM Sans Bold for labels, brass for one highlight word, red only for the enemy or a "myth" word.
+- Small header on every slide: the pillar or campaign label in brass (top left), @ranksandreason in muted (top right).
+- All text inside y ≈ 260 to 1600 so Instagram's story bars never cover it.
+- Builder: ranks-and-reason/stories/launch/make_stories.py in the media repo. New slides go in ranks-and-reason/stories/<date-or-set>/ and are pushed to main so Metricool can fetch them; a copy goes in the Ranksandreason Desktop folder under stories.
+- Story types: brand intro, Reel teaser (a still from the Reel + drop time), "Ideas that shaped war" quote, "Myth vs record" hook.
+- Launch set posted Oct 13, 2026 (5:25–5:28 AM CT): welcome, Campaign No. 1 teaser, Sun Tzu "All warfare is based on deception." (Giles, 1910, I.18), Marathon-run myth hook.
+
 ## Pilot status
 
-- Campaign No. 1: Marathon (490 BC). Re-voiced with Brian on Oct 13: 47.1 s, -16.0 dB mean, -1.0 dB peak, 24.7 MB (c001_marathon_brian.mp4 in the Ranksandreason Desktop folder). Awaiting Chris's approval before scheduling.
+- Campaign No. 1: Marathon (490 BC). Re-voiced with Brian on Oct 13: 47.1 s, -16.0 dB mean, -1.0 dB peak, 24.7 MB (c001_marathon_brian.mp4 in the Ranksandreason Desktop folder). Approved and scheduled for Wed Oct 14, 10:00 AM CT (Metricool post 394790659).
+- Part 2 (Pheidippides): script work starts Wed Oct 14 at 8:00 AM CT, two hours before the pilot posts; must post by Fri Oct 16, 10:00 AM CT.
 - Caption draft: "Ten thousand Athenians. The largest empire on Earth. And a general who did the unthinkable. At Marathon in 490 BC, Miltiades thinned his own center, stacked his wings and charged at a run. Herodotus counts 6,400 Persian dead to 192 Athenian. The run everyone remembers isn't the one that mattered. Part 2 next. Source: Herodotus, Histories, Book 6. #history #militaryhistory #ancientgreece #battleofmarathon #ancienthistory"
 - Part 2 topic: Pheidippides' run to Sparta (about 150 miles in two days, per Herodotus) and the Spartans' answer (they waited for the full moon).
 
