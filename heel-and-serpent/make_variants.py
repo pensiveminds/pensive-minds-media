@@ -166,3 +166,106 @@ if __name__ == "__main__":
         svg, kind = fn(*args, **kw)
         render_on(svg, os.path.join(out, f"mo_{name}.jpg"), kind)
         print(name)
+
+
+# ---------------------------------------------------------------- carousels in every look
+
+LOOKS = {
+    "classic":  dict(ground="iron",  ink=BONE,         ash=ASH,         align="center"),
+    "bone":     dict(ground="bone",  ink=INK_ON_BONE,  ash=ASH_ON_BONE, align="center"),
+    "ledger":   dict(ground="iron",  ink=BONE,         ash=ASH,         align="left"),
+    "engraved": dict(ground="iron",  ink=BONE,         ash=ASH,         align="center", engraved=True),
+    "forge":    dict(ground="forge", ink=BONE,         ash=ASH,         align="center", ghost=True),
+}
+MO = {"classic": mo_classic, "bone": mo_bone, "ledger": mo_ledger, "engraved": mo_engraved, "forge": mo_forge}
+
+
+def mo_look(look, command, verse_lines, ref, sub=None):
+    return MO[look](command, verse_lines, ref, sub=sub)
+
+
+def _engraved_extras():
+    return (f'<rect x="56" y="186" width="{W-112}" height="{Hh-342}" fill="none" stroke="{ASH}" stroke-width="1.2"/>'
+            f'<rect x="68" y="198" width="{W-136}" height="{Hh-366}" fill="none" stroke="{ASH}" stroke-width="0.6"/>'
+            f'<g opacity="0.045">{mark(SEAL, 140, 290, 800)}</g>')
+
+
+def _ghost(title):
+    m = re.search(r"\[([^\]]+)\]", " ".join(title or []))
+    if not m:
+        return ""
+    word = m.group(1).strip(".,")
+    return (f'<text x="{W/2:.0f}" y="760" text-anchor="middle" font-family="{SERIF}" font-weight="600" font-size="430" '
+            f'letter-spacing="10" fill="none" stroke="{EMBER}" stroke-opacity="0.28" stroke-width="2">{escape(word)}</text>')
+
+
+def slide_look(look, series, page, title=None, body=None, verse_lines=None, ref=None, cover=False, close=False):
+    """Same content model as make_posts.slide(), drawn in one of the five looks. Returns (svg, ground)."""
+    L = LOOKS[look]; ink, ash, left = L["ink"], L["ash"], L["align"] == "left"
+    eng, bone = L.get("engraved"), L["ground"] == "bone"
+    X = 150
+    mw = 800 if left else (820 if eng else 920)
+
+    def tb(lines, y, size, **kw):
+        kw.setdefault("color", ink)
+        if left:
+            return _left_block(lines, X, y, size, max_w=mw, **kw)
+        return text_block(lines, y, size, max_w=mw, **kw)
+
+    def divider(y):
+        if eng:
+            return "".join(f'<circle cx="{c}" cy="{y:.0f}" r="3" fill="{EMBER}"/>' for c in (510, 540, 570))
+        if left:
+            return f'<line x1="{X}" y1="{y:.0f}" x2="{X+80}" y2="{y:.0f}" stroke="{EMBER}" stroke-width="2"/>'
+        return f'<line x1="500" y1="{y:.0f}" x2="580" y2="{y:.0f}" stroke="{EMBER}" stroke-width="2"/>'
+
+    seal = _swap(SEAL) if bone else SEAL
+    parts = []
+    if cover:
+        size = 108 if left else 100
+        t, end = tb(title, 0, size, spacing=10 if not left else 8, lead=1.12); parts.append(t)
+        y = end + 70; parts.append(divider(y)); end = y
+        if body:
+            b, end = tb(body, y + 90, 40, weight=400, color=ash, spacing=2); parts.append(b)
+    elif close:
+        size = 92
+        t, end = tb(title, 0, size, spacing=9, lead=1.15); parts.append(t)
+        if body:
+            b, end = tb(body, end + 100, 42, weight=400, color=ash); parts.append(b)
+        parts.append(mark(seal, X if left else 440, end + 70, 200)); end += 270
+    else:
+        size = 76
+        t, end = tb(title, 0, size, spacing=6, lead=1.2); parts.append(t)
+        y = end
+        if body:
+            b, y = tb(body, y + 90, 40, weight=400, color=ash, lead=1.35); parts.append(b)
+        end = y
+        if verse_lines:
+            parts.append(divider(y + 70))
+            v, end = tb(verse_lines, y + 180, 46, italic=True, weight=400, lead=1.3); parts.append(v)
+            r = tb([ref.upper()], end + 74, 22, family=SANS, weight=600, spacing=6, color=ash)[0]; parts.append(r)
+            end += 74
+    top = -size * 0.72
+    extras = ""
+    if eng:
+        extras += _engraved_extras()
+    if L.get("ghost") and (cover or close):
+        extras += _ghost(title)
+    if left:
+        shift = 690 - (top + end) / 2
+        extras += f'<line x1="104" y1="{top + shift:.0f}" x2="104" y2="{end + shift:.0f}" stroke="{EMBER}" stroke-width="3"/>'
+    inner = extras + _centre("\n".join(parts), top, end)
+    return _frame(series, inner, ink=ink, ash=ash, cross=_swap(CROSS) if bone else CROSS, page=page), L["ground"]
+
+
+def carousel(look, prefix, series, slides):
+    """slides: list of slide kwargs. Returns {filename: (svg, ground)}; non-classic files get a _<look> suffix."""
+    n = len(slides); sfx = "" if look == "classic" else f"_{look}"
+    return {f"{prefix}{sfx}_{i+1}.jpg": slide_look(look, series, f"{i+1} / {n}", **kw) for i, kw in enumerate(slides)}
+
+
+def render_looks(posts, out_dir):
+    os.makedirs(out_dir, exist_ok=True)
+    for name, (svg, kind) in posts.items():
+        render_on(svg, os.path.join(out_dir, name), kind)
+    return sorted(posts)

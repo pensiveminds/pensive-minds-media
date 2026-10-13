@@ -17,23 +17,38 @@ Pillar rotation (no pillar twice in a row):
 import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", ".."))
-from make_posts import marching_orders, slide, story, render_set
+from make_variants import mo_look, carousel, render_looks
 
 G, A = "Get Back Up", "Armor Check"
 
+# Design looks (rotation set Oct 13, 2026; no two posts in a row share a look). Classic files keep their names.
+LOOK = {
+    "01_thu_marching_orders_1cor9-27": "ledger",   "02_thu_get_back_up_david": "bone",
+    "03_fri_marching_orders_eph6-4": "classic",    "04_fri_get_back_up_too_far": "engraved",
+    "05_sat_marching_orders_ps5-3": "bone",        "06_sat_get_back_up_jonah": "classic",
+    "07_sun_marching_orders_1cor10-13": "bone",    "08_sun_armor_check_belt": "engraved",
+    "09_sun_get_back_up_apologize": "classic",     "10_mon_marching_orders_col3-23": "ledger",
+    "11_mon_get_back_up_samson": "bone",           "12_tue_marching_orders_josh24-15": "classic",
+    "13_tue_get_back_up_temper": "ledger",         "14_wed_marching_orders_rom12-2": "forge",
+    "15_wed_get_back_up_paul": "bone",
+}
+
 def gbu(prefix, slides, series=G):
-    """slides: list of slide() kwargs; returns {filename: svg}."""
-    n = len(slides)
-    return {f"{prefix}_{i+1}.jpg": slide(series, f"{i+1} / {n}", **kw) for i, kw in enumerate(slides)}
+    """slides: list of slide kwargs; returns {filename: (svg, ground)} in the post's look."""
+    return carousel(LOOK[prefix], prefix, series, slides)
+
+def mo(prefix, *args, **kw):
+    look = LOOK[prefix]
+    return {f"{prefix}{'' if look == 'classic' else '_' + look}.jpg": mo_look(look, *args, **kw)}
 
 SET = {}
 
 # ---------------------------------------------------------------- Thu Oct 15
-SET["01_thu_marching_orders_1cor9-27.jpg"] = marching_orders(
+SET.update(mo("01_thu_marching_orders_1cor9-27",
     ["MASTER", "YOUR [BODY]."],
     ["“…I discipline my body and bring it", "under strict control…”"],
     "1 Corinthians 9:27, CSB",
-    sub=["Move before you scroll. Sweat before you sit."])
+    sub=["Move before you scroll. Sweat before you sit."]))
 
 SET.update(gbu("02_thu_get_back_up_david", [
     dict(title=["A KING AT", "HIS [WORST]"], body=["David. Swipe."], cover=True),
@@ -54,12 +69,12 @@ SET.update(gbu("02_thu_get_back_up_david", [
 ]))
 
 # ---------------------------------------------------------------- Fri Oct 16
-SET["03_fri_marching_orders_eph6-4.jpg"] = marching_orders(
+SET.update(mo("03_fri_marching_orders_eph6-4",
     ["STRONG HANDS.", "[GENTLE] VOICE."],
     ["“Fathers, don’t stir up anger in your children,", "but bring them up in the training",
      "and instruction of the Lord.”"],
     "Ephesians 6:4, CSB",
-    sub=["Tonight, ask your kid one real question."])
+    sub=["Tonight, ask your kid one real question."]))
 
 SET.update(gbu("04_fri_get_back_up_too_far", [
     dict(title=["THE LIE:", "YOU’VE GONE", "TOO [FAR]."], body=["Swipe for the truth."], cover=True),
@@ -79,12 +94,12 @@ SET.update(gbu("04_fri_get_back_up_too_far", [
 ]))
 
 # ---------------------------------------------------------------- Sat Oct 17
-SET["05_sat_marching_orders_ps5-3.jpg"] = marching_orders(
+SET.update(mo("05_sat_marching_orders_ps5-3",
     ["WIN THE", "FIRST [HOUR]."],
     ["“In the morning, LORD, you hear my voice;", "in the morning I plead my case to you",
      "and watch expectantly.”"],
     "Psalm 5:3, CSB",
-    sub=["Phone down. Book open. Knees on the floor."])
+    sub=["Phone down. Book open. Knees on the floor."]))
 
 SET.update(gbu("06_sat_get_back_up_jonah", [
     dict(title=["THE MAN WHO", "RAN THE", "OTHER [WAY]"], body=["Jonah. Swipe."], cover=True),
@@ -100,12 +115,12 @@ SET.update(gbu("06_sat_get_back_up_jonah", [
 ]))
 
 # ---------------------------------------------------------------- Sun Oct 18
-SET["07_sun_marching_orders_1cor10-13.jpg"] = marching_orders(
+SET.update(mo("07_sun_marching_orders_1cor10-13",
     ["TAKE THE", "WAY\u2002[OUT]."],
     ["“…God is faithful; he will not allow you", "to be tempted beyond what you are able,",
      "but with the temptation he will also", "provide the way out…”"],
     "1 Corinthians 10:13, CSB",
-    sub=["There’s always a door. Walk through it."])
+    sub=["There’s always a door. Walk through it."]))
 
 SET.update(gbu("08_sun_armor_check_belt", [
     dict(title=["THE BELT", "OF [TRUTH]"], body=["Armor piece 1 of 6. Swipe."], cover=True),
@@ -141,11 +156,11 @@ SET.update(gbu("09_sun_get_back_up_apologize", [
 ]))
 
 # ---------------------------------------------------------------- Mon Oct 19
-SET["10_mon_marching_orders_col3-23.jpg"] = marching_orders(
+SET.update(mo("10_mon_marching_orders_col3-23",
     ["DO IT", "FOR [HIM]."],
     ["“Whatever you do, do it from the heart,", "as something done for the Lord", "and not for people…”"],
     "Colossians 3:23, CSB",
-    sub=["Clock in like it’s worship. Because it is."])
+    sub=["Clock in like it’s worship. Because it is."]))
 
 SET.update(gbu("11_mon_get_back_up_samson", [
     dict(title=["THE STRONGEST", "MAN WHO", "[FELL]"], body=["Samson. Swipe."], cover=True),
@@ -161,11 +176,11 @@ SET.update(gbu("11_mon_get_back_up_samson", [
 ]))
 
 # ---------------------------------------------------------------- Tue Oct 20
-SET["12_tue_marching_orders_josh24-15.jpg"] = marching_orders(
+SET.update(mo("12_tue_marching_orders_josh24-15",
     ["LEAD YOUR", "[HOUSE]."],
     ["“…As for me and my family,", "we will worship the LORD.”"],
     "Joshua 24:15, CSB",
-    sub=["Pray over them before they sleep."])
+    sub=["Pray over them before they sleep."]))
 
 SET.update(gbu("13_tue_get_back_up_temper", [
     dict(title=["THE LIE:", "IT’S JUST", "MY [TEMPER]."], body=["Swipe."], cover=True),
@@ -185,11 +200,11 @@ SET.update(gbu("13_tue_get_back_up_temper", [
 ]))
 
 # ---------------------------------------------------------------- Wed Oct 21
-SET["14_wed_marching_orders_rom12-2.jpg"] = marching_orders(
+SET.update(mo("14_wed_marching_orders_rom12-2",
     ["RENEW YOUR", "[MIND]."],
     ["“Do not be conformed to this age,", "but be transformed", "by the renewing of your mind…”"],
     "Romans 12:2, CSB",
-    sub=["Cut one thing that’s poisoning it."])
+    sub=["Cut one thing that’s poisoning it."]))
 
 SET.update(gbu("15_wed_get_back_up_paul", [
     dict(title=["THE MAN WHO", "HUNTED", "[CHRISTIANS]"], body=["Paul. Swipe."], cover=True),
@@ -210,4 +225,4 @@ SET.update(gbu("15_wed_get_back_up_paul", [
 ]))
 
 if __name__ == "__main__":
-    print("\n".join(render_set(SET, HERE)))
+    print("\n".join(render_looks(SET, HERE)))
