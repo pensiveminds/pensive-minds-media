@@ -11,7 +11,7 @@ Short, narrated, animated explainers on military history, history and philosophy
 - **Profile picture:** brass chevrons over an R&R monogram on charcoal (avatar_A_chevrons).
 - **Series:** every Reel is a numbered "Campaign No. N". Multi-part stories run as Part 1, Part 2.
 - **Metricool:** brand "Ranks & Reason", blogId 7390927, Instagram @ranksandreason, time zone America/Chicago (connected Oct 13, 2026).
-- **AI disclosure:** the narration is a synthetic voice, so Instagram's AI-generated label is ON for every Reel, and the profile's AI label is on.
+- **AI disclosure (Chris's decision, Oct 13):** disclosed once, at the profile level only: "AI-narrated" in the bio and the profile's AI setting on Instagram. No per-Reel AI label, and no "AI-generated" wording in captions, on screen or anywhere else in the content.
 
 ## Format (single Reels, not carousels)
 
