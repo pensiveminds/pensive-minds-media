@@ -20,7 +20,7 @@ God didn't lecture him. He let him sleep, sent an angel to wake him, and fed him
 
 Then He told him the truth. Seven thousand others had never bowed.
 
-You weren't built to fight alone. "For if either falls, his companion can lift him up."
+You weren't built to fight alone. "For if either falls, his companion can lift him up…"
 
 Call a brother tonight. And if you're carrying more than you can hold, talk to a pastor or a counselor. In the US you can call or text 988 any time.
 
