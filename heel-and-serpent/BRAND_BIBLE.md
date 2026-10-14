@@ -142,6 +142,8 @@ Rotate so the same pillar doesn't run twice in a row.
 
 **Music policy (Chris, Oct 13, 2026; he prefers efficiency and autonomy):** feed posts stay on automatic publishing; Chris adds the paired song to feed posts himself. Reels carry their own original score built into the video (or a song attached, if Metricool ever can: needs a Facebook Page linked). Stories: music preferred but optional; default is to build Story frames as short videos with the original score baked in so they carry sound with no extra step for Chris. For Stories the score should be motivational and dramatic, not dark and moody (Chris, Oct 13): use make_reel.score_drive (D major, driving pulse, lifts into each cut, big resolve). Reels keep make_reel.score (minor to major).
 
+**One score per Story (Chris, Oct 14, 2026):** Story frames post as separate clips, so a score built per frame restarts on every tap and sounds repetitive. A multi-frame Story gets ONE continuous score across all its frames: build it with make_reel.build_story_set({frame: scenes, ...}, out_dir), which writes the score once for the whole set (one intro, lifts on each cut, one resolve on the last frame) and slices it so each frame picks up where the last left off. Schedule the frames back to back, in order, a minute apart, with nothing else between them. Never call build_reel per frame for a Story set.
+
 Every post, Reel and Story set comes with one gospel or worship song pairing for Chris to add in the Instagram app (standing request, Oct 13, 2026). Log each in heel-and-serpent/SONGS.md with the post, song, artist and why it fits. Titles and artists only, never lyrics.
 
 ## Pipeline

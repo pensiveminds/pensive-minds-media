@@ -206,7 +206,8 @@ def score_drive(cuts, length, seed=21, bpm=104):
 
 # ---------------------------------------------------------------- build
 
-def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None):
+def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None, audio=None):
+    """audio: a ready stereo int16 array for this clip (used by build_story_set); otherwise score_fn makes one."""
     os.makedirs(out_dir, exist_ok=True)
     layers = [_layer(s) for s in scenes]
     grounds = _grounds()
@@ -230,7 +231,8 @@ def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None):
                 lay = lay.copy(); lay.putalpha(lay.getchannel("A").point(lambda p: int(p * a)))
             frame.paste(lay, (0, 0), lay)
             frame.save(os.path.join(tmp, f"f{f:04d}.jpg"), quality=92)
-        audio = (score_fn or score)(cuts, length)
+        if audio is None:
+            audio = (score_fn or score)(cuts, length)
         wav = os.path.join(tmp, "score.wav")
         with wave.open(wav, "wb") as w:
             w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(audio.tobytes())
@@ -244,3 +246,36 @@ def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None):
     cover = grounds[0].copy(); cover.paste(layers[0], (0, 0), layers[0])
     cover.save(os.path.join(out_dir, name + "_cover.jpg"), quality=94)
     return mp4, cuts, length
+
+
+def build_story_set(stories, out_dir, score_fn=None, edge=0.012):
+    """Build a multi-frame Story with ONE continuous score.
+
+    stories: ordered dict {frame_name: [Scene, ...]} in posting order. The score is written once for the
+    whole set (one intro, lifts on every cut across all frames, one resolve on the last frame), then sliced
+    so frame 2 picks up exactly where frame 1 left off. Instagram plays the frames back to back, so the music
+    carries across the taps instead of restarting on each frame. Each slice gets a few ms of fade at its
+    edges to avoid clicks. Returns [(name, mp4, start, end)]."""
+    score_fn = score_fn or score_drive
+    names = list(stories)
+    cuts, starts, t = [], [], 0.0
+    for n in names:
+        starts.append(t)
+        for sc in stories[n]:
+            cuts.append(t); t += sc.secs
+    length = t
+    full = score_fn(cuts, length).astype("float32")
+    e = int(edge * SR); ramp = np.linspace(0, 1, e, dtype="float32")[:, None]
+    out = []
+    for k, n in enumerate(names):
+        a = starts[k]; b = starts[k + 1] if k + 1 < len(names) else length
+        seg = full[int(round(a * SR)):int(round(b * SR))].copy()
+        if k > 0:
+            seg[:e] *= ramp
+        if k < len(names) - 1:
+            seg[-e:] *= ramp[::-1]
+        mp4, _, _ = build_reel(stories[n], out_dir, n, audio=seg.astype("int16"))
+        out.append((n, mp4, a, b))
+    with wave.open(os.path.join(out_dir, "_set_score.wav"), "wb") as w:   # the whole score, for reference
+        w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(full.astype("int16").tobytes())
+    return out
