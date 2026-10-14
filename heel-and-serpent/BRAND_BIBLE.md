@@ -71,6 +71,8 @@ Five looks, same words, palette, type and marks. Built by heel-and-serpent/make_
 - **Engraved:** inset double frame, the seal faint behind the type, three ember dots as the divider. Suits Sundays and Armor Check.
 - **Forge:** low ember glow from below; on stills, covers and closing slides the ember word is set huge and cropped behind the command. Strongest lines only, about once or twice a week.
 
+**Visual variety (Chris, Oct 14, 2026):** the brand palette stays; he respects it. But he wants the grid and the Story line-up to stay visually pleasing, not monotonous, so be deliberate about variety within the looks above. A one-off palette is allowed only when Chris asks for one, and it keeps the type, marks and layout so it still reads as Heel & Serpent. Available: "dawn" (deep slate ground, bone type, muted gold highlight, low warm glow), via make_reel.use_palette("dawn"); first used for the "First light" Story, Oct 14.
+
 Rules: no two posts in a row share a look (count Reels as their own look); Classic and Bone carry most of the week; Armor Check runs in Engraved; Forge stays rare. Non-classic files carry a _<look> suffix. When rebuilding a scheduled post in a new look, use new file names and update the Metricool post's media.
 
 ## Formats and cadence
@@ -182,6 +184,7 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
 - Next week (Arm) starts Thu Oct 22; Armor Check #2 is the breastplate of righteousness. Stories for week 1 are not built yet (feed only).
 - Story burst "Before you sleep" (6 frames, 8:16–8:26 PM Oct 13, leading into the 8:30 Elijah post; Lamentations 3:22–23). Stories are built with make_variants.story_look() in the five looks, type kept inside y 300–1500. Polls, question boxes and link stickers can't go through Metricool; add them in the app. Set: stories/2026-10-13-before-you-sleep/.
 - Stories "Tomorrow starts tonight" (3 Story videos with score_drive, 10:15–10:19 PM Oct 13; Isaiah 40:31). Set: stories/2026-10-13-tomorrow-starts-tonight/.
+- Story "First light" (one-off dawn palette, 4 frames, one continuous score_drive score across all four; Mark 1:35) scheduled Wed Oct 14, 2026, 4:35–4:38 AM CT: Metricool 395698359, 395698387, 395698420, 395698448. Set: stories/2026-10-14-first-light/. Song: 10,000 Reasons (Bless the Lord), Matt Redman.
 - Strike #2 (Psalm 4:8 night Reel, "Rest. Then rise.") published Oct 13, 2026, 8:44 PM CT: https://www.instagram.com/reel/DedO3WYE8Z7/ (Metricool 395475633). Set: reels/2026-10-13-psalm4-8/. Reel type width narrowed to 740 px the same night so lines clear Instagram's side buttons.
 - Strike #1 (Micah 7:8 Reel) published Oct 13, 2026, 3:28 PM CT: https://www.instagram.com/reel/DecqtXAoNuJ/ (Metricool 395304172). Set: reels/2026-10-13-micah7-8/.
 - Reels (Strike) added Oct 13, 2026. Instagram sounds can't be attached through Metricool: @heelandserpent is a Business account with no Facebook Page linked. Chris chose the original generated score instead (Oct 13); he can still add a trending sound in the app.
