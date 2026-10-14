@@ -127,6 +127,8 @@ Rotate so the same pillar doesn't run twice in a row.
 | **Watch** | Report the latest Metricool numbers for the page. |
 | **Sheathe** | Move all scheduled posts to draft. "Sheathe off" restores them. |
 
+**Music policy (Chris, Oct 13, 2026; he prefers efficiency and autonomy):** feed posts stay on automatic publishing; Chris adds the paired song to feed posts himself. Reels carry their own original score built into the video (or a song attached, if Metricool ever can: needs a Facebook Page linked). Stories: music preferred but optional; default is to build Story frames as short videos with the original score baked in so they carry sound with no extra step for Chris.
+
 Every post, Reel and Story set comes with one gospel or worship song pairing for Chris to add in the Instagram app (standing request, Oct 13, 2026). Log each in heel-and-serpent/SONGS.md with the post, song, artist and why it fits. Titles and artists only, never lyrics.
 
 ## Pipeline
