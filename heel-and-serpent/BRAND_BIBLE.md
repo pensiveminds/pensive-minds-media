@@ -126,8 +126,9 @@ Rotate so the same pillar doesn't run twice in a row.
 - Files: merch/marks.py recolors the locked logos for garments (tonal, contrast, leather, knit grid) into merch/marks/. Mockups: "H&S Merch Line" design canvas on claude.ai.
 - Knockout search (Oct 14, 2026, USPTO Trademark Search, exact phrase searches; not legal clearance): no filings for HEEL & SERPENT / HEEL AND SERPENT, HEEL DOWN, CRUSH THE HEAD or BRUISED NOT BEATEN. Nearest marks: BEATEN NOT BROKEN, live and registered in class 25 (t-shirts, socks, hats; reg. 5540638), close in wording to "Bruised, not beaten", so have an attorney weigh in before putting that line on product; HEELS DOWN in class 25 (shoes) is dead, CHIN UP, HEELS DOWN is live but for jewelry and watches; live class 25 SERPENT marks (DECAL SERPENT, SERPENT SKIN CAMO) are not close. Design marks (cross, serpent imagery) were not searched.
 - Domain (Oct 14, 2026, Verisign RDAP): heelandserpent.com and heelserpent.com unregistered. Not bought.
-- Considering (Chris, Oct 14): embroidery on the tee and hoodie so a softer, drapier fabric can be used.
-- Next: attorney review (especially "Bruised, not beaten") and a decision on registering the domain; embroidery-ready and knit-ready mark files; print-on-demand samples to test fit before any small batch.
+- Embroidered option (Chris, Oct 14; mocked up alongside the print version): every mark stitched, softer fabric. Tee in a drapier cotton-modal or fine garment-dyed jersey (not the thinnest jersey, which puckers); hoodie in midweight French terry. Lighter stitch density, soft mesh backing. The large back Seal becomes a small stitched Seal (about 4 in) between the shoulders or below the hood, or nothing.
+- On hold (Chris, Oct 14, 2026): no domain purchase, attorney or merch spending yet. Revisit in about a month (mid-November 2026) once momentum is clearer.
+- When resumed: attorney review (especially "Bruised, not beaten"), register the domain, embroidery-ready and knit-ready mark files, print-on-demand samples to test fit before any small batch.
 
 ## Commands (for Heel & Serpent)
 
@@ -183,4 +184,4 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
 - Strike #1 (Micah 7:8 Reel) published Oct 13, 2026, 3:28 PM CT: https://www.instagram.com/reel/DecqtXAoNuJ/ (Metricool 395304172). Set: reels/2026-10-13-micah7-8/.
 - Reels (Strike) added Oct 13, 2026. Instagram sounds can't be attached through Metricool: @heelandserpent is a Business account with no Facebook Page linked. Chris chose the original generated score instead (Oct 13); he can still add a trending sound in the app.
 - On hold (Chris, Oct 13, 2026): comment and DM auto-replies via Metricool Flows. If revisited: narrow keyword triggers only, every reply says a real person reads the inbox, crisis messages point to 988, never an auto-reply on every comment.
-- Oct 14, 2026: trademark knockout and domain check done (results under Merch). Open: attorney review, domain purchase decision.
+- Oct 14, 2026: trademark knockout and domain check done (results under Merch). Domain, attorney and merch spending on hold until about mid-November 2026 (Chris).
