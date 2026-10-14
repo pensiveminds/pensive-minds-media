@@ -43,6 +43,10 @@ These are the anchors, not a slogan. No single quote is repeated across posts, a
 - Humor allowed, dry and rare. Never mocking.
 - Never claims a personal testimony that didn't happen. The page speaks as a voice, not as a specific man with an invented past.
 
+### Reels: daily cadence and pacing (Oct 14, 2026)
+
+Day-1 data: the two Reels reached 106 and 71 people while feed posts reached 2-3 (3 followers), but average watch time was about 4 s of 16. Chris approved a daily Strike Reel, about 3:30 PM CT, starting Oct 14. Pacing rules: the hook line is fully on screen at frame 0 (no fade-in), 1.5-1.8 s per line, the verse lands by about 5 s, 10-12 s total, fade 0.25 s. Chris prefers efficiency and autonomy: daily Reels are built, previewed to him with at least an hour's lead, and go out on schedule unless he pulls them.
+
 ### What's landing (Chris's feedback; read before writing, add to it after)
 
 The voice keeps evolving with Chris's reactions and the numbers from Watch. Log what he likes or pushes back on here, with the date, and let it shape the next set.

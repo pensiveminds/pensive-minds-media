@@ -1,5 +1,8 @@
 """Heel & Serpent Reel builder (Strike).
 
+Pacing (from day-1 data, Oct 14, 2026: avg watch ~4 s on 16 s Reels): hook line fully on at frame 0, 1.5-1.8 s per
+line, verse landing by ~5 s, 10-12 s total, fade=0.25.
+
 A Reel is a list of scenes, each shown for a set time with soft fades, over the grained iron ground.
 The score is original, synthesized here, and timed to the scene cuts: a low drone in D minor,
 a heartbeat pulse, impacts on each cut, a swell into the verse and a resolve to D major on the seal.
@@ -255,7 +258,7 @@ def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None, audio=None):
             tt = f / FPS
             k = max(i for i, c in enumerate(cuts) if c <= tt)
             local, dur = tt - cuts[k], scenes[k].secs
-            a = min(1.0, local / fade)
+            a = 1.0 if k == 0 else min(1.0, local / fade)   # hook: first scene is fully on from frame 0
             if k < len(scenes) - 1:
                 a = min(a, (dur - local) / fade)
             a = max(0.0, min(1.0, a))

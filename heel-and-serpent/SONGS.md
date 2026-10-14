@@ -13,6 +13,7 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | Tue Oct 13, 8:44 PM | Strike #2 Reel (Ps 4:8) | It Is Well – Bethel Music (Kristene DiMarco) | Peace at night |
 | Tue Oct 13, 10:15 PM | Stories: Tomorrow starts tonight (Isa 40:31) | Original score (built in) | Motivational score for Stories |
 | Wed Oct 14, 6:45 AM | You fell. Get up. (Prov 24:16) | Never Would Have Made It – Marvin Sapp | The man who got back up |
+| Wed Oct 14, 3:30 PM | Strike #3 Reel (Prov 22:6) | Original score (built in) | Reels carry their own score |
 | Wed Oct 14, 7:15 PM | Peter, denied three times | Graves Into Gardens – Elevation Worship ft. Brandon Lake | Restored after his worst night |
 | Thu Oct 15, 6:45 AM | Master your body (1 Cor 9:27) | Champion – Bethel Music (Dante Bowe) | Training like it matters |
 | Thu Oct 15, 7:15 PM | David: confession is where kings rise | Create in Me a Clean Heart – Keith Green | Psalm 51 set to music |
