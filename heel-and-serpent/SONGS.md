@@ -11,6 +11,7 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | Tue Oct 13, 8:16 PM | Story burst: Before you sleep (Lam 3:22–23) | Great Is Thy Faithfulness (hymn; any version) | Written from Lamentations 3 |
 | Tue Oct 13, 8:30 PM | The lie: you're the only one (Elijah) | Promises – Maverick City Music | God keeps His word to the worn-out |
 | Tue Oct 13, 8:44 PM | Strike #2 Reel (Ps 4:8) | It Is Well – Bethel Music (Kristene DiMarco) | Peace at night |
+| Tue Oct 13, 10:15 PM | Stories: Tomorrow starts tonight (Isa 40:31) | Original score (built in) | Motivational score for Stories |
 | Wed Oct 14, 6:45 AM | You fell. Get up. (Prov 24:16) | Never Would Have Made It – Marvin Sapp | The man who got back up |
 | Wed Oct 14, 7:15 PM | Peter, denied three times | Graves Into Gardens – Elevation Worship ft. Brandon Lake | Restored after his worst night |
 | Thu Oct 15, 6:45 AM | Master your body (1 Cor 9:27) | Champion – Bethel Music (Dante Bowe) | Training like it matters |

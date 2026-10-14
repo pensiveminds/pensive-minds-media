@@ -127,7 +127,7 @@ Rotate so the same pillar doesn't run twice in a row.
 | **Watch** | Report the latest Metricool numbers for the page. |
 | **Sheathe** | Move all scheduled posts to draft. "Sheathe off" restores them. |
 
-**Music policy (Chris, Oct 13, 2026; he prefers efficiency and autonomy):** feed posts stay on automatic publishing; Chris adds the paired song to feed posts himself. Reels carry their own original score built into the video (or a song attached, if Metricool ever can: needs a Facebook Page linked). Stories: music preferred but optional; default is to build Story frames as short videos with the original score baked in so they carry sound with no extra step for Chris.
+**Music policy (Chris, Oct 13, 2026; he prefers efficiency and autonomy):** feed posts stay on automatic publishing; Chris adds the paired song to feed posts himself. Reels carry their own original score built into the video (or a song attached, if Metricool ever can: needs a Facebook Page linked). Stories: music preferred but optional; default is to build Story frames as short videos with the original score baked in so they carry sound with no extra step for Chris. For Stories the score should be motivational and dramatic, not dark and moody (Chris, Oct 13): use make_reel.score_drive (D major, driving pulse, lifts into each cut, big resolve). Reels keep make_reel.score (minor to major).
 
 Every post, Reel and Story set comes with one gospel or worship song pairing for Chris to add in the Instagram app (standing request, Oct 13, 2026). Log each in heel-and-serpent/SONGS.md with the post, song, artist and why it fits. Titles and artists only, never lyrics.
 
@@ -166,6 +166,7 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
 - Tue Oct 13 evening (first posts in the new looks, set posts/2026-10-13-evening/): Marching Orders, Deut 6:7, 5:45 PM [Bone] (395317735); Get Back Up, lie "you're the only one" (Elijah), 8:30 PM [Ledger] (395318012).
 - Next week (Arm) starts Thu Oct 22; Armor Check #2 is the breastplate of righteousness. Stories for week 1 are not built yet (feed only).
 - Story burst "Before you sleep" (6 frames, 8:16–8:26 PM Oct 13, leading into the 8:30 Elijah post; Lamentations 3:22–23). Stories are built with make_variants.story_look() in the five looks, type kept inside y 300–1500. Polls, question boxes and link stickers can't go through Metricool; add them in the app. Set: stories/2026-10-13-before-you-sleep/.
+- Stories "Tomorrow starts tonight" (3 Story videos with score_drive, 10:15–10:19 PM Oct 13; Isaiah 40:31). Set: stories/2026-10-13-tomorrow-starts-tonight/.
 - Strike #2 (Psalm 4:8 night Reel, "Rest. Then rise.") published Oct 13, 2026, 8:44 PM CT: https://www.instagram.com/reel/DedO3WYE8Z7/ (Metricool 395475633). Set: reels/2026-10-13-psalm4-8/. Reel type width narrowed to 740 px the same night so lines clear Instagram's side buttons.
 - Strike #1 (Micah 7:8 Reel) published Oct 13, 2026, 3:28 PM CT: https://www.instagram.com/reel/DecqtXAoNuJ/ (Metricool 395304172). Set: reels/2026-10-13-micah7-8/.
 - Reels (Strike) added Oct 13, 2026. Instagram sounds can't be attached through Metricool: @heelandserpent is a Business account with no Facebook Page linked. Chris chose the original generated score instead (Oct 13); he can still add a trending sound in the app.

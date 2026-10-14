@@ -76,7 +76,7 @@ def _grounds(n=3):
 
 def _env(n, a, r):
     e = np.ones(n)
-    a, r = int(a * SR), int(r * SR)
+    a, r = min(int(a * SR), n // 2), min(int(r * SR), n // 2)
     if a: e[:a] = np.linspace(0, 1, a)
     if r: e[-r:] *= np.linspace(1, 0, r)
     return e
@@ -149,9 +149,64 @@ def score(cuts, length, seed=11):
     return (mix * 32767).astype("int16")
 
 
+def score_drive(cuts, length, seed=21, bpm=104):
+    """Motivational, dramatic score for Stories: D major, a driving eighth-note pulse, drum hits on the beat,
+    a lift into every cut and a big resolve on the last scene. Bright, not moody. Returns stereo int16."""
+    total = int(length * SR); rng = np.random.default_rng(seed)
+    beat = 60.0 / bpm
+    prog = [[73.42, 146.83, 185.0, 220.0], [61.74, 123.47, 146.83, 185.0],   # D, Bm
+            [49.0, 98.0, 123.47, 146.83], [55.0, 110.0, 138.59, 164.81]]      # G, A
+    chans = []
+    for det in (-0.0012, 0.0012):
+        x = np.zeros(total)
+        # chord pads, one chord per two beats, cycling I-vi-IV-V; last scene holds D major with the octave
+        t = 0.0; i = 0; last = cuts[-1]
+        while t < last:
+            end = min(last, t + 2 * beat)
+            x += _pad(prog[i % 4][1:], t, end + 0.25, total, 0.11, a=0.25, r=0.35, detune=det)
+            x += _pad([prog[i % 4][0]], t, end + 0.25, total, 0.16, a=0.1, r=0.35, detune=det)
+            t = end; i += 1
+        x += _pad([73.42, 146.83, 185.0, 220.0, 293.66, 440.0], last - 0.05, length, total, 0.17, a=0.3, r=1.4, detune=det)
+        # driving eighth-note pulse on the chord root, an octave up, plucked
+        n8 = int(beat / 2 * SR); tt = np.arange(n8) / SR
+        k = 0; t = 0.0
+        while t < last:
+            root = prog[int(t // (2 * beat)) % 4][1]
+            pl = (np.sin(2 * np.pi * root * tt) + 0.4 * np.sin(2 * np.pi * 2 * root * tt)) * np.exp(-tt * 18) * 0.18
+            i0 = int(t * SR); x[i0:i0 + n8] += pl[:max(0, total - i0)]
+            t += beat / 2; k += 1
+        # drums: low hit on beats 1 and 3, a snappier hit on 2 and 4
+        t = 0.0; b = 0
+        while t < last:
+            if b % 2 == 0:
+                x += _boom(t, total, 0.32)
+            else:
+                nn = int(0.25 * SR); tn = np.arange(nn) / SR
+                sn = _lp(rng.normal(0, 1, nn), 5000) * np.exp(-tn * 22) * 0.16
+                i0 = int(t * SR); x[i0:i0 + nn] += sn[:max(0, total - i0)]
+            t += beat; b += 1
+        # lift into each cut, impact on each cut, biggest on the last
+        for c in cuts[1:]:
+            n = int(1.0 * SR); i0 = int((c - 1.0) * SR)
+            if i0 > 0:
+                x[i0:i0 + n] += _lp(rng.normal(0, 1, n), 6000) * np.linspace(0, 1, n) ** 2.5 * 0.16
+            x += _boom(c + 0.01, total, 0.5 if c != last else 0.8)
+        # a high shimmer over the final resolve
+        x += _pad([880.0, 1174.66], last, length, total, 0.03, a=0.6, r=1.0, detune=det)
+        chans.append(x)
+    st = np.stack(chans, 1)
+    ir_n = int(1.6 * SR); ir_t = np.arange(ir_n) / SR
+    ir = _lp(rng.normal(0, 1, ir_n), 6000) * np.exp(-ir_t * 3.5); ir /= np.abs(ir).sum() / 5
+    wet = np.stack([fftconvolve(st[:, c], ir)[:total] for c in range(2)], 1)
+    mix = st * 0.85 + wet * 0.22
+    mix *= _env(total, 0.03, 1.0)[:, None]
+    mix /= np.abs(mix).max() / 0.89
+    return (mix * 32767).astype("int16")
+
+
 # ---------------------------------------------------------------- build
 
-def build_reel(scenes, out_dir, name, fade=0.4):
+def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None):
     os.makedirs(out_dir, exist_ok=True)
     layers = [_layer(s) for s in scenes]
     grounds = _grounds()
@@ -175,7 +230,7 @@ def build_reel(scenes, out_dir, name, fade=0.4):
                 lay = lay.copy(); lay.putalpha(lay.getchannel("A").point(lambda p: int(p * a)))
             frame.paste(lay, (0, 0), lay)
             frame.save(os.path.join(tmp, f"f{f:04d}.jpg"), quality=92)
-        audio = score(cuts, length)
+        audio = (score_fn or score)(cuts, length)
         wav = os.path.join(tmp, "score.wav")
         with wave.open(wav, "wb") as w:
             w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(audio.tobytes())
