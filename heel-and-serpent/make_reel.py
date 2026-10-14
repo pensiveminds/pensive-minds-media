@@ -55,8 +55,32 @@ def _svg(scene):
             f'<g transform="translate(0,{shift:.0f})">{"".join(parts)}</g></svg>')
 
 
+# One-off palettes (Chris asks for these by name; the brand palette stays the default).
+# ground/edge: the vignetted ground; text/accent/label replace bone/ember/ash; glow: optional low light.
+PALETTE = None
+PALETTES = {
+    "dawn": dict(ground=(29, 36, 51), edge="#0E121B", text="#EDE6D8", accent="#D4A55A",
+                 label="#8C95A6", glow=(205, 150, 82), glow_strength=0.34),
+}
+
+
+def use_palette(name=None):
+    """use_palette('dawn') for a one-off set; use_palette() to return to the brand palette."""
+    global PALETTE
+    PALETTE = PALETTES[name] if name else None
+
+
+def _recolor(svg):
+    if not PALETTE:
+        return svg
+    g = "#%02X%02X%02X" % PALETTE["ground"]
+    for old, new in ((BONE, "@T@"), (EMBER, "@A@"), (ASH, "@L@"), ("#1A1A1A", "@G@")):
+        svg = svg.replace(old, new).replace(old.lower(), new)
+    return svg.replace("@T@", PALETTE["text"]).replace("@A@", PALETTE["accent"]).replace("@L@", PALETTE["label"]).replace("@G@", g)
+
+
 def _layer(scene):
-    return Image.open(io.BytesIO(cairosvg.svg2png(bytestring=_svg(scene).encode(), output_width=W))).convert("RGBA")
+    return Image.open(io.BytesIO(cairosvg.svg2png(bytestring=_recolor(_svg(scene)).encode(), output_width=W))).convert("RGBA")
 
 
 def _grounds(n=3):
@@ -65,10 +89,20 @@ def _grounds(n=3):
     v = Image.new("L", (W, H), 0)
     ImageDraw.Draw(v).ellipse((-W * 0.3, -H * 0.15, W * 1.3, H * 1.15), fill=255)
     v = v.filter(ImageFilter.GaussianBlur(W / 5))
+    gr = PALETTE["ground"] if PALETTE else (26, 26, 26)
+    edge = PALETTE["edge"] if PALETTE else "#0d0d0d"
     for i in range(n):
-        a = np.full((H, W, 3), 26, "int16") + np.random.default_rng(7 + i).normal(0, 7, (H, W))[..., None]
+        a = np.array(gr, "int16")[None, None, :] + np.random.default_rng(7 + i).normal(0, 7, (H, W))[..., None]
         base = Image.fromarray(a.clip(0, 255).astype("uint8"))
-        out.append(Image.composite(base, Image.new("RGB", (W, H), "#0d0d0d"), v))
+        img = Image.composite(base, Image.new("RGB", (W, H), edge), v)
+        if PALETTE and PALETTE.get("glow"):   # low first-light glow, laid over the vignette so it stays warm
+            b = np.asarray(img).astype("float32")
+            yy = np.linspace(0, 1, H)[:, None, None]
+            xx = np.linspace(-1, 1, W)[None, :, None]
+            g = np.exp(-((1.0 - yy) / 0.30) ** 2) * np.exp(-(xx / 1.1) ** 2) * PALETTE["glow_strength"]
+            b = b + g * (np.array(PALETTE["glow"], "float32")[None, None, :] - b)
+            img = Image.fromarray(b.clip(0, 255).astype("uint8"))
+        out.append(img)
     return out
 
 
