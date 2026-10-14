@@ -1,0 +1,72 @@
+[
+ {
+  "id": 1,
+  "say": "The famous run to Athens? Herodotus never mentions it. Here's the run he did record.",
+  "cap": [
+   "Marathon to Athens?",
+   "Herodotus never mentions it."
+  ],
+  "hi": "never",
+  "src": "Not in Herodotus; the Athens run appears centuries later (Plutarch, Lucian)."
+ },
+ {
+  "id": 2,
+  "say": "Before the battle, Athens sent a runner, Pheidippides, to Sparta for help.",
+  "cap": [
+   "One runner.",
+   "Athens to Sparta."
+  ],
+  "hi": "Sparta",
+  "src": "Hdt. 6.105.1: sent by the generals before leaving the city; a hemerodromos (professional day-runner)."
+ },
+ {
+  "id": 3,
+  "say": "About a hundred and fifty miles, over mountains. He was in Sparta the day after he left.",
+  "cap": [
+   "About 150 miles.",
+   "There the next day."
+  ],
+  "hi": "150",
+  "src": "Hdt. 6.106.1 (arrived the day after leaving Athens); ~240 km / 150 mi is the modern route estimate."
+ },
+ {
+  "id": 4,
+  "say": "On the way, he said, the god Pan called out to him.",
+  "cap": [
+   "He said Pan",
+   "spoke to him."
+  ],
+  "hi": "Pan",
+  "src": "Hdt. 6.105.1-3 (near Mount Parthenium above Tegea)."
+ },
+ {
+  "id": 5,
+  "say": "His message: Eretria has fallen. Don't let Athens be next.",
+  "cap": [
+   "Eretria has fallen.",
+   "Don't let Athens be next."
+  ],
+  "hi": "fallen",
+  "src": "Hdt. 6.106.2 (paraphrase)."
+ },
+ {
+  "id": 6,
+  "say": "Sparta said yes. But not yet. Their law said no march before the full moon.",
+  "cap": [
+   "Sparta's answer:",
+   "wait for the full moon."
+  ],
+  "hi": "moon",
+  "src": "Hdt. 6.106.3."
+ },
+ {
+  "id": 7,
+  "say": "When two thousand Spartans finally arrived, the battle was over. All they could do was walk the field, and praise Athens.",
+  "cap": [
+   "2,000 Spartans.",
+   "Too late."
+  ],
+  "hi": "late",
+  "src": "Hdt. 6.120 (came after the full moon, reached Attica on the third day, viewed the Persian dead, praised the Athenians)."
+ }
+]
