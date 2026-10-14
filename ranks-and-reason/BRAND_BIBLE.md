@@ -44,7 +44,7 @@ Short, narrated, animated explainers on military history, history and philosophy
 Every Story, post and Reel is built to earn, not just to post. The page makes money in this order, so content serves whichever stage is current:
 
 1. **Now (no follower minimum): own the audience.** Grow followers and an email list. Lead magnet: a free "Campaign Dossier" per Campaign (map, timeline, key numbers, sources) behind an email signup in the link in bio. The list is the asset that survives algorithm changes.
-2. **Early (no Meta threshold): affiliate.** Link the books we actually cite (named translations, atlases, histories) through an affiliate program, labeled as affiliate links. Only recommend what the content uses.
+2. **Affiliate: ON HOLD (Chris, Oct 13, 2026).** No affiliate links until following and reach are built. Later: link only the books we actually cite, labeled as affiliate links.
 3. **When eligible: Instagram's own tools.** Gifts on Reels, Reels revenue share where available, then Subscriptions (extended cuts, early access, subscriber-only Campaign polls). Eligibility needs a professional account, age 18+, a supported country and compliance with Meta's Partner and Content Monetization Policies; follower minimums vary by feature and country, so check the Monetization section in the Instagram app rather than trusting third-party lists.
 4. **With an audience: sponsorships.** Brand-safe partners that fit (history books and audiobooks, documentaries, strategy and history games, map prints). Always use Instagram's "Paid partnership" label.
 5. **Later: own products.** Paid dossier packs, prints of Campaign maps, a paid newsletter tier.
@@ -61,7 +61,7 @@ Every Story, post and Reel is built to earn, not just to post. The page makes mo
 - **Stay original:** all visuals made by us, no watermarked or ripped clips, no compilations. Originality is part of Meta's monetization review.
 - **Measure what pays:** Recon reports sends per reach, saves, follows per post, profile visits and link clicks, not just likes.
 
-**Open items (need Chris):** pick an email service for the dossier signup (Beehiiv or Kit both have free tiers), sign up for an affiliate program, and set the link in bio. Once those exist, Campaign No. 1's dossier is the first lead magnet.
+**Current priority (Chris, Oct 13, 2026): followers and reach first.** Every post optimizes for sends, saves and follows; no selling yet. **Open items (need Chris):** pick an email service for the dossier signup (Beehiiv or Kit both have free tiers) and set the link in bio. Once those exist, Campaign No. 1's dossier is the first lead magnet.
 
 ## Guardrails
 
@@ -115,7 +115,7 @@ The pilot's renderer and script live in the media repo under ranks-and-reason/: 
 
 - Campaign No. 1: Marathon (490 BC). Re-voiced with Brian on Oct 13: 47.1 s, -16.0 dB mean, -1.0 dB peak, 24.7 MB (c001_marathon_brian.mp4 in the Ranksandreason Desktop folder). Approved and scheduled for Wed Oct 14, 10:00 AM CT (Metricool post 394790659).
 - Part 2 (Pheidippides): script work starts Wed Oct 14 at 8:00 AM CT, two hours before the pilot posts; must post by Fri Oct 16, 10:00 AM CT.
-- Caption draft: "Ten thousand Athenians. The largest empire on Earth. And a general who did the unthinkable. At Marathon in 490 BC, Miltiades thinned his own center, stacked his wings and charged at a run. Herodotus counts 6,400 Persian dead to 192 Athenian. The run everyone remembers isn't the one that mattered. Part 2 next. Source: Herodotus, Histories, Book 6. #history #militaryhistory #ancientgreece #battleofmarathon #ancienthistory"
+- Caption (updated Oct 13, 8:22 PM to the monetization rules): "Battle of Marathon, 490 BC, explained in 47 seconds. … The generals were split on whether to fight at all. Would you have voted yes? Send this to the friend who thinks the marathon was about a run to Athens. Part 2 drops this week. Source: Herodotus, Histories 6.102–117. #battleofmarathon #ancientgreece #militaryhistory #history #herodotus"
 - Part 2 topic: Pheidippides' run to Sparta (about 150 miles in two days, per Herodotus) and the Spartans' answer (they waited for the full moon).
 
 Sources for the pilot: Herodotus, Histories 6.105–117; Livius, "Marathon (490 BCE)".
