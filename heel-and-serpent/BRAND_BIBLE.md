@@ -126,6 +126,8 @@ Rotate so the same pillar doesn't run twice in a row.
 | **Watch** | Report the latest Metricool numbers for the page. |
 | **Sheathe** | Move all scheduled posts to draft. "Sheathe off" restores them. |
 
+Every post, Reel and Story set comes with one gospel or worship song pairing for Chris to add in the Instagram app (standing request, Oct 13, 2026). Log each in heel-and-serpent/SONGS.md with the post, song, artist and why it fits. Titles and artists only, never lyrics.
+
 ## Pipeline
 
 - Media repo: pensiveminds/pensive-minds-media, folder heel-and-serpent/ (reorganized Oct 13, 2026: each page has its own folder; Pensive Minds moved to pensive-minds/, Ranks & Reason unchanged).
