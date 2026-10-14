@@ -39,6 +39,30 @@ Short, narrated, animated explainers on military history, history and philosophy
 - Separate legend from record (example: the Marathon-to-Athens run is a later legend; Herodotus records the run to Sparta).
 - No invented quotes. Paraphrase unless the translation is public domain.
 
+## Monetization (standing rule, Chris, Oct 13, 2026)
+
+Every Story, post and Reel is built to earn, not just to post. The page makes money in this order, so content serves whichever stage is current:
+
+1. **Now (no follower minimum): own the audience.** Grow followers and an email list. Lead magnet: a free "Campaign Dossier" per Campaign (map, timeline, key numbers, sources) behind an email signup in the link in bio. The list is the asset that survives algorithm changes.
+2. **Early (no Meta threshold): affiliate.** Link the books we actually cite (named translations, atlases, histories) through an affiliate program, labeled as affiliate links. Only recommend what the content uses.
+3. **When eligible: Instagram's own tools.** Gifts on Reels, Reels revenue share where available, then Subscriptions (extended cuts, early access, subscriber-only Campaign polls). Eligibility needs a professional account, age 18+, a supported country and compliance with Meta's Partner and Content Monetization Policies; follower minimums vary by feature and country, so check the Monetization section in the Instagram app rather than trusting third-party lists.
+4. **With an audience: sponsorships.** Brand-safe partners that fit (history books and audiobooks, documentaries, strategy and history games, map prints). Always use Instagram's "Paid partnership" label.
+5. **Later: own products.** Paid dossier packs, prints of Campaign maps, a paid newsletter tier.
+
+**Every piece of content:**
+- **Hook non-followers first.** Most reach comes from people who don't follow yet, so frame 1 / slide 1 must work with no context: a number, a date, a stake.
+- **Earn the send.** Sends per reach is reported as Instagram's strongest signal for reaching new people. End with a specific share prompt tied to the topic ("Send this to the friend who…"), not a generic "share this".
+- **Earn the save on carousels:** dense, reference-worthy facts (numbers, maps, timelines) and a "Save for later" line.
+- **Ask one real question** in the caption (who was right, what would you have done). No "comment YES" bait; Meta demotes engagement bait.
+- **Build return viewers:** numbered Campaigns, Part 2s, and a teaser for what's next on every post.
+- **Searchable first line:** the caption opens with the plain search terms ("Battle of Marathon, 490 BC") before the story. 3–5 specific hashtags.
+- **Point to the ladder:** on posts tied to a Campaign, mention the free dossier ("Free map and timeline: link in bio"). Stories use the link sticker once a destination exists.
+- **Stay advertiser-safe:** factual, no gore, no glorifying violence, no current wars or living politicians (same as Guardrails); this also keeps Reels eligible for monetization.
+- **Stay original:** all visuals made by us, no watermarked or ripped clips, no compilations. Originality is part of Meta's monetization review.
+- **Measure what pays:** Recon reports sends per reach, saves, follows per post, profile visits and link clicks, not just likes.
+
+**Open items (need Chris):** pick an email service for the dossier signup (Beehiiv or Kit both have free tiers), sign up for an affiliate program, and set the link in bio. Once those exist, Campaign No. 1's dossier is the first lead magnet.
+
 ## Guardrails
 
 - Educational, not glorifying: no gore, no graphic imagery, no celebration of killing.
@@ -63,7 +87,7 @@ Start at 3 Reels a week at fixed times (adjust after the first month of data). P
 | --- | --- |
 | **Ranks & Reason** [optional topic] | Make one new Story slide and post it to Instagram immediately (scheduled about 2 minutes out via Metricool, no AI label). No topic given: pick from the pillars, rotating so the same pillar doesn't run twice in a row, and tie it to the next scheduled Reel when one is coming. Every claim sourced, quotes only from public-domain translations, guardrails apply; HOLD if it touches current events. |
 | **Deploy** [topic] | Research, script, narrate, animate and publish one Reel now (no per-Reel AI label; see AI disclosure). HOLD if it touches current events. |
-| **Recon** | Report the latest Metricool numbers for @ranksandreason. |
+| **Recon** | Report the latest Metricool numbers for @ranksandreason, led by the monetization metrics: sends per reach, saves, follows per post, profile visits, link clicks. |
 | **Resupply** [notes] | Build and schedule next week's three Reels. |
 | **Stand down** | Move all scheduled posts to draft. "Stand down off" restores them. |
 
