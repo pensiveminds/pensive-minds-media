@@ -112,10 +112,19 @@ Rotate so the same pillar doesn't run twice in a row.
 - Grace for addiction, divorce, failure and doubt. When a post touches despair or self-harm, it points to real help (a pastor, a counselor, or the 988 Suicide & Crisis Lifeline in the US) and never treats it lightly.
 - No real living people named in a promotional way; no brands.
 
-## Merch (later)
+## Merch (design started Oct 14, 2026; no sales yet)
 
 - Emblems: the Seal (primary) and the Monogram. Lines: "Bruised, not beaten." "Heel down." "Crush the head."
-- Much later: no merch work until the page has a decent following (Chris, Oct 13, 2026), and the domain and trademark check have cleared.
+- Chris chose to start design work slowly on Oct 14, 2026 (hat, shirt, hoodie, socks). Nothing goes on sale until the trademark knockout ("Heel & Serpent" and the tagline lines) and the domain check have cleared.
+- **Principle:** small marks, tonal thread, heavy blanks. Ember once per piece, as a hidden detail. Colorways: iron first, bone second.
+- **Hat:** low-profile unstructured cap. Cross & Serpent front (tonal on iron; iron thread on bone, ember tongue kept); GENESIS III · XV in ash on the back. Alternate: debossed leather Seal patch.
+- **Tee:** heavyweight. Monogram at the left chest. Iron tee carries the Seal large on the back (the one statement piece); bone tee has "BRUISED, NOT BEATEN." at the nape.
+- **Hoodie:** heavy fleece. Tonal Monogram at the chest, "HEEL DOWN." down the left sleeve, Seal on the back optional. Ember only at the drawcord tips and a stitch inside the hood.
+- **Socks:** "the ember heel": iron crew with an ember heel cup (the bruised heel, Genesis 3:15), knit Cross & Serpent at the ankle, "CRUSH THE HEAD." on the footbed. Bone pair: ember heel, iron toe and cuff stripe.
+- **Rule:** no verse text on anything worn underfoot; phrases and marks only.
+- Thread prep: thicken the cross and serpent tail for embroidery; the Seal's ring text only holds on leather or large prints, never small in thread.
+- Files: merch/marks.py recolors the locked logos for garments (tonal, contrast, leather, knit grid) into merch/marks/. Mockups: "H&S Merch Line" design canvas on claude.ai.
+- Next: trademark and domain check; embroidery-ready and knit-ready mark files; print-on-demand samples to test fit before any small batch.
 
 ## Commands (for Heel & Serpent)
 
