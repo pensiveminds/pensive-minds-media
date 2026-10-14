@@ -269,3 +269,56 @@ def render_looks(posts, out_dir):
     for name, (svg, kind) in posts.items():
         render_on(svg, os.path.join(out_dir, name), kind)
     return sorted(posts)
+
+
+# ---------------------------------------------------------------- Stories in every look
+
+def story_look(look, title, body=None, verse_lines=None, ref=None, kicker=None, seal=False):
+    """1080x1920 Story frame. All type sits in y 300-1500 so Instagram's bars never cover it. Returns (svg, ground)."""
+    L = LOOKS[look]; ink, ash, left = L["ink"], L["ash"], L["align"] == "left"
+    bone = L["ground"] == "bone"; X = 150; mw = 800 if left else 860
+
+    def tb(lines, y, size, **kw):
+        kw.setdefault("color", ink)
+        if left:
+            return _left_block(lines, X, y, size, max_w=mw, **kw)
+        return text_block(lines, y, size, max_w=mw, **kw)
+
+    parts = []; y = 0
+    if kicker:
+        k, y = tb([kicker.upper()], 0, 26, family=SANS, weight=700, spacing=7, color=EMBER); parts.append(k); y += 120
+    size = 104
+    t, end = tb(title, y, size, spacing=9, lead=1.14); parts.append(t)
+    if body:
+        b, end = tb(body, end + 100, 44, weight=400, color=ash, lead=1.35); parts.append(b)
+    if verse_lines:
+        rx = X if left else 500
+        parts.append(f'<line x1="{rx}" y1="{end+80:.0f}" x2="{rx+80}" y2="{end+80:.0f}" stroke="{EMBER}" stroke-width="2"/>')
+        v, end = tb(verse_lines, end + 190, 50, italic=True, weight=400, lead=1.3); parts.append(v)
+        r = tb([ref.upper()], end + 80, 24, family=SANS, weight=600, spacing=6, color=ash)[0]; parts.append(r); end += 80
+    if seal:
+        parts.append(mark(_swap(SEAL) if bone else SEAL, X if left else 430, end + 90, 220)); end += 310
+    top = (-26 * .72) if kicker else -size * .72
+    shift = 900 - (top + end) / 2
+    extras = ""
+    if L.get("engraved"):
+        extras += (f'<rect x="60" y="240" width="960" height="1400" fill="none" stroke="{ASH}" stroke-width="1.2"/>'
+                   f'<rect x="72" y="252" width="936" height="1376" fill="none" stroke="{ASH}" stroke-width="0.6"/>')
+    if L.get("ghost") and not verse_lines:
+        m = re.search(r"\[([^\]]+)\]", " ".join(title))
+        if m:
+            extras += (f'<text x="540" y="{900+160}" text-anchor="middle" font-family="{SERIF}" font-weight="600" font-size="460" '
+                       f'fill="none" stroke="{EMBER}" stroke-opacity="0.28" stroke-width="2">{escape(m.group(1).strip(".,"))}</text>')
+    if left:
+        extras += f'<line x1="104" y1="{top+shift:.0f}" x2="104" y2="{end+shift:.0f}" stroke="{EMBER}" stroke-width="3"/>'
+    foot = (f'<text x="540" y="1560" text-anchor="middle" font-family="{SANS}" font-weight="600" font-size="24" '
+            f'letter-spacing="6" fill="{ash}">{HANDLE.upper()}</text>')
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">{extras}'
+           f'<g transform="translate(0,{shift:.0f})">{"".join(parts)}</g>{foot}</svg>')
+    return svg, L["ground"]
+
+
+def render_story(svg_text, path, kind="iron"):
+    base = ground(kind, 1080, 1920)
+    fg = Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg_text.encode(), output_width=1080))).convert("RGBA")
+    base.paste(fg, (0, 0), fg); base.save(path, quality=94)
