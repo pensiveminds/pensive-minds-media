@@ -33,7 +33,7 @@ def _svg(scene):
     parts = []
     if scene.kind == "big":
         size = 112
-        t, end = text_block(scene.lines, 0, size, spacing=10, lead=1.14, max_w=840)
+        t, end = text_block(scene.lines, 0, size, spacing=10, lead=1.14, max_w=740)
         parts.append(t); top, bottom = -size * 0.72, end
         if scene.sub:
             s_, end = text_block(scene.sub, end + 90, 44, weight=400, color=ASH, max_w=840); parts.append(s_); bottom = end
