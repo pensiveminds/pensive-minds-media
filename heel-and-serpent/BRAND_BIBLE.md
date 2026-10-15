@@ -47,6 +47,15 @@ These are the anchors, not a slogan. No single quote is repeated across posts, a
 
 Day-1 data: the two Reels reached 106 and 71 people while feed posts reached 2-3 (3 followers), but average watch time was about 4 s of 16. Chris approved a daily Strike Reel, about 3:30 PM CT, starting Oct 14. Pacing rules: the hook line is fully on screen at frame 0 (no fade-in), 1.5-1.8 s per line, the verse lands by about 5 s, 10-12 s total, fade 0.25 s. Chris prefers efficiency and autonomy: daily Reels are built, previewed to him with at least an hour's lead, and go out on schedule unless he pulls them.
 
+### Reels: Buzzfy changes, verse bank, queue and voice (Oct 15, 2026)
+
+- Buzzfy scored Strike #1: storytelling 8.9 and visual quality 8.5 (keep the structure); retention 4.5, originality 2.6 and authenticity 3.3 are the weak spots. Defaults since Strike #4: `build_reel(..., motion=True)` (punch-in on each line, drifting embers, seal stamp); verses longer than about 12 words split into two quick shots, reference on the second; the seal scene carries an on-screen call to action via `sub` ("Send this to a brother.").
+- Comment prompts: the bible still forbids asking followers to recite or answer back; a sincere question is Chris's call, not yet approved.
+- VERSE_BANK.json: 30 verses checked verbatim against BibleGateway (CSB) on Oct 15, 2026, with context and cautions, so Reels can be built without the browser. Mark each use.
+- REEL_QUEUE.json: daily Reels scripted ahead (Oct 16–22 written), so Chris can record voice memos in advance. `python3 build_queued_reel.py <date>` builds an entry, logs SOURCES/SONGS and marks it built; `--print` gives the Metricool fields.
+- Voice (Chris, Oct 15): Chris records the hook and verse as a phone voice memo; he wants his voice altered because it's recognizable. `make_reel.voice_fx(src, dst)` shifts pitch down 2.5 semitones with the formants shifted too, cleans and levels it; save to voice/queue/<date>.wav and the builder mixes it over the score with ducking. It lowers recognizability; it does not make the voice anonymous. Each queue entry has a `voice` line: the script to read.
+- Daily task: a scheduled task to build and post the queued Reel at 3:30 PM CT (prompt drafted Oct 15) was blocked by a permission check; until it exists, daily Reels are built in a live session.
+
 ### What's landing (Chris's feedback; read before writing, add to it after)
 
 The voice keeps evolving with Chris's reactions and the numbers from Watch. Log what he likes or pushes back on here, with the date, and let it shape the next set.
@@ -192,6 +201,7 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
 - Stories "Tomorrow starts tonight" (3 Story videos with score_drive, 10:15–10:19 PM Oct 13; Isaiah 40:31). Set: stories/2026-10-13-tomorrow-starts-tonight/.
 - Story "First light" (one-off dawn palette, 4 frames, one continuous score_drive score across all four; Mark 1:35) scheduled Wed Oct 14, 2026, 4:35–4:38 AM CT: Metricool 395698359, 395698387, 395698420, 395698448. Set: stories/2026-10-14-first-light/. Song: 10,000 Reasons (Bless the Lord), Matt Redman.
 - Strike #3 (Proverbs 22:6, "Your kids are watching", first Reel on the new pacing, 11 s) scheduled Wed Oct 14, 2026, 3:30 PM CT (Metricool 396190107). Set: reels/2026-10-14-prov22-6/.
+- Strike #4 (James 4:7, "The enemy is betting you'll quit", first Reel with motion, two-shot verse and on-screen CTA) scheduled Thu Oct 15, 2026, 8:00 PM CT (Metricool 397284077). No Reel went out at 3:30 PM Oct 15: nothing was set to build it outside a live session. Set: reels/2026-10-15-james4-7/.
 - Strike #2 (Psalm 4:8 night Reel, "Rest. Then rise.") published Oct 13, 2026, 8:44 PM CT: https://www.instagram.com/reel/DedO3WYE8Z7/ (Metricool 395475633). Set: reels/2026-10-13-psalm4-8/. Reel type width narrowed to 740 px the same night so lines clear Instagram's side buttons.
 - Strike #1 (Micah 7:8 Reel) published Oct 13, 2026, 3:28 PM CT: https://www.instagram.com/reel/DecqtXAoNuJ/ (Metricool 395304172). Set: reels/2026-10-13-micah7-8/.
 - Reels (Strike) added Oct 13, 2026. Instagram sounds can't be attached through Metricool: @heelandserpent is a Business account with no Facebook Page linked. Chris chose the original generated score instead (Oct 13); he can still add a trending sound in the app.
