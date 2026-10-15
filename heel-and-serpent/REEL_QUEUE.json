@@ -1,0 +1,451 @@
+{
+ "note": "Daily Strike Reels, scripted ahead so Chris can record voice memos. build_queued_reel.py builds the entry for a date. Voice: drop a processed WAV at voice/queue/<date>.wav (made with make_reel.voice_fx) and the builder mixes it in. Verses come from VERSE_BANK.json (CSB, verified Oct 15, 2026).",
+ "reels": [
+  {
+   "date": "2026-10-16",
+   "slug": "heb12-11",
+   "pillar": "discipline",
+   "sources": [
+    [
+     "Hebrews 12:11 (partial on graphic, full in caption)",
+     "Heb 12:5–11",
+     1
+    ]
+   ],
+   "scenes": [
+    [
+     "big",
+     1.8,
+     [
+      "NOBODY",
+      "ENJOYS THE",
+      "[GRIND]."
+     ]
+    ],
+    [
+     "big",
+     1.4,
+     [
+      "DO IT",
+      "[ANYWAY]."
+     ]
+    ],
+    [
+     "verse",
+     2.4,
+     [
+      "“No discipline seems",
+      "enjoyable at the time,",
+      "but painful."
+     ]
+    ],
+    [
+     "verse",
+     2.8,
+     [
+      "Later on, however,",
+      "it yields the peaceful",
+      "fruit of righteousness…”"
+     ],
+     "Hebrews 12:11, CSB"
+    ],
+    [
+     "seal",
+     2.6,
+     [
+      "TRAIN [ANYWAY]."
+     ],
+     null,
+     [
+      "Send this to a brother."
+     ]
+    ]
+   ],
+   "voice": "Nobody enjoys the grind. Do it anyway. No discipline seems enjoyable at the time, but painful. Later on, however, it yields the peaceful fruit of righteousness.",
+   "caption": "Nobody enjoys the grind. The early alarm, the hard conversation, the workout you'd rather skip.\n\nDo it anyway.\n\n\"No discipline seems enjoyable at the time, but painful. Later on, however, it yields the peaceful fruit of righteousness to those who have been trained by it.\" Hebrews 12:11 (CSB)\n\nTrain anyway. Send this to a brother.\n\n#christianmen #faith #discipline #getbackup #biblicalmanhood\n\nScripture quotations marked CSB have been taken from the Christian Standard Bible®, Copyright © 2017 by Holman Bible Publishers. Used by permission. Christian Standard Bible® and CSB® are federally registered trademarks of Holman Bible Publishers.\n\nMusic: original score, Heel & Serpent.",
+   "alt": "Short video on dark charcoal with drifting embers and an original score. NOBODY ENJOYS THE GRIND. DO IT ANYWAY. Then Hebrews 12:11 (CSB) in two shots: No discipline seems enjoyable at the time, but painful. Later on, however, it yields the peaceful fruit of righteousness… It closes on the Heel & Serpent seal, TRAIN ANYWAY, and Send this to a brother.",
+   "post_time": "15:30",
+   "built": null
+  },
+  {
+   "date": "2026-10-17",
+   "slug": "prov27-17",
+   "pillar": "brotherhood",
+   "sources": [
+    [
+     "Proverbs 27:17",
+     "Prov 27:17",
+     1
+    ]
+   ],
+   "scenes": [
+    [
+     "big",
+     1.8,
+     [
+      "WHO’S",
+      "SHARPENING",
+      "[YOU]?"
+     ]
+    ],
+    [
+     "big",
+     1.4,
+     [
+      "NAME",
+      "[ONE] MAN."
+     ]
+    ],
+    [
+     "verse",
+     3.2,
+     [
+      "“Iron sharpens iron,",
+      "and one person",
+      "sharpens another.”"
+     ],
+     "Proverbs 27:17, CSB"
+    ],
+    [
+     "seal",
+     2.6,
+     [
+      "FIND YOUR [IRON]."
+     ],
+     null,
+     [
+      "Send this to him."
+     ]
+    ]
+   ],
+   "voice": "Who's sharpening you? Name one man. Iron sharpens iron, and one person sharpens another.",
+   "caption": "Who's sharpening you? Not your followers. Not your feed. One man who knows your real life and calls you on it.\n\nIf you can't name him, go find him. If you can, send him this.\n\n\"Iron sharpens iron, and one person sharpens another.\" Proverbs 27:17 (CSB)\n\n#christianmen #faith #brotherhood #ironsharpensiron #getbackup\n\nScripture quotations marked CSB have been taken from the Christian Standard Bible®, Copyright © 2017 by Holman Bible Publishers. Used by permission. Christian Standard Bible® and CSB® are federally registered trademarks of Holman Bible Publishers.\n\nMusic: original score, Heel & Serpent.",
+   "alt": "Short video on dark charcoal with drifting embers and an original score. WHO'S SHARPENING YOU? NAME ONE MAN. Then Proverbs 27:17 (CSB): Iron sharpens iron, and one person sharpens another. It closes on the seal, FIND YOUR IRON, and Send this to him.",
+   "post_time": "15:30",
+   "built": null
+  },
+  {
+   "date": "2026-10-18",
+   "slug": "1pet5-8",
+   "pillar": "enemy",
+   "sources": [
+    [
+     "1 Peter 5:8 (partial on graphic, full in caption)",
+     "1 Pet 5:6–11",
+     1
+    ]
+   ],
+   "scenes": [
+    [
+     "big",
+     1.8,
+     [
+      "HE’S",
+      "[HUNTING]."
+     ]
+    ],
+    [
+     "big",
+     1.4,
+     [
+      "STAY",
+      "[AWAKE]."
+     ]
+    ],
+    [
+     "verse",
+     2.2,
+     [
+      "“Be sober-minded,",
+      "be alert."
+     ]
+    ],
+    [
+     "verse",
+     2.8,
+     [
+      "Your adversary the devil",
+      "is prowling around",
+      "like a roaring lion…”"
+     ],
+     "1 Peter 5:8, CSB"
+    ],
+    [
+     "seal",
+     2.6,
+     [
+      "STAND [WATCH]."
+     ],
+     null,
+     [
+      "Send this to a brother."
+     ]
+    ]
+   ],
+   "voice": "He's hunting. Stay awake. Be sober-minded, be alert. Your adversary the devil is prowling around like a roaring lion.",
+   "caption": "The enemy isn't lazy. He's patient. He waits for the tired night, the lonely week, the moment you stop paying attention.\n\nStay awake.\n\n\"Be sober-minded, be alert. Your adversary the devil is prowling around like a roaring lion, looking for anyone he can devour.\" 1 Peter 5:8 (CSB)\n\nAnd don't miss verse 9: resist him, firm in the faith. You're not the only one fighting.\n\nStand watch. Send this to a brother.\n\n#christianmen #faith #spiritualwarfare #getbackup #biblicalmanhood\n\nScripture quotations marked CSB have been taken from the Christian Standard Bible®, Copyright © 2017 by Holman Bible Publishers. Used by permission. Christian Standard Bible® and CSB® are federally registered trademarks of Holman Bible Publishers.\n\nMusic: original score, Heel & Serpent.",
+   "alt": "Short video on dark charcoal with drifting embers and an original score. HE'S HUNTING. STAY AWAKE. Then 1 Peter 5:8 (CSB) in two shots: Be sober-minded, be alert. Your adversary the devil is prowling around like a roaring lion… It closes on the seal, STAND WATCH, and Send this to a brother.",
+   "post_time": "15:30",
+   "built": null
+  },
+  {
+   "date": "2026-10-19",
+   "slug": "josh1-9",
+   "pillar": "get back up",
+   "sources": [
+    [
+     "Joshua 1:9",
+     "Josh 1:1–9",
+     1
+    ]
+   ],
+   "scenes": [
+    [
+     "big",
+     1.8,
+     [
+      "SCARED",
+      "IS [FINE]."
+     ]
+    ],
+    [
+     "big",
+     1.4,
+     [
+      "STOPPING",
+      "[ISN’T]."
+     ]
+    ],
+    [
+     "verse",
+     2.6,
+     [
+      "“…be strong and",
+      "courageous? Do not be",
+      "afraid or discouraged,"
+     ]
+    ],
+    [
+     "verse",
+     2.6,
+     [
+      "for the LORD your God",
+      "is with you",
+      "wherever you go.”"
+     ],
+     "Joshua 1:9, CSB"
+    ],
+    [
+     "seal",
+     2.6,
+     [
+      "GO [ANYWAY]."
+     ],
+     null,
+     [
+      "Send this to a brother."
+     ]
+    ]
+   ],
+   "voice": "Scared is fine. Stopping isn't. Be strong and courageous. Do not be afraid or discouraged, for the Lord your God is with you wherever you go.",
+   "caption": "Courage isn't the absence of fear. It's moving with it.\n\nScared is fine. Stopping isn't.\n\n\"Haven't I commanded you: be strong and courageous? Do not be afraid or discouraged, for the LORD your God is with you wherever you go.\" Joshua 1:9 (CSB)\n\nGo anyway. Send this to a brother who's standing at the edge of something hard.\n\n#christianmen #faith #courage #getbackup #biblicalmanhood\n\nScripture quotations marked CSB have been taken from the Christian Standard Bible®, Copyright © 2017 by Holman Bible Publishers. Used by permission. Christian Standard Bible® and CSB® are federally registered trademarks of Holman Bible Publishers.\n\nMusic: original score, Heel & Serpent.",
+   "alt": "Short video on dark charcoal with drifting embers and an original score. SCARED IS FINE. STOPPING ISN'T. Then Joshua 1:9 (CSB) in two shots: …be strong and courageous? Do not be afraid or discouraged, for the LORD your God is with you wherever you go. It closes on the seal, GO ANYWAY, and Send this to a brother.",
+   "post_time": "15:30",
+   "built": null
+  },
+  {
+   "date": "2026-10-20",
+   "slug": "neh4-14",
+   "pillar": "father",
+   "sources": [
+    [
+     "Nehemiah 4:14 (partial)",
+     "Neh 4:7–14",
+     1
+    ]
+   ],
+   "scenes": [
+    [
+     "big",
+     1.8,
+     [
+      "FIGHT",
+      "FOR YOUR",
+      "[HOUSE]."
+     ]
+    ],
+    [
+     "big",
+     1.4,
+     [
+      "ON YOUR",
+      "[KNEES]."
+     ]
+    ],
+    [
+     "verse",
+     2.4,
+     [
+      "“…Remember the great",
+      "and awe-inspiring Lord,"
+     ]
+    ],
+    [
+     "verse",
+     2.8,
+     [
+      "and fight for",
+      "your countrymen,",
+      "your sons and daughters,",
+      "your wives and homes.”"
+     ],
+     "Nehemiah 4:14, CSB"
+    ],
+    [
+     "seal",
+     2.6,
+     [
+      "PRAY. THEN [STAND]."
+     ],
+     null,
+     [
+      "Send this to a father."
+     ]
+    ]
+   ],
+   "voice": "Fight for your house. On your knees. Remember the great and awe-inspiring Lord, and fight for your countrymen, your sons and daughters, your wives and homes.",
+   "caption": "Nehemiah's men rebuilt the wall with enemies watching. He didn't tell them to panic. He told them who to remember, and who they were fighting for.\n\nThe fight for your home starts on your knees.\n\n\"…Don't be afraid of them. Remember the great and awe-inspiring Lord, and fight for your countrymen, your sons and daughters, your wives and homes.\" Nehemiah 4:14 (CSB)\n\nPray. Then stand. Send this to a father.\n\n#christianfathers #faith #fatherhood #biblicalmanhood #getbackup\n\nScripture quotations marked CSB have been taken from the Christian Standard Bible®, Copyright © 2017 by Holman Bible Publishers. Used by permission. Christian Standard Bible® and CSB® are federally registered trademarks of Holman Bible Publishers.\n\nMusic: original score, Heel & Serpent.",
+   "alt": "Short video on dark charcoal with drifting embers and an original score. FIGHT FOR YOUR HOUSE. ON YOUR KNEES. Then Nehemiah 4:14 (CSB) in two shots: …Remember the great and awe-inspiring Lord, and fight for your countrymen, your sons and daughters, your wives and homes. It closes on the seal, PRAY. THEN STAND., and Send this to a father.",
+   "post_time": "15:30",
+   "built": null
+  },
+  {
+   "date": "2026-10-21",
+   "slug": "gal6-9",
+   "pillar": "discipline",
+   "sources": [
+    [
+     "Galatians 6:9",
+     "Gal 6:7–10",
+     1
+    ]
+   ],
+   "scenes": [
+    [
+     "big",
+     1.8,
+     [
+      "TIRED OF",
+      "DOING",
+      "[RIGHT]?"
+     ]
+    ],
+    [
+     "big",
+     1.4,
+     [
+      "HARVEST IS",
+      "[COMING]."
+     ]
+    ],
+    [
+     "verse",
+     2.2,
+     [
+      "“Let us not get tired",
+      "of doing good,"
+     ]
+    ],
+    [
+     "verse",
+     2.6,
+     [
+      "for we will reap",
+      "at the proper time",
+      "if we don’t give up.”"
+     ],
+     "Galatians 6:9, CSB"
+    ],
+    [
+     "seal",
+     2.6,
+     [
+      "DON’T [QUIT]."
+     ],
+     null,
+     [
+      "Send this to a brother."
+     ]
+    ]
+   ],
+   "voice": "Tired of doing right? Harvest is coming. Let us not get tired of doing good, for we will reap at the proper time if we don't give up.",
+   "caption": "Doing right and seeing nothing for it is its own kind of tired.\n\nThe harvest isn't late. It's on time. His time.\n\n\"Let us not get tired of doing good, for we will reap at the proper time if we don't give up.\" Galatians 6:9 (CSB)\n\nDon't quit. Send this to a brother who's been sowing a long time.\n\n#christianmen #faith #perseverance #getbackup #biblicalmanhood\n\nScripture quotations marked CSB have been taken from the Christian Standard Bible®, Copyright © 2017 by Holman Bible Publishers. Used by permission. Christian Standard Bible® and CSB® are federally registered trademarks of Holman Bible Publishers.\n\nMusic: original score, Heel & Serpent.",
+   "alt": "Short video on dark charcoal with drifting embers and an original score. TIRED OF DOING RIGHT? HARVEST IS COMING. Then Galatians 6:9 (CSB) in two shots: Let us not get tired of doing good, for we will reap at the proper time if we don't give up. It closes on the seal, DON'T QUIT, and Send this to a brother.",
+   "post_time": "15:30",
+   "built": null
+  },
+  {
+   "date": "2026-10-22",
+   "slug": "2cor12-9",
+   "pillar": "get back up",
+   "sources": [
+    [
+     "2 Corinthians 12:9 (partial on graphic, full in caption)",
+     "2 Cor 12:7–10",
+     1
+    ]
+   ],
+   "scenes": [
+    [
+     "big",
+     1.8,
+     [
+      "WEAK",
+      "[TODAY]?"
+     ]
+    ],
+    [
+     "big",
+     1.4,
+     [
+      "[GOOD]."
+     ]
+    ],
+    [
+     "verse",
+     2.2,
+     [
+      "“…My grace",
+      "is sufficient for you,"
+     ]
+    ],
+    [
+     "verse",
+     2.6,
+     [
+      "for my power",
+      "is perfected",
+      "in weakness.”"
+     ],
+     "2 Corinthians 12:9, CSB"
+    ],
+    [
+     "seal",
+     2.6,
+     [
+      "LEAN [IN]."
+     ],
+     null,
+     [
+      "Send this to a brother."
+     ]
+    ]
+   ],
+   "voice": "Weak today? Good. My grace is sufficient for you, for my power is perfected in weakness.",
+   "caption": "Paul begged for the weakness to be taken away. God's answer wasn't a fix. It was Himself.\n\nWeak today? Good. That's where His strength shows up.\n\n\"But he said to me, 'My grace is sufficient for you, for my power is perfected in weakness.' Therefore, I will most gladly boast all the more about my weaknesses, so that Christ's power may reside in me.\" 2 Corinthians 12:9 (CSB)\n\nLean in. Send this to a brother who's running on empty.\n\n#christianmen #faith #grace #getbackup #biblicalmanhood\n\nScripture quotations marked CSB have been taken from the Christian Standard Bible®, Copyright © 2017 by Holman Bible Publishers. Used by permission. Christian Standard Bible® and CSB® are federally registered trademarks of Holman Bible Publishers.\n\nMusic: original score, Heel & Serpent.",
+   "alt": "Short video on dark charcoal with drifting embers and an original score. WEAK TODAY? GOOD. Then 2 Corinthians 12:9 (CSB) in two shots: …My grace is sufficient for you, for my power is perfected in weakness. It closes on the seal, LEAN IN, and Send this to a brother.",
+   "post_time": "15:30",
+   "built": null
+  }
+ ]
+}
