@@ -16,6 +16,7 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | Wed Oct 14, 3:30 PM | Strike #3 Reel (Prov 22:6) | Original score (built in) | Reels carry their own score |
 | Wed Oct 14, 7:15 PM | Peter, denied three times | Graves Into Gardens – Elevation Worship ft. Brandon Lake | Restored after his worst night |
 | Thu Oct 15, 6:45 AM | Master your body (1 Cor 9:27) | Champion – Bethel Music (Dante Bowe) | Training like it matters |
+| Thu Oct 15, 8:00 PM | Strike #4 Reel (James 4:7) | Original score (built in) | Reels carry their own score |
 | Thu Oct 15, 7:15 PM | David: confession is where kings rise | Create in Me a Clean Heart – Keith Green | Psalm 51 set to music |
 | Fri Oct 16, 6:45 AM | Strong hands, gentle voice (Eph 6:4) | Good Good Father – Chris Tomlin | The Father we model |
 | Fri Oct 16, 7:15 PM | The lie: you've gone too far | Who You Say I Am – Hillsong Worship | Identity over shame |

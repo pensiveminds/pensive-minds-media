@@ -41,15 +41,19 @@ def _svg(scene):
         if scene.sub:
             s_, end = text_block(scene.sub, end + 90, 44, weight=400, color=ASH, max_w=840); parts.append(s_); bottom = end
     elif scene.kind == "verse":
-        size = 62
+        size = 72 if len(scene.lines) <= 3 else 62   # two-shot verses carry fewer words, so set them larger
         v, end = text_block(scene.lines, 0, size, italic=True, weight=400, lead=1.32, max_w=760)
-        r = text_block([scene.ref.upper()], end + 92, 26, family=SANS, weight=600, spacing=6, color=ASH)[0]
-        parts = [v, r]
-        top, bottom = -size * 0.72, end + 92
+        parts = [v]; bottom = end
+        if scene.ref:   # a verse split across two shots shows its reference on the last shot
+            r = text_block([scene.ref.upper()], end + 92, 26, family=SANS, weight=600, spacing=6, color=ASH)[0]
+            parts.append(r); bottom = end + 92
+        top = -size * 0.72
     else:  # seal
         parts.append(mark(SEAL, 340, -420, 400))
         size = 100
         t, end = text_block(scene.lines, 70, size, spacing=9, lead=1.14, max_w=720); parts.append(t)
+        if scene.sub:   # on-screen call to action, e.g. "Send this to a brother."
+            c_, end = text_block(scene.sub, end + 96, 46, weight=400, color=BONE, max_w=760); parts.append(c_)
         h = text_block([HANDLE.upper()], end + 110, 26, family=SANS, weight=600, spacing=6, color=ASH)[0]
         parts.append(h)
         top, bottom = -420, end + 110
@@ -143,14 +147,16 @@ def _pad(freqs, start, end, total, gain, a=1.2, r=1.2, detune=0.0):
     return out
 
 
-def score(cuts, length, seed=11):
-    """cuts: scene start times. Last scene is the resolve. Returns stereo int16 array."""
+def score(cuts, length, seed=11, verse_at=None):
+    """cuts: scene start times. Last scene is the resolve. verse_at: when the (first) verse shot starts
+    (defaults to the second-to-last cut). Returns stereo int16 array."""
     total = int(length * SR)
     rng = np.random.default_rng(seed)
     chans = []
     for ch, det in enumerate((-0.0015, 0.0015)):
         x = np.zeros(total)
-        verse_at, seal_at = cuts[-2], cuts[-1]
+        seal_at = cuts[-1]
+        verse_at = cuts[-2] if verse_at is None else verse_at
         # drone: D minor until the seal, then D major (the Picardy third: the turn from down to up)
         x += _pad([73.42, 110.0], 0, length, total, 0.30, a=1.5, r=1.6, detune=det)
         x += _pad([174.61], 0.6, seal_at + 0.3, total, 0.10, a=1.5, r=0.6, detune=det)
@@ -165,8 +171,11 @@ def score(cuts, length, seed=11):
                 i = int((t + off) * SR); x[i:i + n] += beat[:max(0, total - i)]
             t += 1.25
         # impacts on the opening cuts and on the seal
-        for c in cuts[:-2]:
-            x += _boom(c + 0.02, total, 0.55)
+        for c in cuts[:-1]:
+            if c < verse_at:
+                x += _boom(c + 0.02, total, 0.55)
+            elif c > verse_at:
+                x += _boom(c + 0.02, total, 0.25)   # a light hit on the second verse shot
         x += _boom(seal_at + 0.02, total, 0.75)
         # riser into the verse: filtered noise swelling for 1.6 s
         n = int(1.6 * SR); i = int((verse_at - 1.6) * SR)
@@ -241,13 +250,75 @@ def score_drive(cuts, length, seed=21, bpm=104):
     return (mix * 32767).astype("int16")
 
 
+# ---------------------------------------------------------------- motion and voice
+
+def _punch(lay, s):
+    """Scale a full-frame layer about its centre (s > 1 zooms in), cropped back to the frame."""
+    if s <= 1.001:
+        return lay
+    w, h = int(W * s), int(H * s)
+    big = lay.resize((w, h), Image.BILINEAR)
+    x, y = (w - W) // 2, (h - H) // 2
+    return big.crop((x, y, x + W, y + H))
+
+
+def _embers(n=42, seed=5):
+    rng = np.random.default_rng(seed)
+    return [dict(x=rng.uniform(90, 990), y=rng.uniform(900, 2100), v=rng.uniform(60, 140), r=rng.uniform(2.6, 6.0),
+                 sway=rng.uniform(8, 26), ph=rng.uniform(0, 6.28), a=rng.uniform(110, 210)) for _ in range(n)]
+
+
+def _draw_embers(frame, parts, t):
+    """Faint ember sparks drifting up from the bottom, behind the type."""
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
+    col = PALETTE["accent"] if PALETTE else EMBER
+    rgb = tuple(int(col.lstrip("#")[i:i + 2], 16) for i in (0, 2, 4))
+    for p in parts:
+        y = (p["y"] - p["v"] * t) % 2100 - 100
+        x = p["x"] + p["sway"] * np.sin(t * 1.3 + p["ph"])
+        fade = max(0.0, min(1.0, (y - 250) / 900))          # die out as they rise
+        a = int(p["a"] * fade)
+        if a > 4:
+            d.ellipse((x - p["r"], y - p["r"], x + p["r"], y + p["r"]), fill=rgb + (a,))
+    frame.paste(ov, (0, 0), ov)
+
+
+def voice_fx(src, dst, semitones=-2.5, formant=True):
+    """Disguise a voice memo: pitch shift (formants shifted with it, so the timbre changes, not just the pitch),
+    clean up rumble and hiss, warm it slightly, add a short room and even out the level.
+    Writes a 44.1 kHz stereo WAV. It lowers recognisability; it does not make a voice anonymous."""
+    ratio = 2 ** (semitones / 12)
+    af = (f"highpass=f=80,lowpass=f=9000,rubberband=pitch={ratio:.5f}" + (":formant=shifted" if formant else ":formant=preserved") +
+          ",equalizer=f=180:t=q:w=1:g=2,equalizer=f=3200:t=q:w=1.2:g=-2,aecho=0.8:0.5:35:0.12,"
+          "loudnorm=I=-16:TP=-1.5:LRA=7")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-af", af, "-ar", str(SR), "-ac", "2", dst], check=True)
+    return dst
+
+
+def _mix_voice(audio, voice_wav, at=0.0, duck=0.35):
+    """Lay a processed voice over the score, ducking the score under the voice."""
+    with wave.open(voice_wav) as w:
+        v = np.frombuffer(w.readframes(w.getnframes()), "int16").reshape(-1, 2).astype("float32")
+    a = audio.astype("float32"); i = int(at * SR)
+    v = v[:max(0, len(a) - i)]
+    env = np.abs(v).mean(1); env = np.convolve(env, np.ones(4410) / 4410, "same"); env = np.clip(env / (env.max() + 1e-9) * 4, 0, 1)
+    gain = 1 - (1 - duck) * env
+    a[i:i + len(v)] *= gain[:, None]
+    a[i:i + len(v)] += v * 0.95
+    a /= max(1.0, np.abs(a).max() / (0.89 * 32767))
+    return a.astype("int16")
+
+
 # ---------------------------------------------------------------- build
 
-def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None, audio=None):
-    """audio: a ready stereo int16 array for this clip (used by build_story_set); otherwise score_fn makes one."""
+def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None, audio=None, motion=False, voice=None, voice_at=0.0):
+    """audio: a ready stereo int16 array for this clip (used by build_story_set); otherwise score_fn makes one.
+    motion: punch-in on each scene, drifting embers, a harder stamp on the seal (Buzzfy feedback, Oct 15, 2026).
+    voice: a processed voice WAV (see voice_fx) mixed over the score from voice_at seconds, score ducked under it."""
     os.makedirs(out_dir, exist_ok=True)
     layers = [_layer(s) for s in scenes]
     grounds = _grounds()
+    parts = _embers() if motion else None
     cuts, t = [], 0.0
     for s in scenes:
         cuts.append(t); t += s.secs
@@ -264,12 +335,22 @@ def build_reel(scenes, out_dir, name, fade=0.4, score_fn=None, audio=None):
             a = max(0.0, min(1.0, a))
             frame = grounds[0].copy()
             lay = layers[k]
+            if motion:
+                _draw_embers(frame, parts, tt)
+                amt = 0.12 if scenes[k].kind == "seal" else 0.05
+                lay = _punch(lay, 1 + amt * max(0.0, 1 - local / 0.35) ** 2)
             if a < 1:
                 lay = lay.copy(); lay.putalpha(lay.getchannel("A").point(lambda p: int(p * a)))
             frame.paste(lay, (0, 0), lay)
             frame.save(os.path.join(tmp, f"f{f:04d}.jpg"), quality=92)
         if audio is None:
-            audio = (score_fn or score)(cuts, length)
+            if score_fn is None:
+                vi = next((i for i, sc in enumerate(scenes) if sc.kind == "verse"), len(scenes) - 2)
+                audio = score(cuts, length, verse_at=cuts[vi])
+            else:
+                audio = score_fn(cuts, length)
+        if voice:
+            audio = _mix_voice(audio, voice, voice_at)
         wav = os.path.join(tmp, "score.wav")
         with wave.open(wav, "wb") as w:
             w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(audio.tobytes())
