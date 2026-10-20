@@ -53,8 +53,17 @@ Day-1 data: the two Reels reached 106 and 71 people while feed posts reached 2-3
 - Comment prompts: the bible still forbids asking followers to recite or answer back; a sincere question is Chris's call, not yet approved.
 - VERSE_BANK.json: 30 verses checked verbatim against BibleGateway (CSB) on Oct 15, 2026, with context and cautions, so Reels can be built without the browser. Mark each use.
 - REEL_QUEUE.json: daily Reels scripted ahead (Oct 16–22 written), so Chris can record voice memos in advance. `python3 build_queued_reel.py <date>` builds an entry, logs SOURCES/SONGS and marks it built; `--print` gives the Metricool fields.
-- Voice (Chris, Oct 15): Chris records the hook and verse as a phone voice memo; he wants his voice altered because it's recognizable. `make_reel.voice_fx(src, dst)` shifts pitch down 2.5 semitones with the formants shifted too, cleans and levels it; save to voice/queue/<date>.wav and the builder mixes it over the score with ducking. It lowers recognizability; it does not make the voice anonymous. Each queue entry has a `voice` line: the script to read.
-- Daily task: a scheduled task to build and post the queued Reel at 3:30 PM CT (prompt drafted Oct 15) was blocked by a permission check; until it exists, daily Reels are built in a live session.
+- Voice: dropped (Chris, Oct 20, 2026: "I don't want to do the voice memo"). No voice on Reels; make_reel.voice_fx stays in the code, unused.
+
+### Reels and feed from Oct 20, 2026 (Chris: "keep this posting schedule going until I pause action")
+
+- **Why:** Watch on Oct 20 showed reach falling from 180 accounts (Oct 13) to 1 (Oct 19). Feed posts reach only followers (3), 1–3 people each. All non-follower reach came from Reels: Strikes #1–2 reached 114 and 147 (24% watched past 3 s); Strikes #3–4, on the faster pacing, reached 16 and 12 (19% and 8%). Then no Reel went out Oct 16–19 because the daily task didn't exist. Samples are tiny; the pacing test below is how we find out.
+- **Schedule:** one Strike Reel every day at 3:30 PM CT; one feed post a day: Marching Orders 6:45 AM Mon/Wed/Fri, Get Back Up 7:15 PM Tue/Thu/Sat, Armor Check 1:15 PM Sun. It keeps running until Chris says Sheathe.
+- **A new original score every Reel** (Chris, Oct 20): heel-and-serpent/score_engine.py, six synthesized styles (anthem, hymn, march, dawn, pulse, nocturne), all six cycle before one repeats; key and tempo seeded by the slug. Every score opens with a hit on frame 0, lifts into the verse and resolves major on the seal. The style, key and tempo are logged in REEL_QUEUE.json and SONGS.md.
+- **Pacing A/B:** Reels alternate pace "slow" (the original Strike #1–2 style: 2.4–2.6 s hook lines, the verse in one 5.8–6.4 s shot, 0.4 s fades, no motion, about 14 s) and "fast" (quick cuts, two-shot verse, motion, about 10 s). Compare reach and 3-second hold by pace after two weeks (from Oct 20) and keep the winner.
+- **Weekly scheduled task** "Heel & Serpent weekly Arm" (trig_013uukPqcVyA7iA2e8nRZuJ7), Fridays 9:48 AM CT, runs in the cloud with automatic approval: it fills every Reel and feed slot from tomorrow through 8 days out, never duplicating what's already scheduled, using only VERSE_BANK.json verses, and reports to Chris by push and email. It stops if heel-and-serpent/PAUSED exists.
+- **Verse bank:** 109 CSB verses plus 7 verified story passages (Moses, Gideon, Jacob, Joseph, Thomas, John Mark, the prodigal son) as of Oct 20, 2026, copied from BibleGateway with a script and checked byte for byte. The task flags when fewer than 20 unused verses remain; refill in a live session with Chris's computer on (built-in browser, BibleGateway, CSB).
+- **Growth lever only Chris can pull:** 10 minutes a day of real comments from @heelandserpent on larger Christian men's and fatherhood pages, and (if he chooses) sharing a Reel from his personal account. Suggested Oct 20; his call.
 
 ### What's landing (Chris's feedback; read before writing, add to it after)
 
@@ -91,13 +100,13 @@ Rules: no two posts in a row share a look (count Reels as their own look); Class
 
 ## Formats and cadence
 
-About 14 feed posts a week plus daily Stories, all templated. Fixed times; adjust after the first month of data.
+From Oct 20, 2026: one feed post a day plus one Strike Reel a day at 3:30 PM (see "Reels and feed from Oct 20"). Week 1 ran about 14 feed posts a week. Fixed times; adjust after the first month of data.
 
 | Series | When | Format |
 | --- | --- | --- |
-| **Marching Orders** | Daily, morning | One still: a verse plus one command for the day |
-| **Get Back Up** | Daily, evening | 5–7 slide carousel: a man who fell and rose, or a lie men believe and the truth that answers it |
-| **Armor Check** | Sundays | Carousel on one piece of the armor of God (Ephesians 6), rotating weekly |
+| **Marching Orders** | Mon/Wed/Fri, 6:45 AM | One still: a verse plus one command for the day |
+| **Get Back Up** | Tue/Thu/Sat, 7:15 PM | 5–7 slide carousel: a man who fell and rose, or a lie men believe and the truth that answers it |
+| **Armor Check** | Sundays, 1:15 PM | Carousel on one piece of the armor of God (Ephesians 6), rotating weekly |
 | **Stories** | Daily | Poll, question box, behind-the-post, or a repost of the day's feed post |
 
 ## Pillars
@@ -153,11 +162,11 @@ Rotate so the same pillar doesn't run twice in a row.
 | --- | --- |
 | **Rise** [optional topic] | Make one feed post (Marching Orders still or Get Back Up carousel, whichever is next) and schedule it about 2 minutes out via Metricool. No topic: pick by pillar rotation. Scripture rules and guardrails apply; HOLD if it touches current events. |
 | **Arm** [notes] | Build and schedule next week's 14 feed posts plus Armor Check. |
-| **Strike** [optional topic] | Make one short Reel (9:16, 12–18 s) with heel-and-serpent/make_reel.py: moving type over the iron ground, a verse with its reference, the seal to close, and an original score built into the video (drone in D minor, heartbeat pulse, impacts on the cuts, resolving to D major on the seal). Show Chris and wait for his OK, then schedule about 2 minutes out via Metricool as a REEL. Use it between the morning and evening posts. No topic: pick by pillar rotation. Sets go in heel-and-serpent/reels/<date>-<topic>/. |
+| **Strike** [optional topic] | Make one short Reel (9:16, 12–18 s) with heel-and-serpent/make_reel.py: moving type over the iron ground, a verse with its reference, the seal to close, and a new original score built into the video (score_engine.py: a different style, key and tempo each time, resolving major on the seal). Show Chris and wait for his OK, then schedule about 2 minutes out via Metricool as a REEL. Use it between the morning and evening posts. No topic: pick by pillar rotation. Sets go in heel-and-serpent/reels/<date>-<topic>/. |
 | **Watch** | Report the latest Metricool numbers for the page. |
-| **Sheathe** | Move all scheduled posts to draft. "Sheathe off" restores them. |
+| **Sheathe** | Move all scheduled posts to draft and create heel-and-serpent/PAUSED (so the weekly task stops). "Sheathe off" deletes PAUSED and restores the drafts. |
 
-**Music policy (Chris, Oct 13, 2026; he prefers efficiency and autonomy):** feed posts stay on automatic publishing; Chris adds the paired song to feed posts himself. Reels carry their own original score built into the video (or a song attached, if Metricool ever can: needs a Facebook Page linked). Stories: music preferred but optional; default is to build Story frames as short videos with the original score baked in so they carry sound with no extra step for Chris. For Stories the score should be motivational and dramatic, not dark and moody (Chris, Oct 13): use make_reel.score_drive (D major, driving pulse, lifts into each cut, big resolve). Reels keep make_reel.score (minor to major).
+**Music policy (Chris, Oct 13, 2026; he prefers efficiency and autonomy):** feed posts stay on automatic publishing; Chris adds the paired song to feed posts himself. Reels carry their own original score built into the video (or a song attached, if Metricool ever can: needs a Facebook Page linked). Stories: music preferred but optional; default is to build Story frames as short videos with the original score baked in so they carry sound with no extra step for Chris. For Stories the score should be motivational and dramatic, not dark and moody (Chris, Oct 13): use make_reel.score_drive (D major, driving pulse, lifts into each cut, big resolve). Reels get a new score every time from score_engine.py (Chris, Oct 20, 2026).
 
 **One score per Story (Chris, Oct 14, 2026):** Story frames post as separate clips, so a score built per frame restarts on every tap and sounds repetitive. A multi-frame Story gets ONE continuous score across all its frames: build it with make_reel.build_story_set({frame: scenes, ...}, out_dir), which writes the score once for the whole set (one intro, lifts on each cut, one resolve on the last frame) and slices it so each frame picks up where the last left off. Schedule the frames back to back, in order, a minute apart, with nothing else between them. Never call build_reel per frame for a Story set.
 
@@ -196,7 +205,8 @@ Everything needed lives in the media repo; nothing depends on earlier chats.
   - Wed Oct 21: Marching Orders, Rom 12:2 (395319273) [Forge]; Get Back Up, Paul (395319380) [Bone]
 - Wed Oct 14: Marching Orders #1, Prov 24:16, rebuilt in Forge (395318152, posts/2026-10-13-launch/build_forge.py); Get Back Up #1, Peter, stays Classic (394994778).
 - Tue Oct 13 evening (first posts in the new looks, set posts/2026-10-13-evening/): Marching Orders, Deut 6:7, 5:45 PM [Bone] (395317735); Get Back Up, lie "you're the only one" (Elijah), 8:30 PM [Ledger] (395318012).
-- Next week (Arm) starts Thu Oct 22; Armor Check #2 is the breastplate of righteousness. Stories for week 1 are not built yet (feed only).
+- Oct 20, 2026 (one-a-day schedule begins): Strike Reels, each with its own score: Tue Oct 20, 8:00 PM, Hebrews 12:11, slow, march (401462958); Wed Oct 21 3:30 PM, Proverbs 27:17, fast, pulse (401469383); Thu Oct 22, 1 Peter 5:8, slow, hymn (401469462); Fri Oct 23, Joshua 1:9, fast, dawn (401469520); Sat Oct 24, Nehemiah 4:14, slow, anthem (401469634); Sun Oct 25, Galatians 6:9, fast, nocturne (401469669); Mon Oct 26, 2 Corinthians 12:9, slow, march (401469756). Sets: reels/<date>-<slug>/.
+- Bridge feed set posts/2026-10-22-bridge/: Thu Oct 22, 7:15 PM, Get Back Up, Gideon [Classic] (401476286); Fri Oct 23, 6:45 AM, Marching Orders, Luke 9:23 [Ledger] (401476326). From Sat Oct 24 the weekly task builds the feed. Armor Check #2 (Sun Oct 25) is the breastplate of righteousness. Stories are not on the schedule.
 - Story burst "Before you sleep" (6 frames, 8:16–8:26 PM Oct 13, leading into the 8:30 Elijah post; Lamentations 3:22–23). Stories are built with make_variants.story_look() in the five looks, type kept inside y 300–1500. Polls, question boxes and link stickers can't go through Metricool; add them in the app. Set: stories/2026-10-13-before-you-sleep/.
 - Stories "Tomorrow starts tonight" (3 Story videos with score_drive, 10:15–10:19 PM Oct 13; Isaiah 40:31). Set: stories/2026-10-13-tomorrow-starts-tonight/.
 - Story "First light" (one-off dawn palette, 4 frames, one continuous score_drive score across all four; Mark 1:35) scheduled Wed Oct 14, 2026, 4:35–4:38 AM CT: Metricool 395698359, 395698387, 395698420, 395698448. Set: stories/2026-10-14-first-light/. Song: 10,000 Reasons (Bless the Lord), Matt Redman.
