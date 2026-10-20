@@ -1,35 +1,195 @@
 {
-  "note": "CSB text checked verbatim against BibleGateway (CSB) on Oct 15, 2026, while Chris's computer was on, so scheduled runs never need the browser. Poetry line breaks are shown as ' / '. Quote verbatim; mark partial verses with an ellipsis. Read the context before use. Log every use in SOURCES.md.",
-  "verses": [
-    {"ref": "James 4:7", "text": "Therefore, submit to God. Resist the devil, and he will flee from you.", "context": "James 4:1-10", "pillar": "enemy", "used": "2026-10-15 Strike #4"},
-    {"ref": "Joshua 1:9", "text": "Haven’t I commanded you: be strong and courageous? Do not be afraid or discouraged, for the LORD your God is with you wherever you go.", "context": "Joshua 1:1-9", "pillar": "get back up", "note": "God's command to Joshua as he takes over from Moses; a closing speech quote mark in the source is dropped."},
-    {"ref": "Psalm 18:32", "text": "God—he clothes me with strength / and makes my way perfect.", "context": "Psalm 18:30-36", "pillar": "discipline"},
-    {"ref": "Psalm 18:34", "text": "He trains my hands for war; / my arms can bend a bow of bronze.", "context": "Psalm 18:30-36", "pillar": "discipline", "note": "War imagery: keep the fight spiritual, never literal violence."},
-    {"ref": "Psalm 27:1", "text": "The LORD is my light and my salvation— / whom should I fear? / The LORD is the stronghold of my life— / whom should I dread?", "context": "Psalm 27:1-6", "pillar": "enemy"},
-    {"ref": "Psalm 37:23-24", "text": "A person’s steps are established by the LORD, / and he takes pleasure in his way. / Though he falls, he will not be overwhelmed, / because the LORD supports him with his hand.", "context": "Psalm 37:23-26", "pillar": "get back up"},
-    {"ref": "Psalm 46:1", "text": "God is our refuge and strength, / a helper who is always found / in times of trouble.", "context": "Psalm 46:1-3", "pillar": "get back up"},
-    {"ref": "Psalm 73:26", "text": "My flesh and my heart may fail, / but God is the strength of my heart, / my portion forever.", "context": "Psalm 73:21-28", "pillar": "get back up"},
-    {"ref": "Psalm 144:1", "text": "Blessed be the LORD, my rock / who trains my hands for battle / and my fingers for warfare.", "context": "Psalm 144:1-2", "pillar": "discipline", "note": "War imagery: keep the fight spiritual."},
-    {"ref": "Proverbs 27:17", "text": "Iron sharpens iron, / and one person sharpens another.", "context": "Proverbs 27:17", "pillar": "brotherhood"},
-    {"ref": "Proverbs 28:1", "text": "The wicked flee when no one is pursuing them, / but the righteous are as bold as a lion.", "context": "Proverbs 28:1", "pillar": "discipline"},
-    {"ref": "Isaiah 41:10", "text": "Do not fear, for I am with you; / do not be afraid, for I am your God. / I will strengthen you; I will help you; / I will hold on to you with my righteous right hand.", "context": "Isaiah 41:8-13", "pillar": "get back up"},
-    {"ref": "Nehemiah 4:14", "text": "After I made an inspection, I stood up and said to the nobles, the officials, and the rest of the people, “Don’t be afraid of them. Remember the great and awe-inspiring Lord, and fight for your countrymen, your sons and daughters, your wives and homes.”", "context": "Nehemiah 4:7-14", "pillar": "father", "note": "Rebuilding the wall under threat. Apply to protecting the home spiritually; never imply violence."},
-    {"ref": "Micah 6:8", "text": "Mankind, he has told each of you what is good / and what it is the LORD requires of you: / to act justly, / to love faithfulness, / and to walk humbly with your God.", "context": "Micah 6:6-8", "pillar": "discipline"},
-    {"ref": "1 Corinthians 16:13", "text": "Be alert, stand firm in the faith, be courageous, be strong.", "context": "1 Corinthians 16:13-14", "pillar": "discipline", "note": "Pair with v14 (do everything in love) in the caption when it fits."},
-    {"ref": "2 Corinthians 4:8-9", "text": "We are afflicted in every way but not crushed; we are perplexed but not in despair; we are persecuted but not abandoned; we are struck down but not destroyed.", "context": "2 Corinthians 4:7-12", "pillar": "get back up"},
-    {"ref": "2 Corinthians 12:9", "text": "But he said to me, “My grace is sufficient for you, for my power is perfected in weakness.” Therefore, I will most gladly boast all the more about my weaknesses, so that Christ’s power may reside in me.", "context": "2 Corinthians 12:7-10", "pillar": "get back up"},
-    {"ref": "Galatians 6:9", "text": "Let us not get tired of doing good, for we will reap at the proper time if we don’t give up.", "context": "Galatians 6:7-10", "pillar": "discipline"},
-    {"ref": "Ephesians 6:10", "text": "Finally, be strengthened by the Lord and by his vast strength.", "context": "Ephesians 6:10-18", "pillar": "armor"},
-    {"ref": "Ephesians 6:11", "text": "Put on the full armor of God so that you can stand against the schemes of the devil.", "context": "Ephesians 6:10-18", "pillar": "armor"},
-    {"ref": "2 Timothy 1:7", "text": "For God has not given us a spirit of fear, but one of power, love, and sound judgment.", "context": "2 Timothy 1:6-8", "pillar": "enemy"},
-    {"ref": "2 Timothy 2:3", "text": "Share in suffering as a good soldier of Christ Jesus.", "context": "2 Timothy 2:1-7", "pillar": "discipline"},
-    {"ref": "Hebrews 12:1", "text": "Therefore, since we also have such a large cloud of witnesses surrounding us, let us lay aside every hindrance and the sin that so easily ensnares us. Let us run with endurance the race that lies before us,", "context": "Hebrews 11:32-12:3", "pillar": "discipline", "note": "Sentence continues into v2: quote as partial with an ellipsis."},
-    {"ref": "Hebrews 12:11", "text": "No discipline seems enjoyable at the time, but painful. Later on, however, it yields the peaceful fruit of righteousness to those who have been trained by it.", "context": "Hebrews 12:5-11", "pillar": "discipline", "note": "Context is God's discipline of His children; fine for training and hardship, keep God as the one who trains."},
-    {"ref": "James 1:12", "text": "Blessed is the one who endures trials, because when he has stood the test he will receive the crown of life that God has promised to those who love him.", "context": "James 1:2-12", "pillar": "get back up"},
-    {"ref": "1 Peter 5:8", "text": "Be sober-minded, be alert. Your adversary the devil is prowling around like a roaring lion, looking for anyone he can devour.", "context": "1 Peter 5:6-11", "pillar": "enemy"},
-    {"ref": "1 Peter 5:10", "text": "The God of all grace, who called you to his eternal glory in Christ, will himself restore, establish, strengthen, and support you after you have suffered a little while.", "context": "1 Peter 5:6-11", "pillar": "get back up"},
-    {"ref": "Romans 8:37", "text": "No, in all these things we are more than conquerors through him who loved us.", "context": "Romans 8:31-39", "pillar": "enemy"},
-    {"ref": "1 John 4:4", "text": "You are from God, little children, and you have conquered them, because the one who is in you is greater than the one who is in the world.", "context": "1 John 4:1-6", "pillar": "enemy"},
-    {"ref": "Proverbs 3:5-6", "text": "Trust in the LORD with all your heart, / and do not rely on your own understanding; / in all your ways know him, / and he will make your paths straight.", "context": "Proverbs 3:1-8", "pillar": "discipline"}
-  ]
+ "note": "CSB text checked verbatim against BibleGateway (CSB) on Oct 15, 2026, while Chris's computer was on, so scheduled runs never need the browser. Poetry line breaks are shown as ' / '. Quote verbatim; mark partial verses with an ellipsis. Read the context before use. Log every use in SOURCES.md.",
+ "verses": [
+  {
+   "ref": "James 4:7",
+   "text": "Therefore, submit to God. Resist the devil, and he will flee from you.",
+   "context": "James 4:1-10",
+   "pillar": "enemy",
+   "used": "2026-10-15 Strike #4"
+  },
+  {
+   "ref": "Joshua 1:9",
+   "text": "Haven’t I commanded you: be strong and courageous? Do not be afraid or discouraged, for the LORD your God is with you wherever you go.",
+   "context": "Joshua 1:1-9",
+   "pillar": "get back up",
+   "note": "God's command to Joshua as he takes over from Moses; a closing speech quote mark in the source is dropped."
+  },
+  {
+   "ref": "Psalm 18:32",
+   "text": "God—he clothes me with strength / and makes my way perfect.",
+   "context": "Psalm 18:30-36",
+   "pillar": "discipline"
+  },
+  {
+   "ref": "Psalm 18:34",
+   "text": "He trains my hands for war; / my arms can bend a bow of bronze.",
+   "context": "Psalm 18:30-36",
+   "pillar": "discipline",
+   "note": "War imagery: keep the fight spiritual, never literal violence."
+  },
+  {
+   "ref": "Psalm 27:1",
+   "text": "The LORD is my light and my salvation— / whom should I fear? / The LORD is the stronghold of my life— / whom should I dread?",
+   "context": "Psalm 27:1-6",
+   "pillar": "enemy"
+  },
+  {
+   "ref": "Psalm 37:23-24",
+   "text": "A person’s steps are established by the LORD, / and he takes pleasure in his way. / Though he falls, he will not be overwhelmed, / because the LORD supports him with his hand.",
+   "context": "Psalm 37:23-26",
+   "pillar": "get back up"
+  },
+  {
+   "ref": "Psalm 46:1",
+   "text": "God is our refuge and strength, / a helper who is always found / in times of trouble.",
+   "context": "Psalm 46:1-3",
+   "pillar": "get back up"
+  },
+  {
+   "ref": "Psalm 73:26",
+   "text": "My flesh and my heart may fail, / but God is the strength of my heart, / my portion forever.",
+   "context": "Psalm 73:21-28",
+   "pillar": "get back up"
+  },
+  {
+   "ref": "Psalm 144:1",
+   "text": "Blessed be the LORD, my rock / who trains my hands for battle / and my fingers for warfare.",
+   "context": "Psalm 144:1-2",
+   "pillar": "discipline",
+   "note": "War imagery: keep the fight spiritual."
+  },
+  {
+   "ref": "Proverbs 27:17",
+   "text": "Iron sharpens iron, / and one person sharpens another.",
+   "context": "Proverbs 27:17",
+   "pillar": "brotherhood"
+  },
+  {
+   "ref": "Proverbs 28:1",
+   "text": "The wicked flee when no one is pursuing them, / but the righteous are as bold as a lion.",
+   "context": "Proverbs 28:1",
+   "pillar": "discipline"
+  },
+  {
+   "ref": "Isaiah 41:10",
+   "text": "Do not fear, for I am with you; / do not be afraid, for I am your God. / I will strengthen you; I will help you; / I will hold on to you with my righteous right hand.",
+   "context": "Isaiah 41:8-13",
+   "pillar": "get back up"
+  },
+  {
+   "ref": "Nehemiah 4:14",
+   "text": "After I made an inspection, I stood up and said to the nobles, the officials, and the rest of the people, “Don’t be afraid of them. Remember the great and awe-inspiring Lord, and fight for your countrymen, your sons and daughters, your wives and homes.”",
+   "context": "Nehemiah 4:7-14",
+   "pillar": "father",
+   "note": "Rebuilding the wall under threat. Apply to protecting the home spiritually; never imply violence."
+  },
+  {
+   "ref": "Micah 6:8",
+   "text": "Mankind, he has told each of you what is good / and what it is the LORD requires of you: / to act justly, / to love faithfulness, / and to walk humbly with your God.",
+   "context": "Micah 6:6-8",
+   "pillar": "discipline"
+  },
+  {
+   "ref": "1 Corinthians 16:13",
+   "text": "Be alert, stand firm in the faith, be courageous, be strong.",
+   "context": "1 Corinthians 16:13-14",
+   "pillar": "discipline",
+   "note": "Pair with v14 (do everything in love) in the caption when it fits."
+  },
+  {
+   "ref": "2 Corinthians 4:8-9",
+   "text": "We are afflicted in every way but not crushed; we are perplexed but not in despair; we are persecuted but not abandoned; we are struck down but not destroyed.",
+   "context": "2 Corinthians 4:7-12",
+   "pillar": "get back up"
+  },
+  {
+   "ref": "2 Corinthians 12:9",
+   "text": "But he said to me, “My grace is sufficient for you, for my power is perfected in weakness.” Therefore, I will most gladly boast all the more about my weaknesses, so that Christ’s power may reside in me.",
+   "context": "2 Corinthians 12:7-10",
+   "pillar": "get back up"
+  },
+  {
+   "ref": "Galatians 6:9",
+   "text": "Let us not get tired of doing good, for we will reap at the proper time if we don’t give up.",
+   "context": "Galatians 6:7-10",
+   "pillar": "discipline"
+  },
+  {
+   "ref": "Ephesians 6:10",
+   "text": "Finally, be strengthened by the Lord and by his vast strength.",
+   "context": "Ephesians 6:10-18",
+   "pillar": "armor"
+  },
+  {
+   "ref": "Ephesians 6:11",
+   "text": "Put on the full armor of God so that you can stand against the schemes of the devil.",
+   "context": "Ephesians 6:10-18",
+   "pillar": "armor"
+  },
+  {
+   "ref": "2 Timothy 1:7",
+   "text": "For God has not given us a spirit of fear, but one of power, love, and sound judgment.",
+   "context": "2 Timothy 1:6-8",
+   "pillar": "enemy"
+  },
+  {
+   "ref": "2 Timothy 2:3",
+   "text": "Share in suffering as a good soldier of Christ Jesus.",
+   "context": "2 Timothy 2:1-7",
+   "pillar": "discipline"
+  },
+  {
+   "ref": "Hebrews 12:1",
+   "text": "Therefore, since we also have such a large cloud of witnesses surrounding us, let us lay aside every hindrance and the sin that so easily ensnares us. Let us run with endurance the race that lies before us,",
+   "context": "Hebrews 11:32-12:3",
+   "pillar": "discipline",
+   "note": "Sentence continues into v2: quote as partial with an ellipsis.",
+   "used": "2026-10-20 Strike Reel (heb12-11)"
+  },
+  {
+   "ref": "Hebrews 12:11",
+   "text": "No discipline seems enjoyable at the time, but painful. Later on, however, it yields the peaceful fruit of righteousness to those who have been trained by it.",
+   "context": "Hebrews 12:5-11",
+   "pillar": "discipline",
+   "note": "Context is God's discipline of His children; fine for training and hardship, keep God as the one who trains.",
+   "used": "2026-10-20 Strike Reel (heb12-11)"
+  },
+  {
+   "ref": "James 1:12",
+   "text": "Blessed is the one who endures trials, because when he has stood the test he will receive the crown of life that God has promised to those who love him.",
+   "context": "James 1:2-12",
+   "pillar": "get back up"
+  },
+  {
+   "ref": "1 Peter 5:8",
+   "text": "Be sober-minded, be alert. Your adversary the devil is prowling around like a roaring lion, looking for anyone he can devour.",
+   "context": "1 Peter 5:6-11",
+   "pillar": "enemy"
+  },
+  {
+   "ref": "1 Peter 5:10",
+   "text": "The God of all grace, who called you to his eternal glory in Christ, will himself restore, establish, strengthen, and support you after you have suffered a little while.",
+   "context": "1 Peter 5:6-11",
+   "pillar": "get back up"
+  },
+  {
+   "ref": "Romans 8:37",
+   "text": "No, in all these things we are more than conquerors through him who loved us.",
+   "context": "Romans 8:31-39",
+   "pillar": "enemy"
+  },
+  {
+   "ref": "1 John 4:4",
+   "text": "You are from God, little children, and you have conquered them, because the one who is in you is greater than the one who is in the world.",
+   "context": "1 John 4:1-6",
+   "pillar": "enemy"
+  },
+  {
+   "ref": "Proverbs 3:5-6",
+   "text": "Trust in the LORD with all your heart, / and do not rely on your own understanding; / in all your ways know him, / and he will make your paths straight.",
+   "context": "Proverbs 3:1-8",
+   "pillar": "discipline"
+  }
+ ]
 }

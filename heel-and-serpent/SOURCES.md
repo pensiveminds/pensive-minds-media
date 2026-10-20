@@ -33,8 +33,9 @@ CSB terms: up to 1,000 verses may be quoted without written permission, provided
 | 2026-10-14 Stories "First light" (dawn palette) | Mark 1:35 | Mark 1:32–39 | 1 |
 | 2026-10-14 Strike #3 (Reel) | Proverbs 22:6 | Prov 22:1–6 | 1 |
 | 2026-10-15 Strike #4 (Reel) | James 4:7 | James 4:1–10 | 1 |
+| 2026-10-20 Strike Reel (heb12-11) | Hebrews 12:11 (partial on graphic, full in caption) | Heb 12:5–11 | 1 |
 | Brand anchors (bible, not posts) | Genesis 3:15; Romans 16:20; Romans 8:31 | | 0 |
 
 Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
 
-**Running total on posts: 60 verses.**
+**Running total on posts: 61 verses.**

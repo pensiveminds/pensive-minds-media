@@ -32,3 +32,4 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | Wed Oct 21, 6:45 AM | Renew your mind (Rom 12:2) | Holy Spirit – Francesca Battistelli | Asking to be changed from the inside |
 | Wed Oct 21, 7:15 PM | Paul: your past isn't your orders | Amazing Grace (My Chains Are Gone) – Chris Tomlin | The worst of sinners, set free |
 | Wed Oct 14, early morning (Story) | First light: meet Him first (Mark 1:35) | 10,000 Reasons (Bless the Lord) – Matt Redman | A morning song of praise, sung before the day starts |
+| 2026-10-20 8:00 PM | Strike Reel (heb12-11, slow) | Original score: march, G, 106 bpm (built in) | Reels carry their own score |
