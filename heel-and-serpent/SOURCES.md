@@ -34,8 +34,14 @@ CSB terms: up to 1,000 verses may be quoted without written permission, provided
 | 2026-10-14 Strike #3 (Reel) | Proverbs 22:6 | Prov 22:1–6 | 1 |
 | 2026-10-15 Strike #4 (Reel) | James 4:7 | James 4:1–10 | 1 |
 | 2026-10-20 Strike Reel (heb12-11) | Hebrews 12:11 (partial on graphic, full in caption) | Heb 12:5–11 | 1 |
+| 2026-10-21 Strike Reel (prov27-17) | Proverbs 27:17 | Prov 27:17 | 1 |
+| 2026-10-22 Strike Reel (1pet5-8) | 1 Peter 5:8 (partial on graphic, full in caption) | 1 Pet 5:6–11 | 1 |
+| 2026-10-23 Strike Reel (josh1-9) | Joshua 1:9 | Josh 1:1–9 | 1 |
+| 2026-10-24 Strike Reel (neh4-14) | Nehemiah 4:14 (partial) | Neh 4:7–14 | 1 |
+| 2026-10-25 Strike Reel (gal6-9) | Galatians 6:9 | Gal 6:7–10 | 1 |
+| 2026-10-26 Strike Reel (2cor12-9) | 2 Corinthians 12:9 (partial on graphic, full in caption) | 2 Cor 12:7–10 | 1 |
 | Brand anchors (bible, not posts) | Genesis 3:15; Romans 16:20; Romans 8:31 | | 0 |
 
 Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
 
-**Running total on posts: 61 verses.**
+**Running total on posts: 67 verses.**

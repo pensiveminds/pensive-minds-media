@@ -236,10 +236,10 @@ def timpani_roll(dur, f, vel=1.0):
 # ------------------------------------------------------------------ the score
 
 def pick_score(slug, used=()):
-    """Choose a style not used in the last three Reels, and a key, mode and tempo seeded by the slug,
+    """Choose a style not used in the last five Reels (all six cycle before one repeats), and a key, mode and tempo seeded by the slug,
     so a rebuild of the same Reel gives the same score but every Reel gets its own."""
     h = int(hashlib.sha1(slug.encode()).hexdigest(), 16)
-    recent = list(used)[-3:]
+    recent = list(used)[-5:]
     options = [s for s in STYLES if s not in recent] or STYLES
     style = options[h % len(options)]
     key = list(KEYS)[(h // 7) % len(KEYS)]

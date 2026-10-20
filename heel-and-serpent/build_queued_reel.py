@@ -5,7 +5,7 @@
     python3 build_queued_reel.py --next              # the earliest unbuilt date in the queue
 
 Every Reel gets a new original score (score_engine.py; Chris, Oct 20, 2026): the style is never one of the last
-three used, and the key and tempo are seeded by the slug. Pace comes from the entry: 'fast' keeps the scenes as
+five used (all six cycle), and the key and tempo are seeded by the slug. Pace comes from the entry: 'fast' keeps the scenes as
 written (two-shot verse, motion, 0.25 s fades); 'slow' is the original Strike #1-2 style (longer holds, one verse
 shot, 0.4 s fades, no motion). No voice. Never invents verses: every verse comes from REEL_QUEUE.json, which is
 scripted from VERSE_BANK.json (CSB, verified).

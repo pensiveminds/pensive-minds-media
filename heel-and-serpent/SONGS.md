@@ -33,3 +33,9 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | Wed Oct 21, 7:15 PM | Paul: your past isn't your orders | Amazing Grace (My Chains Are Gone) – Chris Tomlin | The worst of sinners, set free |
 | Wed Oct 14, early morning (Story) | First light: meet Him first (Mark 1:35) | 10,000 Reasons (Bless the Lord) – Matt Redman | A morning song of praise, sung before the day starts |
 | 2026-10-20 8:00 PM | Strike Reel (heb12-11, slow) | Original score: march, G, 106 bpm (built in) | Reels carry their own score |
+| 2026-10-21 3:30 PM | Strike Reel (prov27-17, fast) | Original score: pulse, Bb, 118 bpm (built in) | Reels carry their own score |
+| 2026-10-22 3:30 PM | Strike Reel (1pet5-8, slow) | Original score: hymn, D, 67 bpm (built in) | Reels carry their own score |
+| 2026-10-23 3:30 PM | Strike Reel (josh1-9, fast) | Original score: dawn, A, 83 bpm (built in) | Reels carry their own score |
+| 2026-10-24 3:30 PM | Strike Reel (neh4-14, slow) | Original score: anthem, Bb, 97 bpm (built in) | Reels carry their own score |
+| 2026-10-25 3:30 PM | Strike Reel (gal6-9, fast) | Original score: nocturne, Eb, 73 bpm (built in) | Reels carry their own score |
+| 2026-10-26 3:30 PM | Strike Reel (2cor12-9, slow) | Original score: march, A, 103 bpm (built in) | Reels carry their own score |
