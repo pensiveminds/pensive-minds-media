@@ -39,3 +39,5 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | 2026-10-24 3:30 PM | Strike Reel (neh4-14, slow) | Original score: anthem, Bb, 97 bpm (built in) | Reels carry their own score |
 | 2026-10-25 3:30 PM | Strike Reel (gal6-9, fast) | Original score: nocturne, Eb, 73 bpm (built in) | Reels carry their own score |
 | 2026-10-26 3:30 PM | Strike Reel (2cor12-9, slow) | Original score: march, A, 103 bpm (built in) | Reels carry their own score |
+| Thu Oct 22, 7:15 PM | Get Back Up: Gideon (Judges 6) | No Longer Slaves – Bethel Music (Jonathan & Melissa Helser) | Fear doesn't get the last word |
+| Fri Oct 23, 6:45 AM | Marching Orders: Take it up daily (Luke 9:23) | I Have Decided to Follow Jesus (traditional; any version) | The daily choice, sung plainly |

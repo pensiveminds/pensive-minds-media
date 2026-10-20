@@ -40,8 +40,10 @@ CSB terms: up to 1,000 verses may be quoted without written permission, provided
 | 2026-10-24 Strike Reel (neh4-14) | Nehemiah 4:14 (partial) | Neh 4:7–14 | 1 |
 | 2026-10-25 Strike Reel (gal6-9) | Galatians 6:9 | Gal 6:7–10 | 1 |
 | 2026-10-26 Strike Reel (2cor12-9) | 2 Corinthians 12:9 (partial on graphic, full in caption) | 2 Cor 12:7–10 | 1 |
+| 2026-10-22 Get Back Up, Gideon | Judges 6:11 (partial); Judges 6:12 (partial); Judges 6:15 (partial); Judges 6:16 (partial); Judges 6:14 (caption) | Judges 6:11–16; 7:7 | 5 |
+| 2026-10-23 Marching Orders, Luke 9:23 | Luke 9:23 (partial) | Luke 9:23–26 | 1 |
 | Brand anchors (bible, not posts) | Genesis 3:15; Romans 16:20; Romans 8:31 | | 0 |
 
-Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
+From Oct 20, 2026 verses come from VERSE_BANK.json (checked against BibleGateway, CSB, byte for byte). Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
 
-**Running total on posts: 67 verses.**
+**Running total on posts: 73 verses.**
