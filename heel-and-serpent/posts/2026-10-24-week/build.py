@@ -5,7 +5,7 @@
 Scripture: CSB, from VERSE_BANK.json (checked verbatim against BibleGateway, Oct 20, 2026). Partial verses
 are marked with an ellipsis. Every verse is logged in SOURCES.md.
 
-  Sat Oct 24, 7:15 PM  Get Back Up: Jacob, wrestled till dawn (get back up) [Bone]
+  Sat Oct 24, 6:55 PM  Get Back Up: Jacob, wrestled till dawn (get back up) [Bone]
   Sun Oct 25, 1:15 PM  Armor Check #2: the breastplate of righteousness (armor) [Engraved]
   Mon Oct 26, 6:45 AM  Marching Orders: 2 Timothy 1:7 (enemy) [Classic]
   Tue Oct 27, 7:15 PM  Get Back Up: the lie "your past is who you are" (enemy) [Bone]

@@ -2,7 +2,7 @@
 
 Built by the weekly task on Oct 23, 2026. One feed post a day. Every caption that quotes Scripture ends with the CSB credit line.
 
-## 01 Sat Oct 24, 7:15 PM · Get Back Up: Jacob, wrestled till dawn (carousel, 6 slides, Bone)
+## 01 Sat Oct 24, 6:55 PM (moved from 7:15: Metricool shifted 7:15 to 9:15, see bible) · Get Back Up: Jacob, wrestled till dawn (carousel, 6 slides, Bone)
 
 Jacob was alone in the dark, and the fight came to him. He wrestled until daybreak.
 
