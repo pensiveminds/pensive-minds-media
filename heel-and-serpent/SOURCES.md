@@ -42,8 +42,21 @@ CSB terms: up to 1,000 verses may be quoted without written permission, provided
 | 2026-10-26 Strike Reel (2cor12-9) | 2 Corinthians 12:9 (partial on graphic, full in caption) | 2 Cor 12:7–10 | 1 |
 | 2026-10-22 Get Back Up, Gideon | Judges 6:11 (partial); Judges 6:12 (partial); Judges 6:15 (partial); Judges 6:16 (partial); Judges 6:14 (caption) | Judges 6:11–16; 7:7 | 5 |
 | 2026-10-23 Marching Orders, Luke 9:23 | Luke 9:23 (partial) | Luke 9:23–26 | 1 |
+| 2026-10-27 Strike Reel (eccl4-12) | Ecclesiastes 4:12 (partial on graphic, full in caption) | Eccl 4:9–12 | 1 |
+| 2026-10-28 Strike Reel (ps37-24) | Psalm 37:24 (graphic); Psalm 37:23-24 (caption) | Ps 37:23–26 | 2 |
+| 2026-10-29 Strike Reel (rom8-37) | Romans 8:37 | Rom 8:31–39 | 1 |
+| 2026-10-30 Strike Reel (2tim4-7) | 2 Timothy 4:7 | 2 Tim 4:6–8 | 1 |
+| 2026-10-31 Strike Reel (ps27-1) | Psalm 27:1 | Ps 27:1–6 | 1 |
+| 2026-10-24 Get Back Up: Jacob, wrestled till dawn | Genesis 32:24; Genesis 32:25 (partial); Genesis 32:26 (partial); Genesis 32:28 (partial); Genesis 32:31 (caption) | Gen 32:24–31 | 5 |
+| 2026-10-25 Armor Check #2: The Breastplate of Righteousness | Proverbs 4:23; Philippians 3:9 (partial); 2 Corinthians 5:21 | Eph 6:10–18; Prov 4:20–27; Phil 3:7–11; 2 Cor 5:17–21 | 3 |
+| 2026-10-26 Marching Orders: 2 Timothy 1:7 | 2 Timothy 1:7 | 2 Tim 1:6–8 | 1 |
+| 2026-10-27 Get Back Up: the lie, "your past is who you are" | 2 Corinthians 5:17 (partial on graphic, full in caption); Isaiah 43:19 (partial); 1 John 1:9; Philippians 1:6 (partial) | 2 Cor 5:14–21; Isa 43:14–21; 1 John 1:5–10; Phil 1:3–11 | 4 |
+| 2026-10-28 Marching Orders: 1 Corinthians 16:13 | 1 Corinthians 16:13 | 1 Cor 16:13–14 | 1 |
+| 2026-10-29 Get Back Up: Joseph, sold, jailed, faithful | Genesis 37:28 (partial); Genesis 39:20 (partial); Genesis 39:21 (partial); Genesis 50:20 (partial on graphic, full in caption) | Gen 37:28; 39:20–21; 50:19–20 | 4 |
+| 2026-10-30 Marching Orders: Ephesians 4:32 | Ephesians 4:32 | Eph 4:29–32 | 1 |
+| 2026-10-31 Get Back Up: John Mark, the quitter who came back | Acts 15:38 (partial); Acts 15:39 (partial); 2 Timothy 4:11 (partial) | Acts 15:36–41 (15:37–39 verified); 2 Tim 4:9–11 | 3 |
 | Brand anchors (bible, not posts) | Genesis 3:15; Romans 16:20; Romans 8:31 | | 0 |
 
 From Oct 20, 2026 verses come from VERSE_BANK.json (checked against BibleGateway, CSB, byte for byte). Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
 
-**Running total on posts: 73 verses.**
+**Running total on posts: 101 verses.**

@@ -41,3 +41,16 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | 2026-10-26 3:30 PM | Strike Reel (2cor12-9, slow) | Original score: march, A, 103 bpm (built in) | Reels carry their own score |
 | Thu Oct 22, 7:15 PM | Get Back Up: Gideon (Judges 6) | No Longer Slaves – Bethel Music (Jonathan & Melissa Helser) | Fear doesn't get the last word |
 | Fri Oct 23, 6:45 AM | Marching Orders: Take it up daily (Luke 9:23) | I Have Decided to Follow Jesus (traditional; any version) | The daily choice, sung plainly |
+| 2026-10-27 3:30 PM | Strike Reel (eccl4-12, fast) | Original score: pulse, Eb, 122 bpm (built in) | Reels carry their own score |
+| 2026-10-28 3:30 PM | Strike Reel (ps37-24, slow) | Original score: hymn, Bb, 62 bpm (built in) | Reels carry their own score |
+| 2026-10-29 3:30 PM | Strike Reel (rom8-37, fast) | Original score: dawn, F, 80 bpm (built in) | Reels carry their own score |
+| 2026-10-30 3:30 PM | Strike Reel (2tim4-7, slow) | Original score: anthem, F, 96 bpm (built in) | Reels carry their own score |
+| 2026-10-31 3:30 PM | Strike Reel (ps27-1, fast) | Original score: nocturne, A, 68 bpm (built in) | Reels carry their own score |
+| Sat Oct 24, 7:15 PM | Get Back Up: Jacob, wrestled till dawn | Do It Again – Elevation Worship | Holding on through the night until the promise comes |
+| Sun Oct 25, 1:15 PM | Armor Check #2: The Breastplate of Righteousness | In Christ Alone – Keith & Kristyn Getty | Standing in Christ's righteousness, not our own |
+| Mon Oct 26, 6:45 AM | Marching Orders: 2 Timothy 1:7 | Fear Is a Liar – Zach Williams | Fear talks first; it doesn't get the last word |
+| Tue Oct 27, 7:15 PM | Get Back Up: the lie, "your past is who you are" | Who You Say I Am – Hillsong Worship | Your name comes from Him, not your record |
+| Wed Oct 28, 6:45 AM | Marching Orders: 1 Corinthians 16:13 | Stand In Your Love – Bethel Music (Josh Baldwin) | Standing firm, rooted in love |
+| Thu Oct 29, 7:15 PM | Get Back Up: Joseph, sold, jailed, faithful | Goodness of God – Bethel Music (Jenn Johnson) | Faithful in every season, the pit and the prison included |
+| Fri Oct 30, 6:45 AM | Marching Orders: Ephesians 4:32 | O Come to the Altar – Elevation Worship | Forgiven much, so we forgive |
+| Sat Oct 31, 7:15 PM | Get Back Up: John Mark, the quitter who came back | Reckless Love – Cory Asbury | A God who goes after the one who walked away |
