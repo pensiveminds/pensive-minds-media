@@ -54,3 +54,4 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | Thu Oct 29, 7:15 PM | Get Back Up: Joseph, sold, jailed, faithful | Goodness of God – Bethel Music (Jenn Johnson) | Faithful in every season, the pit and the prison included |
 | Fri Oct 30, 6:45 AM | Marching Orders: Ephesians 4:32 | O Come to the Altar – Elevation Worship | Forgiven much, so we forgive |
 | Sat Oct 31, 7:15 PM | Get Back Up: John Mark, the quitter who came back | Reckless Love – Cory Asbury | A God who goes after the one who walked away |
+| Wed Oct 28, about 5:00 PM | Marching Orders (Rise): Romans 12:21 | Battle Belongs – Phil Wickham | The fight is the Lord's, so we answer evil with good |

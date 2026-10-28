@@ -55,8 +55,9 @@ CSB terms: up to 1,000 verses may be quoted without written permission, provided
 | 2026-10-29 Get Back Up: Joseph, sold, jailed, faithful | Genesis 37:28 (partial); Genesis 39:20 (partial); Genesis 39:21 (partial); Genesis 50:20 (partial on graphic, full in caption) | Gen 37:28; 39:20–21; 50:19–20 | 4 |
 | 2026-10-30 Marching Orders: Ephesians 4:32 | Ephesians 4:32 | Eph 4:29–32 | 1 |
 | 2026-10-31 Get Back Up: John Mark, the quitter who came back | Acts 15:38 (partial); Acts 15:39 (partial); 2 Timothy 4:11 (partial) | Acts 15:36–41 (15:37–39 verified); 2 Tim 4:9–11 | 3 |
+| 2026-10-28 Marching Orders (Rise): Romans 12:21 | Romans 12:21 | Rom 12:17–21 | 1 |
 | Brand anchors (bible, not posts) | Genesis 3:15; Romans 16:20; Romans 8:31 | | 0 |
 
 From Oct 20, 2026 verses come from VERSE_BANK.json (checked against BibleGateway, CSB, byte for byte). Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
 
-**Running total on posts: 101 verses.**
+**Running total on posts: 102 verses.**
