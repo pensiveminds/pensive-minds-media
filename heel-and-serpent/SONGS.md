@@ -55,3 +55,12 @@ Titles and artists only; never put lyrics on graphics or in captions.
 | Fri Oct 30, 6:45 AM | Marching Orders: Ephesians 4:32 | O Come to the Altar – Elevation Worship | Forgiven much, so we forgive |
 | Sat Oct 31, 7:15 PM | Get Back Up: John Mark, the quitter who came back | Reckless Love – Cory Asbury | A God who goes after the one who walked away |
 | Wed Oct 28, about 5:00 PM | Marching Orders (Rise): Romans 12:21 | Battle Belongs – Phil Wickham | The fight is the Lord's, so we answer evil with good |
+| 2026-11-01 3:30 PM | Strike Reel (2cor4-8, fast) | Original score: march, Bb, 107 bpm (built in) | Reels carry their own score |
+| 2026-11-03 3:30 PM | Strike Reel (john16-33, slow) | Original score: pulse, G, 126 bpm (built in) | Reels carry their own score |
+| 2026-11-05 3:30 PM | Strike Reel (eph5-25, fast) | Original score: hymn, G, 69 bpm (built in) | Reels carry their own score |
+| 2026-11-07 3:30 PM | Strike Reel (matt26-41, slow) | Original score: dawn, F, 77 bpm (built in) | Reels carry their own score |
+| 2026-11-09 3:30 PM | Strike Reel (gal6-2, fast) | Original score: anthem, F, 94 bpm (built in) | Reels carry their own score |
+| 2026-11-11 3:30 PM | Strike Reel (ps40-2, slow) | Original score: nocturne, C, 65 bpm (built in) | Reels carry their own score |
+| 2026-11-13 3:30 PM | Strike Reel (eph6-16, fast) | Original score: march, Bb, 100 bpm (built in) | Reels carry their own score |
+| 2026-11-15 3:30 PM | Strike Reel (1pet2-11, slow) | Original score: pulse, Bb, 121 bpm (built in) | Reels carry their own score |
+| 2026-11-17 3:30 PM | Strike Reel (john15-13, fast) | Original score: hymn, D, 70 bpm (built in) | Reels carry their own score |

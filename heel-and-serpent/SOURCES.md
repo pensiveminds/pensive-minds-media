@@ -56,8 +56,17 @@ CSB terms: up to 1,000 verses may be quoted without written permission, provided
 | 2026-10-30 Marching Orders: Ephesians 4:32 | Ephesians 4:32 | Eph 4:29–32 | 1 |
 | 2026-10-31 Get Back Up: John Mark, the quitter who came back | Acts 15:38 (partial); Acts 15:39 (partial); 2 Timothy 4:11 (partial) | Acts 15:36–41 (15:37–39 verified); 2 Tim 4:9–11 | 3 |
 | 2026-10-28 Marching Orders (Rise): Romans 12:21 | Romans 12:21 | Rom 12:17–21 | 1 |
+| 2026-11-01 Strike Reel (2cor4-8) | 2 Corinthians 4:8-9 | 2 Cor 4:7–12 | 2 |
+| 2026-11-03 Strike Reel (john16-33) | John 16:33 | John 16:31–33 | 1 |
+| 2026-11-05 Strike Reel (eph5-25) | Ephesians 5:25 | Eph 5:21–33 | 1 |
+| 2026-11-07 Strike Reel (matt26-41) | Matthew 26:41 | Matt 26:36–46 | 1 |
+| 2026-11-09 Strike Reel (gal6-2) | Galatians 6:2 | Gal 6:1–5 | 1 |
+| 2026-11-11 Strike Reel (ps40-2) | Psalm 40:2 | Ps 40:1–3 | 1 |
+| 2026-11-13 Strike Reel (eph6-16) | Ephesians 6:16 | Eph 6:10–18 | 1 |
+| 2026-11-15 Strike Reel (1pet2-11) | 1 Peter 2:11 | 1 Pet 2:11–12 | 1 |
+| 2026-11-17 Strike Reel (john15-13) | John 15:13 | John 15:12–17 | 1 |
 | Brand anchors (bible, not posts) | Genesis 3:15; Romans 16:20; Romans 8:31 | | 0 |
 
 From Oct 20, 2026 verses come from VERSE_BANK.json (checked against BibleGateway, CSB, byte for byte). Week 1 (2026-10-15-week1) text checked verbatim against BibleGateway (CSB) on Oct 13, 2026. Samson's slide stops at Judges 16:22 and Hebrews 11 on purpose: his last prayer (16:28) asks for vengeance, so it isn't quoted as a model.
 
-**Running total on posts: 102 verses.**
+**Running total on posts: 112 verses.**
