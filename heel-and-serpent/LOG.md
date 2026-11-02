@@ -85,3 +85,4 @@ Dated history: what was built, scheduled and changed, with Metricool post ids. A
   - Metricool's follower series found unreliable for this brand (14, 35, 43, 44, 175 on consecutive days).
   - Asked Chris: trending sound per Reel plus 10 min/day of comments (a), and a hook redesign (b); recommended both; default (b).
   - Chris's answer (7:46 PM): no trending-sound step, posting never waits on him; he does the commenting and engagement; keep usage low (his main usage goes to another project), he trusts the gauge; no instant growth needed but no wasted credits. Hook redesign dropped; Dec 1 gauge set in STATUS.md (Nov Reels > 100 average reach and 30+ new followers, or Sheathe).
+  - 7:50 PM: Chris approved; the task prompt was updated (slow only, STATUS/LOG) and the split files were pushed to main (63c5cee).

@@ -2,7 +2,7 @@
 
 What is running right now. Update this file whenever the plan, the queue, the task or the bank changes; put the dated history in LOG.md. Rules live in BRAND_BIBLE.md.
 
-Last updated: Nov 1, 2026, 8 PM CT (Chris's decisions on usage and engagement added).
+Last updated: Nov 1, 2026, 7:50 PM CT.
 
 ## Current plan (set Nov 1, 2026; frozen until Dec 1, 2026)
 
@@ -45,8 +45,7 @@ Next uncovered posting days: Nov 19, 21, 23, 25, 27, 29, Dec 1. The Nov 15 task 
 - Stops if heel-and-serpent/PAUSED exists (Sheathe).
 - Last run: Nov 1, 2026, 9:48 AM CT, succeeded (scheduled Nov 1–17). Next run: Nov 15, 2026.
 - The only scheduled task for this page. The earlier daily and weekly tasks were this same task, renamed.
-- **Prompt update pending (Nov 1, 2026):** the task still carries the Oct 28 prompt (pace alternating slow/fast; records in the bible's old "Setup status" section). The new prompt (slow only; reads STATUS.md; records in STATUS.md and LOG.md) is in TASK_PROMPT.md and needs to be applied to the task before the Nov 15 run. Until then a run still works; it will just alternate pace and may write its record into the bible.
-- **Repo push pending (Nov 1, 2026):** the split files (BRAND_BIBLE.md rewritten, STATUS.md, LOG.md, MERCH.md, TASK_PROMPT.md) are committed locally and in the Project; the push to main needed Chris's approval. Until it lands, the repo copy of the bible is the old one.
+- Prompt current as of Nov 1, 2026, 7:50 PM CT (slow only; reads STATUS.md; records in STATUS.md and LOG.md). The text is kept in TASK_PROMPT.md; change both together.
 
 ## Verse bank
 

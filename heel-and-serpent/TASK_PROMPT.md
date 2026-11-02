@@ -1,6 +1,6 @@
 # Scheduled task prompt: "Heel & Serpent Arm (every-other-day Reels)"
 
-Task id trig_013uukPqcVyA7iA2e8nRZuJ7, runs the 1st and 15th at 9:48 AM CT. This is the prompt the task should carry from Nov 1, 2026 (slow pace only; reads STATUS.md; records in STATUS.md and LOG.md). Paste it into the task's settings if it has not been applied yet; STATUS.md says whether it has.
+Task id trig_013uukPqcVyA7iA2e8nRZuJ7, runs the 1st and 15th at 9:48 AM CT. Applied to the task on Nov 1, 2026, 7:50 PM CT (slow pace only; reads STATUS.md; records in STATUS.md and LOG.md). When the prompt changes, change it here and on the task together.
 
 ---
 
