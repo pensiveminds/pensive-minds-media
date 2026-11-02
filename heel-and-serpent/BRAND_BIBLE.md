@@ -1,8 +1,10 @@
-# Heel & Serpent: Brand Bible and Setup
+# Heel & Serpent: Brand Bible
 
-Oct 13, 2026 · @Chris · Instagram: @heelandserpent
+Oct 13, 2026 · Chris · Instagram: @heelandserpent · Rewritten as rules only on Nov 1, 2026
 
 Faith-driven motivation for men of every age who've been knocked down and want to rise again. Gritty, disciplined, integrity-first father energy: strong enough to fight, choosing peace. The through-line: with God behind you, the war is already won.
+
+**Four files, one job each.** This bible holds the rules; they change rarely. **STATUS.md** holds what is running right now: cadence, queue, scheduled task, verse bank, numbers, open decisions. **LOG.md** holds the dated history and every Metricool post id. **MERCH.md** holds the merch line (on hold). All four live in the repo folder heel-and-serpent/ and in the claude.ai Project (there as BRAND_BIBLE.md, claude/STATUS.md, claude/LOG.md, claude/MERCH.md). Read the bible and STATUS.md before any work. After work, update STATUS.md and append to LOG.md, in both places. Change the bible only when a rule changes, and then change both copies.
 
 ## Where it sits in the suite
 
@@ -33,7 +35,8 @@ These are the anchors, not a slogan. No single quote is repeated across posts, a
   - **Cross & Serpent (header mark, small uses):** a slender cross with a sword point driven onto the head of a coiled serpent. It reads Genesis 3:15 as fulfilled at the cross. File: hs_cross_serpent_bone (.svg, .png).
   - Ember appears sparingly: the serpent's tongue, plus the ampersand on the monogram and the dots on the seal.
   - Logo scripts: heel-and-serpent/brand/logos.py and export_logos.py render every mark from code; finished files in brand/logos/.
-- **Metricool:** brand "Heel & Serpent", blogId 7400959, Instagram @heelandserpent, time zone America/Chicago (connected Oct 13, 2026; first link mistakenly pointed at @pensive.minds_ and was corrected the same morning, so check the handle before any bulk scheduling).
+- **Metricool:** brand "Heel & Serpent", blogId 7400959, Instagram @heelandserpent, time zone America/Chicago. The first link (Oct 13, 2026) mistakenly pointed at @pensive.minds_ and was corrected the same morning, so confirm the handle with getBrandSettings before any bulk scheduling.
+- **Pinned post:** the intro carousel "Why Heel & Serpent" (Oct 13, 2026, https://www.instagram.com/p/DecE5YZDT3a/) stays pinned at the top of the profile.
 
 ## Voice
 
@@ -42,30 +45,8 @@ These are the anchors, not a slogan. No single quote is repeated across posts, a
 - Confident, not preachy. Commands, not lectures ("Get up. Make the bed. Open the Book.").
 - Humor allowed, dry and rare. Never mocking.
 - Never claims a personal testimony that didn't happen. The page speaks as a voice, not as a specific man with an invented past.
-
-### Reels: daily cadence and pacing (Oct 14, 2026)
-
-Day-1 data: the two Reels reached 106 and 71 people while feed posts reached 2-3 (3 followers), but average watch time was about 4 s of 16. Chris approved a daily Strike Reel, about 3:30 PM CT, starting Oct 14. Pacing rules: the hook line is fully on screen at frame 0 (no fade-in), 1.5-1.8 s per line, the verse lands by about 5 s, 10-12 s total, fade 0.25 s. Chris prefers efficiency and autonomy: daily Reels are built, previewed to him with at least an hour's lead, and go out on schedule unless he pulls them.
-
-### Reels: Buzzfy changes, verse bank, queue and voice (Oct 15, 2026)
-
-- Buzzfy scored Strike #1: storytelling 8.9 and visual quality 8.5 (keep the structure); retention 4.5, originality 2.6 and authenticity 3.3 are the weak spots. Defaults since Strike #4: `build_reel(..., motion=True)` (punch-in on each line, drifting embers, seal stamp); verses longer than about 12 words split into two quick shots, reference on the second; the seal scene carries an on-screen call to action via `sub` ("Send this to a brother.").
-- Comment prompts: the bible still forbids asking followers to recite or answer back; a sincere question is Chris's call, not yet approved.
-- VERSE_BANK.json: 30 verses checked verbatim against BibleGateway (CSB) on Oct 15, 2026, with context and cautions, so Reels can be built without the browser. Mark each use.
-- REEL_QUEUE.json: daily Reels scripted ahead (Oct 16–22 written), so Chris can record voice memos in advance. `python3 build_queued_reel.py <date>` builds an entry, logs SOURCES/SONGS and marks it built; `--print` gives the Metricool fields.
-- Voice: dropped (Chris, Oct 20, 2026: "I don't want to do the voice memo"). No voice on Reels; make_reel.voice_fx stays in the code, unused.
-
-### Reels and feed from Oct 20, 2026 (Chris: "keep this posting schedule going until I pause action")
-
-- **Why:** Watch on Oct 20 showed reach falling from 180 accounts (Oct 13) to 1 (Oct 19). Feed posts reach only followers (3), 1–3 people each. All non-follower reach came from Reels: Strikes #1–2 reached 114 and 147 (24% watched past 3 s); Strikes #3–4, on the faster pacing, reached 16 and 12 (19% and 8%). Then no Reel went out Oct 16–19 because the daily task didn't exist. Samples are tiny; the pacing test below is how we find out.
-- **Every other day (Chris, Oct 28, 2026: "Make it every other day for now"):** after a Watch showed growth stalled (3 to about 14 followers in two weeks; Reels average 67 reach, feed posts about 1; 8–24% hold past 3 s; 3 shares total), the page posts one Strike Reel every other day at 3:30 PM CT, Reels only. Posting days are an even number of days after Oct 28 (Oct 28, 30, Nov 1, 3 ...). The off-day posts already built for Oct 29 and Oct 31 were moved to draft in Metricool, not deleted (Reels Romans 8:37 and Psalm 27:1; Get Back Up Joseph and John Mark): restore any of them by unticking draft. Oct 30 keeps its Reel and the Ephesians 4:32 Marching Orders. The scheduled task (renamed "Heel & Serpent Arm (every-other-day Reels)") now runs on the 1st and 15th at 9:48 AM CT and fills posting days through 17 days out. This replaces the daily cadence in the lean schedule below.
-- **Lean schedule (Chris, Oct 24, 2026, to save usage):** from Nov 1, Reels only: one Strike Reel a day at 3:30 PM CT, no feed posts, no Stories. Feed posts reached 0–1 people each even at 15 followers; Reels reached 28–100. The scheduled task moves to twice a month (1st and 15th, 16 days ahead). Posts already built through Oct 31 stay. Review the numbers and the pacing test around Nov 7.
-- **Schedule (Oct 20–31):** one Strike Reel every day at 3:30 PM CT; one feed post a day: Marching Orders 6:45 AM Mon/Wed/Fri, Get Back Up 7:15 PM Tue/Thu/Sat, Armor Check 1:15 PM Sun. It keeps running until Chris says Sheathe.
-- **A new original score every Reel** (Chris, Oct 20): heel-and-serpent/score_engine.py, six synthesized styles (anthem, hymn, march, dawn, pulse, nocturne), all six cycle before one repeats; key and tempo seeded by the slug. Every score opens with a hit on frame 0, lifts into the verse and resolves major on the seal. The style, key and tempo are logged in REEL_QUEUE.json and SONGS.md.
-- **Pacing A/B:** Reels alternate pace "slow" (the original Strike #1–2 style: 2.4–2.6 s hook lines, the verse in one 5.8–6.4 s shot, 0.4 s fades, no motion, about 14 s) and "fast" (quick cuts, two-shot verse, motion, about 10 s). Compare reach and 3-second hold by pace after two weeks (from Oct 20) and keep the winner.
-- **Weekly scheduled task** "Heel & Serpent weekly Arm" (trig_013uukPqcVyA7iA2e8nRZuJ7), Fridays 9:48 AM CT, runs in the cloud with automatic approval: it fills every Reel and feed slot from tomorrow through 8 days out, never duplicating what's already scheduled, using only VERSE_BANK.json verses, and reports to Chris by push and email. It stops if heel-and-serpent/PAUSED exists.
-- **Verse bank:** 109 CSB verses plus 7 verified story passages (Moses, Gideon, Jacob, Joseph, Thomas, John Mark, the prodigal son) as of Oct 20, 2026, copied from BibleGateway with a script and checked byte for byte. The task flags when fewer than 20 unused verses remain; refill in a live session with Chris's computer on (built-in browser, BibleGateway, CSB).
-- **Growth lever only Chris can pull:** 10 minutes a day of real comments from @heelandserpent on larger Christian men's and fatherhood pages, and (if he chooses) sharing a Reel from his personal account. Suggested Oct 20; his call.
+- No voice-over on Reels (Chris, Oct 20, 2026: "I don't want to do the voice memo"). make_reel.voice_fx stays in the code, unused.
+- Comment prompts: no post asks followers to recite or answer back. A sincere question is Chris's call, not yet approved.
 
 ### What's landing (Chris's feedback; read before writing, add to it after)
 
@@ -74,21 +55,24 @@ The voice keeps evolving with Chris's reactions and the numbers from Watch. Log 
 - Oct 13, 2026: liked the intro carousel ("Why Heel & Serpent"). What it did: opened with the promise, not with us; let Scripture carry the weight; short lines; named the wound before the win ("The heel gets bruised. The head gets crushed."); closed on "Bruised, not beaten." Keep that shape.
 - Oct 13, 2026: called Strike #1 (Micah 7:8 Reel) "incredible." What it did: three short blows before the verse (YOU'RE DOWN. / HE THINKS IT'S OVER. / IT ISN'T.), the enemy named, then the full verse, then GET BACK UP on the seal; the score turns from minor to major on the seal. Liked the generated instrumental over a trending sound.
 - Oct 13, 2026 (end of launch day): "I can relate to this, it gives something to hold onto and is a responsible reminder to obey God." Keep both halves: something a man can hold onto when he's down, and a clear call to obedience. Grace and command together, never one without the other.
-- Oct 14, 2026: called Strike #3 ("Your kids are watching", Prov 22:6) "awesome." First Reel on the fast pacing: hook on frame 0, three quick blows, verse by 5 s, seal, 11 s. Fathers as the subject landed.
+- Oct 14, 2026: called Strike #3 ("Your kids are watching", Prov 22:6) "awesome." Hook on frame 0, three quick blows, verse by 5 s, seal, 11 s. Fathers as the subject landed.
+- Oct 14, 2026: the brand palette stays, but the grid and Story line-up must stay visually pleasing, not monotonous; be deliberate about variety within the looks.
+- Nov 1, 2026: "This project is struggling, BAD." The numbers behind it, and the cleanup, are in STATUS.md and LOG.md. What the numbers say about the voice: the Reel that did best (Psalm 4:8, "You carried it all day. Set it down.") opened on a specific, ordinary weight a man recognizes, not on a slogan; the ones that did worst opened on abstractions.
 
 ## Visual language
 
-- **Feed:** 1080x1350 (4:5) stills and carousels. **Stories:** 1080x1920.
+- **Feed:** 1080x1350 (4:5) stills and carousels. **Stories:** 1080x1920. **Reels:** 1080x1920, type width 740 px so lines clear Instagram's side buttons.
 - **Palette:** iron #1A1A1A background, bone #ECE6DA for text, ember #C8501E for the single highlight word, ash #8A8580 for labels and references.
 - **Type:** EB Garamond capitals, widely letter-spaced, for the big line (matches the logos); EB Garamond italic for Scripture; Inter Bold for small labels. Bebas Neue only for the occasional hard-hitting command line, if at all.
 - **Finish:** fine grain, soft vignette, thin hairline rules, generous margins. One idea per frame.
 - **Imagery (optional):** moody stills like boots on a trail, a forge, a man at dawn, an empty chapel, a father's hands. Stylized serpent only, never gore.
 - **Header on every frame:** series name in ember (top left), Cross & Serpent mark (top right).
 - **Scripture reference always shown** under any verse, in ash (e.g. "Romans 8:31, CSB").
+- Bracket one word per line for ember, e.g. "GET [UP]." Text is measured and auto-shrinks to fit. If an ember word loses the space before it (seen after "WAY"), use an en space ( ) before the bracket.
 
 ### Looks (rotation set by Chris, Oct 13, 2026)
 
-Five looks, same words, palette, type and marks. Built by heel-and-serpent/make_variants.py: mo_look() for Marching Orders, carousel() for carousels (a carousel keeps one look on every slide), render_looks() to render.
+Five looks, same words, palette, type and marks. Built by heel-and-serpent/make_variants.py: mo_look() for Marching Orders, carousel() for carousels (a carousel keeps one look on every slide), story_look() for Stories (type kept inside y 300–1500), render_looks() to render.
 
 - **Classic:** centred on iron. The anchor look.
 - **Bone:** iron type on a bone ground (marks swapped to iron). Breaks the grid into light and dark.
@@ -96,20 +80,33 @@ Five looks, same words, palette, type and marks. Built by heel-and-serpent/make_
 - **Engraved:** inset double frame, the seal faint behind the type, three ember dots as the divider. Suits Sundays and Armor Check.
 - **Forge:** low ember glow from below; on stills, covers and closing slides the ember word is set huge and cropped behind the command. Strongest lines only, about once or twice a week.
 
-**Visual variety (Chris, Oct 14, 2026):** the brand palette stays; he respects it. But he wants the grid and the Story line-up to stay visually pleasing, not monotonous, so be deliberate about variety within the looks above. A one-off palette is allowed only when Chris asks for one, and it keeps the type, marks and layout so it still reads as Heel & Serpent. Available: "dawn" (deep slate ground, bone type, muted gold highlight, low warm glow), via make_reel.use_palette("dawn"); first used for the "First light" Story, Oct 14.
-
 Rules: no two posts in a row share a look (count Reels as their own look); Classic and Bone carry most of the week; Armor Check runs in Engraved; Forge stays rare. Non-classic files carry a _<look> suffix. When rebuilding a scheduled post in a new look, use new file names and update the Metricool post's media.
 
-## Formats and cadence
+A one-off palette is allowed only when Chris asks for one, and it keeps the type, marks and layout so it still reads as Heel & Serpent. Available: "dawn" (deep slate ground, bone type, muted gold highlight, low warm glow), via make_reel.use_palette("dawn"); first used for the "First light" Story, Oct 14.
 
-From Oct 20, 2026: one feed post a day plus one Strike Reel a day at 3:30 PM (see "Reels and feed from Oct 20"). Week 1 ran about 14 feed posts a week. Fixed times; adjust after the first month of data.
+## Reels (Strike)
 
-| Series | When | Format |
-| --- | --- | --- |
-| **Marching Orders** | Mon/Wed/Fri, 6:45 AM | One still: a verse plus one command for the day |
-| **Get Back Up** | Tue/Thu/Sat, 7:15 PM | 5–7 slide carousel: a man who fell and rose, or a lie men believe and the truth that answers it |
-| **Armor Check** | Sundays, 1:15 PM | Carousel on one piece of the armor of God (Ephesians 6), rotating weekly |
-| **Stories** | Daily | Poll, question box, behind-the-post, or a repost of the day's feed post |
+- **Format:** 9:16, 10–16 s. Moving type over the iron ground. The hook line is fully on screen at frame 0 (no fade-in). Three short blows, then the verse with its reference, then the seal with the on-screen call to action via `sub` ("Send this to a brother."). Sets go in heel-and-serpent/reels/<date>-<slug>/.
+- **The shape that landed (Strike #1):** YOU'RE DOWN. / HE THINKS IT'S OVER. / IT ISN'T. Then the enemy named, the full verse, GET BACK UP on the seal, and the score turning from minor to major on the seal.
+- **Pace: slow.** Decided Nov 1, 2026 on the Oct 13–30 test (slow averaged 88 reach per Reel and 17% watched past 3 s; fast averaged 47 and 15%). Slow is the original Strike #1–2 style: 2.4–2.6 s hook lines, the verse in one 5.8–6.4 s shot, 0.4 s fades, no motion, about 14 s. The fast style (1.5–1.8 s lines, two-shot verse, motion, drifting embers, 0.25 s fades, about 10 s) stays in the code as `pace: "fast"` for a deliberate test only.
+- Verses longer than about 12 words may split into two shots, reference on the second.
+- **Score:** a new original score every Reel from heel-and-serpent/score_engine.py. Six synthesized styles (anthem, hymn, march, dawn, pulse, nocturne); all six cycle before one repeats; key and tempo seeded by the slug. Every score opens with a hit on frame 0, lifts into the verse and resolves major on the seal. Log style, key and tempo in REEL_QUEUE.json and SONGS.md. Chris chose the generated instrumental over a trending sound (Oct 13); he can still add a trending sound in the app.
+- **Build:** REEL_QUEUE.json scripts Reels ahead (hook scenes, verse scenes, seal with sub, caption with the CSB credit line and "Music: original score, Heel & Serpent.", alt text, sources, post_time, pace, pillar). `python3 build_queued_reel.py <date>` builds one, logs SOURCES.md and SONGS.md and marks the verse used; `--print` gives the Metricool fields; `--next` builds the earliest unbuilt. Check a frame from each scene (ffmpeg) before scheduling: type inside the safe zone, reads correctly.
+- **Scheduling:** Metricool createScheduledPost, instagramData type REEL, isAiGenerated false, videoThumbnailUrl set to the cover jpg, autoPublish true. Check publicationDate in each result; fix any drift with updateScheduledPost.
+- Chris prefers efficiency and autonomy: Reels built in a live session are previewed to him with at least an hour's lead and go out on schedule unless he pulls them. Task-built Reels go out on schedule and are reported by push and email.
+- Buzzfy on Strike #1 (Oct 15, 2026): storytelling 8.9 and visual quality 8.5 (keep the structure); retention 4.5, originality 2.6 and authenticity 3.3 (the weak spots).
+
+## Formats
+
+Which of these run, and when, is set in STATUS.md. Fixed times; adjust only on a month of data.
+
+| Series | Format |
+| --- | --- |
+| **Strike** | Reel, see above |
+| **Marching Orders** | One still (4:5): a verse plus one command for the day |
+| **Get Back Up** | 5–7 slide carousel: a man who fell and rose, or a lie men believe and the truth that answers it |
+| **Armor Check** | Carousel on one piece of the armor of God (Ephesians 6), rotating; Engraved look. Done: belt of truth (#1), breastplate of righteousness (#2). Next: shoes of peace (Eph 6:15; Isa 52:7, Rom 10:15, Rom 5:1 are in the bank) |
+| **Stories** | Poll, question box, behind-the-post, or a repost of the day's feed post. Built as short videos with the score baked in; one continuous score per set |
 
 ## Pillars
 
@@ -124,11 +121,12 @@ Rotate so the same pillar doesn't run twice in a row.
 ## Scripture and accuracy rules
 
 - **Translation: CSB (Christian Standard Bible)**, chosen by Chris Oct 13, 2026. Quote it verbatim; mark partial verses with an ellipsis; check the wording against a published CSB source, never from memory.
+- **Verse bank:** from Oct 20, 2026, every verse on a Reel or task-built post comes word for word from heel-and-serpent/VERSE_BANK.json (CSB, copied from BibleGateway with a script and checked byte for byte), with its context read from the bank's notes, and is not one already used on the page (`used` field and SOURCES.md). Mark each use. Never quote a verse from memory and never paraphrase inside quotation marks. If the bank runs short, skip the slot and say so. Refill in a live session with Chris's computer on: open the passages on BibleGateway (version=CSB, several references separated by semicolons) in the built-in browser and read the page text; the web fetcher only returns short snippets and the shell can't reach the site.
 - **CSB license:** up to 1,000 verses without written permission, under 50% of any work, never a complete book. Track the running count in heel-and-serpent/SOURCES.md and ask Holman Bible Publishers before it nears 1,000.
 - **Credit line on every caption that quotes Scripture:** "Scripture quotations marked CSB have been taken from the Christian Standard Bible®, Copyright © 2017 by Holman Bible Publishers. Used by permission. Christian Standard Bible® and CSB® are federally registered trademarks of Holman Bible Publishers." The graphic itself shows the reference with ", CSB".
 - Every verse shows its reference. Read the surrounding passage first; no verse used to mean something its context doesn't support.
 - Quotes from historical Christians (Spurgeon, Augustine, Luther, etc.) must trace to a named work. No viral misattributions.
-- Keep a Sources log (heel-and-serpent/SOURCES.md in the media repo): post, verse, context read, verse count.
+- Keep the Sources log (heel-and-serpent/SOURCES.md): post, verse, context read, verse count.
 
 ## Guardrails
 
@@ -139,87 +137,40 @@ Rotate so the same pillar doesn't run twice in a row.
 - Grace for addiction, divorce, failure and doubt. When a post touches despair or self-harm, it points to real help (a pastor, a counselor, or the 988 Suicide & Crisis Lifeline in the US) and never treats it lightly.
 - No real living people named in a promotional way; no brands.
 
-## Merch (design started Oct 14, 2026; no sales yet)
+## Music policy (Chris, Oct 13, 2026; he prefers efficiency and autonomy)
 
-- Emblems: the Seal (primary) and the Monogram. Lines: "Bruised, not beaten." "Heel down." "Crush the head."
-- Chris chose to start design work slowly on Oct 14, 2026 (hat, shirt, hoodie, socks). Nothing goes on sale until the trademark knockout ("Heel & Serpent" and the tagline lines) and the domain check have cleared.
-- **Principle:** small marks, tonal thread, heavy blanks. Ember once per piece, as a hidden detail. Colorways: iron first, bone second.
-- **Hat:** low-profile unstructured cap. Cross & Serpent front (tonal on iron; iron thread on bone, ember tongue kept); GENESIS III · XV in ash on the back. Alternate: debossed leather Seal patch.
-- **Tee:** heavyweight. Monogram at the left chest. Iron tee carries the Seal large on the back (the one statement piece); bone tee has "BRUISED, NOT BEATEN." at the nape.
-- **Hoodie:** heavy fleece. Tonal Monogram at the chest, "HEEL DOWN." down the left sleeve, Seal on the back optional. Ember only at the drawcord tips and a stitch inside the hood.
-- **Socks:** "the ember heel": iron crew with an ember heel cup (the bruised heel, Genesis 3:15), knit Cross & Serpent at the ankle, "CRUSH THE HEAD." on the footbed. Bone pair: ember heel, iron toe and cuff stripe.
-- **Rule:** no verse text on anything worn underfoot; phrases and marks only.
-- Thread prep: thicken the cross and serpent tail for embroidery; the Seal's ring text only holds on leather or large prints, never small in thread.
-- Files: merch/marks.py recolors the locked logos for garments (tonal, contrast, leather, knit grid) into merch/marks/. Mockups: "H&S Merch Line" design canvas on claude.ai.
-- Knockout search (Oct 14, 2026, USPTO Trademark Search, exact phrase searches; not legal clearance): no filings for HEEL & SERPENT / HEEL AND SERPENT, HEEL DOWN, CRUSH THE HEAD or BRUISED NOT BEATEN. Nearest marks: BEATEN NOT BROKEN, live and registered in class 25 (t-shirts, socks, hats; reg. 5540638), close in wording to "Bruised, not beaten", so have an attorney weigh in before putting that line on product; HEELS DOWN in class 25 (shoes) is dead, CHIN UP, HEELS DOWN is live but for jewelry and watches; live class 25 SERPENT marks (DECAL SERPENT, SERPENT SKIN CAMO) are not close. Design marks (cross, serpent imagery) were not searched.
-- Domain (Oct 14, 2026, Verisign RDAP): heelandserpent.com and heelserpent.com unregistered. Not bought.
-- Embroidered option (Chris, Oct 14; mocked up alongside the print version): every mark stitched, softer fabric. Tee in a drapier cotton-modal or fine garment-dyed jersey (not the thinnest jersey, which puckers); hoodie in midweight French terry. Lighter stitch density, soft mesh backing. The large back Seal becomes a small stitched Seal (about 4 in) between the shoulders or below the hood, or nothing.
-- Focus (Chris, Oct 15, 2026): the soft drape tee and French terry hood, embroidered, as samples for himself to see the direction (not for sale). Embroidery-ready files are in merch/embroidery/ (built by merch/embroidery.py, to Printful's limits: lettering 0.25 in or taller, lines 0.05 in or thicker): chest Monogram 3 in (tee) / 3.5 in (hood), back Seal 4.5 in, nape and sleeve lines in Inter Black. Suggested sample route: Printful (single pieces, no minimum), or a local embroiderer on his own blanks if the softest fabric is wanted. Socks need a knit maker, later.
-- On hold (Chris, Oct 14, 2026): no domain purchase, attorney or merch spending yet. Revisit in about a month (mid-November 2026) once momentum is clearer.
-- When resumed: attorney review (especially "Bruised, not beaten"), register the domain, embroidery-ready and knit-ready mark files, print-on-demand samples to test fit before any small batch.
+- Feed posts stay on automatic publishing; Chris adds the paired song to feed posts himself.
+- Reels carry their own original score built into the video (a song attached through Metricool would need a Facebook Page linked to the account).
+- Stories: music preferred but optional; default is short videos with the original score baked in, motivational and dramatic, not dark and moody: make_reel.score_drive (D major, driving pulse, lifts into each cut, big resolve). A multi-frame Story gets ONE continuous score across all its frames: build it with make_reel.build_story_set({frame: scenes, ...}, out_dir), which writes the score once for the set and slices it so each frame picks up where the last left off. Schedule the frames back to back, in order, a minute apart, with nothing else between them. Never call build_reel per frame for a Story set.
+- Every post, Reel and Story set comes with one gospel or worship song pairing for Chris to add in the Instagram app (standing request, Oct 13, 2026). Log each in heel-and-serpent/SONGS.md with the post, song, artist and why it fits. Titles and artists only, never lyrics.
 
-## Commands (for Heel & Serpent)
+## Commands
 
 | Command | Action |
 | --- | --- |
 | **Rise** [optional topic] | Make one feed post (Marching Orders still or Get Back Up carousel, whichever is next) and schedule it about 2 minutes out via Metricool. No topic: pick by pillar rotation. Scripture rules and guardrails apply; HOLD if it touches current events. |
-| **Arm** [notes] | Build and schedule next week's 14 feed posts plus Armor Check. |
-| **Strike** [optional topic] | Make one short Reel (9:16, 12–18 s) with heel-and-serpent/make_reel.py: moving type over the iron ground, a verse with its reference, the seal to close, and a new original score built into the video (score_engine.py: a different style, key and tempo each time, resolving major on the seal). Show Chris and wait for his OK, then schedule about 2 minutes out via Metricool as a REEL. Use it between the morning and evening posts. No topic: pick by pillar rotation. Sets go in heel-and-serpent/reels/<date>-<topic>/. |
-| **Watch** | Report the latest Metricool numbers for the page. |
-| **Sheathe** | Move all scheduled posts to draft and create heel-and-serpent/PAUSED (so the weekly task stops). "Sheathe off" deletes PAUSED and restores the drafts. |
-
-**Music policy (Chris, Oct 13, 2026; he prefers efficiency and autonomy):** feed posts stay on automatic publishing; Chris adds the paired song to feed posts himself. Reels carry their own original score built into the video (or a song attached, if Metricool ever can: needs a Facebook Page linked). Stories: music preferred but optional; default is to build Story frames as short videos with the original score baked in so they carry sound with no extra step for Chris. For Stories the score should be motivational and dramatic, not dark and moody (Chris, Oct 13): use make_reel.score_drive (D major, driving pulse, lifts into each cut, big resolve). Reels get a new score every time from score_engine.py (Chris, Oct 20, 2026).
-
-**One score per Story (Chris, Oct 14, 2026):** Story frames post as separate clips, so a score built per frame restarts on every tap and sounds repetitive. A multi-frame Story gets ONE continuous score across all its frames: build it with make_reel.build_story_set({frame: scenes, ...}, out_dir), which writes the score once for the whole set (one intro, lifts on each cut, one resolve on the last frame) and slices it so each frame picks up where the last left off. Schedule the frames back to back, in order, a minute apart, with nothing else between them. Never call build_reel per frame for a Story set.
-
-Every post, Reel and Story set comes with one gospel or worship song pairing for Chris to add in the Instagram app (standing request, Oct 13, 2026). Log each in heel-and-serpent/SONGS.md with the post, song, artist and why it fits. Titles and artists only, never lyrics.
+| **Arm** [notes] | Build and schedule the next stretch of posts on the current plan in STATUS.md (today: Strike Reels on every posting day through 17 days out). |
+| **Strike** [optional topic] | Make one Reel as described under Reels. Show Chris and wait for his OK, then schedule about 2 minutes out via Metricool as a REEL. No topic: pick by pillar rotation. |
+| **Watch** | Report the latest Metricool numbers for the page (Reels reach, watch time, past-3-second rate, shares, saves, comments; feed reach; read followers in the app, not Metricool). |
+| **Sheathe** | Move all scheduled posts to draft and create heel-and-serpent/PAUSED (so the scheduled task stops). "Sheathe off" deletes PAUSED and restores the drafts. |
 
 ## Pipeline
 
-- Media repo: pensiveminds/pensive-minds-media, folder heel-and-serpent/ (reorganized Oct 13, 2026: each page has its own folder; Pensive Minds moved to pensive-minds/, Ranks & Reason unchanged).
-- Builder: heel-and-serpent/make_posts.py. Templates: marching_orders(), slide() for carousels (cover, body, close with the Seal), story(). Bracket one word for ember, e.g. "GET [UP]." Text is measured and auto-shrinks to fit; content centres between the header and footer rules. Slides go in heel-and-serpent/posts/<date>-<set>/ with a CAPTIONS.md, and are pushed to main so Metricool can fetch them; a copy goes in a Heelandserpent Desktop folder.
+- Media repo: pensiveminds/pensive-minds-media, folder heel-and-serpent/ (each page has its own folder; Pensive Minds in pensive-minds/, Ranks & Reason in ranks-and-reason/). Never touch the other two.
+- Feed builder: heel-and-serpent/make_posts.py. Templates: marching_orders(), slide() for carousels (cover, body, close with the Seal), story(). Content centres between the header and footer rules. Slides go in heel-and-serpent/posts/<date>-<set>/ with a CAPTIONS.md, and are pushed to main so Metricool can fetch them; a copy goes in a Heelandserpent Desktop folder.
+- Looks: make_variants.py. Reels: make_reel.py, score_engine.py, build_queued_reel.py, REEL_QUEUE.json. Verses: VERSE_BANK.json. Logs: SOURCES.md, SONGS.md. Merch: merch/ (see MERCH.md).
 
 ## Working session (start here in any new Project or chat)
 
 Everything needed lives in the media repo; nothing depends on earlier chats.
 
 1. **Attach the repo:** pensiveminds/pensive-minds-media (push access). Work only inside heel-and-serpent/; don't touch pensive-minds/ or ranks-and-reason/.
-2. **Read** heel-and-serpent/BRAND_BIBLE.md (this file), SOURCES.md, and the latest posts/<date>-<set>/CAPTIONS.md.
-3. **Set up rendering:** `pip install --break-system-packages cairosvg pillow numpy`, then `mkdir -p ~/.fonts && cp heel-and-serpent/fonts/*.ttf ~/.fonts/ && fc-cache -f` (SVG text needs the fonts installed).
-4. **Build a set:** copy posts/_template/ to posts/<YYYY-MM-DD>-<set>/, fill SET in build.py, run it, look at every image, write CAPTIONS.md (CSB credit line on every caption that quotes Scripture), add each verse to SOURCES.md. To check CSB wording, open the passages on BibleGateway (version=CSB, several references separated by semicolons) in the built-in browser and read the page text; the web fetcher only returns short snippets and the shell can't reach the site. If an ember word loses the space before it (seen after "WAY"), use an en space (\u2002) before the bracket.
-5. **Publish:** commit and push to main; images are then at https://raw.githubusercontent.com/pensiveminds/pensive-minds-media/main/heel-and-serpent/posts/<set>/<file>. Before scheduling, run Metricool getBrandSettings and confirm blogId 7400959 shows instagramData "heelandserpent". Schedule with createScheduledPost (Story: no text; feed: caption plus alt text per image; isAiGenerated false).
-6. **Record** what was scheduled (date, time, Metricool post id) in Setup status below, in the repo copy and the Project copy of this bible.
+2. **Read** BRAND_BIBLE.md (this file), STATUS.md, SOURCES.md, and the latest reels/<date>-<slug>/CAPTIONS.md or posts/<date>-<set>/CAPTIONS.md.
+3. **Set up rendering:** `pip install --break-system-packages cairosvg pillow numpy scipy`, then `mkdir -p ~/.fonts && cp heel-and-serpent/fonts/*.ttf ~/.fonts/ && fc-cache -f` (SVG text needs the fonts installed).
+4. **Build:** Reels with build_queued_reel.py (above). Feed sets: copy posts/_template/ to posts/<YYYY-MM-DD>-<set>/, fill SET in build.py, run it, look at every image, write CAPTIONS.md (CSB credit line on every caption that quotes Scripture), add each verse to SOURCES.md.
+5. **Publish:** commit and push to main; media is then at https://raw.githubusercontent.com/pensiveminds/pensive-minds-media/main/heel-and-serpent/<path>. Confirm each URL returns 200. Before scheduling, run Metricool getBrandSettings and confirm blogId 7400959 shows instagramData "heelandserpent". Schedule with createScheduledPost (Story: no text; feed: caption plus alt text per image; isAiGenerated false).
+6. **Record:** update the queue in STATUS.md and append the run to LOG.md (date, time, verse, pace, score, Metricool post id), in the repo and in the Project copies.
 
-## Setup status
+## Merch
 
-- Name locked: Heel & Serpent (Oct 13, 2026).
-- Done: Instagram account @heelandserpent created; Metricool connected; logo system locked (Monogram, Seal, Cross & Serpent) (Oct 13).
-- Done: post templates and a draft launch set (welcome Story, Marching Orders on Proverbs 24:16, Get Back Up carousel on Peter) (Oct 13).
-- Launch set scheduled Oct 13, 2026 (Metricool): welcome Story Tue Oct 13, 9:30 AM CT (post 394994572); Marching Orders #1 Wed Oct 14, 6:45 AM CT (394994656); Get Back Up #1, Peter, Wed Oct 14, 7:15 PM CT (394994778). Working cadence: Marching Orders 6:45 AM, Get Back Up 7:15 PM.
-- Intro carousel "Why Heel & Serpent" (Start Here, Genesis 3:15 and Romans 16:20) published Oct 13, 2026, 9:57 AM CT: https://www.instagram.com/p/DecE5YZDT3a/ (Metricool 395032100). Meant to stay pinned at the top of the profile. Set: posts/2026-10-13-intro/.
-- Week 1 (Arm) scheduled Oct 13, 2026, set posts/2026-10-15-week1/ (38 verses). Armor Check runs Sundays 1:15 PM CT. Rebuilt in the rotating looks the same afternoon (Metricool ids changed on update; uuids did not). Metricool post ids, look in brackets:
-  - Thu Oct 15: Marching Orders, 1 Cor 9:27, 6:45 AM (395318385) [Ledger]; Get Back Up, David, 7:15 PM (395318548) [Bone]
-  - Fri Oct 16: Marching Orders, Eph 6:4 (395008539) [Classic]; Get Back Up, lie "too far gone" (395318688) [Engraved]
-  - Sat Oct 17: Marching Orders, Ps 5:3 (395318742) [Bone]; Get Back Up, Jonah (395009231) [Classic]
-  - Sun Oct 18: Marching Orders, 1 Cor 10:13 (395318798) [Bone]; Armor Check #1, belt of truth, 1:15 PM (395318899) [Engraved]; Get Back Up, lie "strong men don't apologize" (395009536) [Classic]
-  - Mon Oct 19: Marching Orders, Col 3:23 (395318964) [Ledger]; Get Back Up, Samson (395319087) [Bone]
-  - Tue Oct 20: Marching Orders, Josh 24:15 (395009927) [Classic]; Get Back Up, lie "it's just my temper" (395319232) [Ledger]
-  - Wed Oct 21: Marching Orders, Rom 12:2 (395319273) [Forge]; Get Back Up, Paul (395319380) [Bone]
-- Wed Oct 14: Marching Orders #1, Prov 24:16, rebuilt in Forge (395318152, posts/2026-10-13-launch/build_forge.py); Get Back Up #1, Peter, stays Classic (394994778).
-- Tue Oct 13 evening (first posts in the new looks, set posts/2026-10-13-evening/): Marching Orders, Deut 6:7, 5:45 PM [Bone] (395317735); Get Back Up, lie "you're the only one" (Elijah), 8:30 PM [Ledger] (395318012).
-- Oct 20, 2026 (one-a-day schedule begins): Strike Reels, each with its own score: Tue Oct 20, 8:00 PM, Hebrews 12:11, slow, march (401462958); Wed Oct 21 3:30 PM, Proverbs 27:17, fast, pulse (401469383); Thu Oct 22, 1 Peter 5:8, slow, hymn (401469462); Fri Oct 23, Joshua 1:9, fast, dawn (401469520); Sat Oct 24, Nehemiah 4:14, slow, anthem (401469634); Sun Oct 25, Galatians 6:9, fast, nocturne (401469669); Mon Oct 26, 2 Corinthians 12:9, slow, march (401469756). Sets: reels/<date>-<slug>/.
-- Bridge feed set posts/2026-10-22-bridge/: Thu Oct 22, 7:15 PM, Get Back Up, Gideon [Classic] (401476286); Fri Oct 23, 6:45 AM, Marching Orders, Luke 9:23 [Ledger] (401476326). From Sat Oct 24 the weekly task builds the feed. Armor Check #2 (Sun Oct 25) is the breastplate of righteousness. Stories are not on the schedule.
-- Weekly task run Oct 23, 2026 (Arm for Oct 24–31; every day now has one Reel and one feed post). Strike Reels at 3:30 PM CT, set reels/<date>-<slug>/: Tue Oct 27, Ecclesiastes 4:12, fast, pulse Eb 122 (404259811); Wed Oct 28, Psalm 37:24, slow, hymn Bb 62 (404259838); Thu Oct 29, Romans 8:37, fast, dawn F 80 (404259873); Fri Oct 30, 2 Timothy 4:7, slow, anthem F 96 (404259913); Sat Oct 31, Psalm 27:1, fast, nocturne A 68 (404259965). Feed set posts/2026-10-24-week/: Sat Oct 24, 6:55 PM, Get Back Up, Jacob [Bone] (404262842); Sun Oct 25, 1:15 PM, Armor Check #2, breastplate of righteousness [Engraved] (404261621); Mon Oct 26, 6:45 AM, Marching Orders, 2 Tim 1:7 [Classic] (404261640); Tue Oct 27, 7:15 PM, Get Back Up, lie "your past is who you are" [Bone] (404261674); Wed Oct 28, 6:45 AM, Marching Orders, 1 Cor 16:13 [Ledger] (404261691); Thu Oct 29, 7:15 PM, Get Back Up, Joseph [Classic] (404261714); Fri Oct 30, 6:45 AM, Marching Orders, Eph 4:32 [Forge] (404261736); Sat Oct 31, 7:15 PM, Get Back Up, John Mark [Bone] (404261764). Armor Check #3 (Sun Nov 1) is the shoes of peace (Eph 6:15; Isa 52:7, Rom 10:15, Rom 5:1 are in the bank). Bank after this run: 83 unused verses, 3 unused story passages (Moses, Thomas, prodigal son). Ephesians 6:14 is marked used (its first clause ran Oct 18), so breastplate posts quote other verses.
-- Metricool quirk (Oct 23, 2026): a post set for 7:00–7:59 PM CT on Sat Oct 24 saves as 9:xx PM (that hour is the night Madrid, the account's join zone, turns its clocks back). Jacob was moved to 6:55 PM. Watch for the same thing around US clock changes (Nov 1, 2026): check publicationDate in each create result and fix any that drift.
-- Story burst "Before you sleep" (6 frames, 8:16–8:26 PM Oct 13, leading into the 8:30 Elijah post; Lamentations 3:22–23). Stories are built with make_variants.story_look() in the five looks, type kept inside y 300–1500. Polls, question boxes and link stickers can't go through Metricool; add them in the app. Set: stories/2026-10-13-before-you-sleep/.
-- Stories "Tomorrow starts tonight" (3 Story videos with score_drive, 10:15–10:19 PM Oct 13; Isaiah 40:31). Set: stories/2026-10-13-tomorrow-starts-tonight/.
-- Story "First light" (one-off dawn palette, 4 frames, one continuous score_drive score across all four; Mark 1:35) scheduled Wed Oct 14, 2026, 4:35–4:38 AM CT: Metricool 395698359, 395698387, 395698420, 395698448. Set: stories/2026-10-14-first-light/. Song: 10,000 Reasons (Bless the Lord), Matt Redman.
-- Strike #3 (Proverbs 22:6, "Your kids are watching", first Reel on the new pacing, 11 s) scheduled Wed Oct 14, 2026, 3:30 PM CT (Metricool 396190107). Set: reels/2026-10-14-prov22-6/.
-- Strike #4 (James 4:7, "The enemy is betting you'll quit", first Reel with motion, two-shot verse and on-screen CTA) scheduled Thu Oct 15, 2026, 8:00 PM CT (Metricool 397284077). No Reel went out at 3:30 PM Oct 15: nothing was set to build it outside a live session. Set: reels/2026-10-15-james4-7/.
-- Strike #2 (Psalm 4:8 night Reel, "Rest. Then rise.") published Oct 13, 2026, 8:44 PM CT: https://www.instagram.com/reel/DedO3WYE8Z7/ (Metricool 395475633). Set: reels/2026-10-13-psalm4-8/. Reel type width narrowed to 740 px the same night so lines clear Instagram's side buttons.
-- Strike #1 (Micah 7:8 Reel) published Oct 13, 2026, 3:28 PM CT: https://www.instagram.com/reel/DecqtXAoNuJ/ (Metricool 395304172). Set: reels/2026-10-13-micah7-8/.
-- Reels (Strike) added Oct 13, 2026. Instagram sounds can't be attached through Metricool: @heelandserpent is a Business account with no Facebook Page linked. Chris chose the original generated score instead (Oct 13); he can still add a trending sound in the app.
-- On hold (Chris, Oct 13, 2026): comment and DM auto-replies via Metricool Flows. If revisited: narrow keyword triggers only, every reply says a real person reads the inbox, crisis messages point to 988, never an auto-reply on every comment.
-- Oct 14, 2026: trademark knockout and domain check done (results under Merch). Domain, attorney and merch spending on hold until about mid-November 2026 (Chris).
-- Oct 28, 2026 (every-other-day switch): Rise, Marching Orders, Romans 12:21, "ANSWER IT WITH GOOD." [Bone], Wed Oct 28, 4:53 PM CT (Metricool 409455547). Set: posts/2026-10-28-rise/. Moved to draft: Thu Oct 29 Reel Romans 8:37 (409454697) and Get Back Up Joseph (409454708); Sat Oct 31 Reel Psalm 27:1 (409454721) and Get Back Up John Mark (409454729). Bank after this: 82 unused verses.
-- Scheduled task run Nov 1, 2026 (every-other-day Arm, posting days Nov 1–17; nothing was scheduled before the run). Strike Reels at 3:30 PM CT, set reels/<date>-<slug>/, all times confirmed in Metricool after the Nov 1 clock change: Sun Nov 1, 2 Corinthians 4:8–9, fast, march Bb 107 (413030933); Tue Nov 3, John 16:33, slow, pulse G 126 (413031310); Thu Nov 5, Ephesians 5:25 (partial), fast, hymn G 69 (413031326); Sat Nov 7, Matthew 26:41, slow, dawn F 77 (413031341); Mon Nov 9, Galatians 6:2, fast, anthem F 94 (413031356); Wed Nov 11, Psalm 40:2, slow, nocturne C 65 (413031737); Fri Nov 13, Ephesians 6:16, fast, march Bb 100 (413031754); Sun Nov 15, 1 Peter 2:11, slow, pulse Bb 121 (413031768); Tue Nov 17, John 15:13, fast, hymn D 70 (413031781). Pace restarted on fast for Nov 1 because the last published Reel (Oct 30) was slow and the Oct 31 fast Reel stayed in draft; published so far: 6 slow, 4 fast before this run. Nov 1 and Nov 11 captions carry the 988 line (despair, the pit). Bank after this run: 73 unused verses. Running total on posts: 112 verses.
+The line, the knockout search and the sample plan are in MERCH.md. Standing rules: nothing goes on sale until the trademark knockout and the domain check have cleared with an attorney (especially "Bruised, not beaten"); no verse text on anything worn underfoot, phrases and marks only; small marks, tonal thread, heavy blanks, ember once per piece. On hold (Chris, Oct 14, 2026): no domain purchase, attorney or merch spending; revisit about mid-November 2026.
